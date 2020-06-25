@@ -1,0 +1,16 @@
+2020-06-18T13:30:17+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/front-page.php:3
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/front-page.php on line 3
+
+2020-06-18T13:31:23+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/front-page.php:3
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/front-page.php on line 3
+

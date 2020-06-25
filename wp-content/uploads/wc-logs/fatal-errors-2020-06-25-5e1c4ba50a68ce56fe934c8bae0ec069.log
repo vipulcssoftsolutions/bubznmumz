@@ -1,0 +1,28 @@
+2020-06-25T04:37:52+00:00 CRITICAL syntax error, unexpected '.' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 564
+
+2020-06-25T04:38:24+00:00 CRITICAL syntax error, unexpected '.' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 564
+
+2020-06-25T07:07:50+00:00 CRITICAL syntax error, unexpected end of file, expecting '(' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 351
+
+2020-06-25T07:36:25+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 483
+
+2020-06-25T07:36:27+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 483
+
+2020-06-25T07:36:27+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 483
+
+2020-06-25T07:36:27+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 483
+
+2020-06-25T07:36:35+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 483
+
+2020-06-25T08:32:34+00:00 CRITICAL syntax error, unexpected end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/product-thumbnails.php on line 40
+
+2020-06-25T08:58:44+00:00 CRITICAL Uncaught Error: Call to a member function get_sku() on null in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php:101
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php on line 101
+

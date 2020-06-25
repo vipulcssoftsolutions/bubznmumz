@@ -1,0 +1,45 @@
+/*
+Theme Name: Twenty Ten Child
+Author: ChildThemeWP.com
+Author URI: https://childthemewp.com/twenty-ten/
+Description: Twenty Ten WordPress child theme.
+Template: twentyten
+Text Domain: twentyten-child
+*/ 
+
+.xoxo {
+    list-style-type: none;
+}
+
+.woocommerce-loop-product__title {
+    text-align: center;
+    font-size: 13px !important;
+    font-size: 13px;
+    color: #000;
+    margin: 0;
+    margin-bottom: 0px;
+    letter-spacing: .4px;
+    font-family: arial;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+p.woocommerce-result-count {
+    margin-top: -33px !important;
+}
+div#top_link {
+    text-align: right !important;
+    margin-left: 1100px;
+}
+
+.variations, .label, label {
+    color: black;
+    font-size: 15px;
+    color: #747474;
+    text-transform: uppercase;;
+}
+
+#prdct_full_info {
+    margin-top: 26px;
+}
+

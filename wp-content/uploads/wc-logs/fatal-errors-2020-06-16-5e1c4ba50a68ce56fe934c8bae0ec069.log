@@ -1,0 +1,6 @@
+2020-06-16T14:04:10+00:00 CRITICAL Cannot declare class HFE\WidgetsManager\Widgets\Cart, because the name is already in use in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/header-footer-elementor/inc/widgets-manager/widgets/class-cart.php on line 0
+
+2020-06-16T14:04:51+00:00 CRITICAL Cannot declare class HFE\WidgetsManager\Widgets\Cart, because the name is already in use in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/header-footer-elementor/inc/widgets-manager/widgets/class-cart.php on line 0
+
+2020-06-16T14:12:30+00:00 CRITICAL Cannot declare class HFE\WidgetsManager\Widgets\Cart, because the name is already in use in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/header-footer-elementor/inc/widgets-manager/widgets/class-cart.php on line 0
+

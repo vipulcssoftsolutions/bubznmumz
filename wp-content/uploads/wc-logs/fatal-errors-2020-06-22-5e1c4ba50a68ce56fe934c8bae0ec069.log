@@ -1,0 +1,156 @@
+2020-06-22T04:59:20+00:00 CRITICAL Cannot redeclare elementor_fail_wp_version() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor/elementor.php:97) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor-master/elementor.php on line 97
+
+2020-06-22T04:59:22+00:00 CRITICAL Cannot redeclare elementor_fail_wp_version() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor/elementor.php:97) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor-master/elementor.php on line 97
+
+2020-06-22T04:59:22+00:00 CRITICAL Cannot redeclare elementor_fail_wp_version() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor/elementor.php:97) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor-master/elementor.php on line 97
+
+2020-06-22T05:15:03+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:05+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:09+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:09+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:13+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:17+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:21+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:24+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:26+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:28+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:29+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:30+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:30+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:39+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:41+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:42+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:15:43+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:16:16+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:16:18+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:16:19+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:16:21+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:16:23+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:16:30+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:16:46+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:16:53+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:03+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:09+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:13+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:14+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:29+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:30+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:31+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:40+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:44+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:17:45+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:18:28+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:18:30+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:01+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:03+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:09+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:13+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:14+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:25+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:28+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:28+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:29+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:31+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:32+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:19:39+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:20:30+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:20:47+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:20:58+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:05+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:09+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:15+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:20+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:28+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:29+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:30+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:30+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:32+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:21:33+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:22:30+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:23:00+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:23:05+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T05:23:09+00:00 CRITICAL syntax error, unexpected '?>' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 905
+
+2020-06-22T07:33:12+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting ',' or ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 1318
+
+2020-06-22T07:33:38+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting ',' or ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 1318
+
+2020-06-22T07:33:42+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting ',' or ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 1318
+
+2020-06-22T07:34:15+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting ',' or ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 1318
+
+2020-06-22T07:34:24+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting ',' or ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 1318
+
+2020-06-22T07:35:09+00:00 CRITICAL syntax error, unexpected '}' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 1371
+
+2020-06-22T07:35:39+00:00 CRITICAL syntax error, unexpected '}' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 1371
+
+2020-06-22T07:35:42+00:00 CRITICAL syntax error, unexpected '}' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/bubznmumz/functions.php on line 1371
+
+2020-06-22T17:52:12+00:00 CRITICAL Cannot redeclare twentyten_widgets_init() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:13) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten/functions.php on line 499
+

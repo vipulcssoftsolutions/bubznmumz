@@ -47,7 +47,7 @@ $terms = get_terms( array(
 ) );
 
 foreach ( $terms as $term ) {
-     echo "<li><a href='".site_url()."/brand/".$term->slug."'>" . $term->name . "</li>";
+     echo "<li><a href='".site_url()."/brand/".$term->slug."'>" . $term->name . "</a></li>";
 }
 ?>
 <span class="clearfix"></span>

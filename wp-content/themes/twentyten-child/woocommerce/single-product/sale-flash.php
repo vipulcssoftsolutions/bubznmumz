@@ -19,25 +19,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-?>
-
-
-
-<div class="detail_content">
-    <div class="container">
-    <div class="row">
-    	
-    <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">	
-<?php
-
 global $post, $product;
 
 ?>
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" style="padding-left: 0;">
 <?php if ( $product->is_on_sale() ) : ?>
 
 	<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . esc_html__( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
 
 	<?php
 endif;
-
+?>
+  <div class="liking text-right">
+                                <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]') ?>
+                            </div>   
+       <?php                     
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

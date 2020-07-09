@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 
 ?>
-
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" style="padding-left: 0;">
         <div class="product_big_outer">
         	
 
@@ -48,8 +48,7 @@ $wrapper_classes   = apply_filters(
 
 <div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
 	<div class="product_box_big">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
-          
+       
 	<figure class="woocommerce-product-gallery__wrapper">
 		<?php
 		if ( $product->get_image_id() ) {

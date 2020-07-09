@@ -65,11 +65,12 @@ do_action( 'woocommerce_sidebar' );
 ?>
 </div>
 </div>
-		<div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
-			<div class="product_list_content">
+
 <?php
 if ( woocommerce_product_loop() ) {
 ?>        
+		<div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
+			<div class="product_list_content">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="row">
               <div class="sort_bar">
@@ -77,7 +78,7 @@ if ( woocommerce_product_loop() ) {
                   <div class="product_heading">
                     <?php echo get_the_title(); ?>
                   </div>
-                </div>
+                </div>	
                 <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
 					<div class="right_filter pull-right">
     <?php      
@@ -90,6 +91,14 @@ if ( woocommerce_product_loop() ) {
 	 */
 	do_action( 'woocommerce_before_shop_loop' );
 ?>
+            <div class="row-column-switcher">
+              <select name="column-switcher" class="column-switcher">
+					<option value="menu_order" selected="selected">Columns Per Row</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+			</select>
+          </div>
 </div>
 </div>
 </div>
@@ -143,16 +152,29 @@ if ( woocommerce_product_loop() ) {
           </div>
 <?php	
 	do_action( 'shop_page_description' );
-	
+?>
+</div>
+</div>
+</div>
+</div>	
+<?php	
 } else {
+?>
+		<div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
+
+<?php	
 	/**
 	 * Hook: woocommerce_no_products_found.
 	 *
 	 * @hooked wc_no_products_found - 10
 	 */
 	do_action( 'woocommerce_no_products_found' );
+ ?>
+            </div>
+<?php    
 }
-
+?>
+<?php
 /**
  * Hook: woocommerce_after_main_content.
  *
@@ -160,9 +182,6 @@ if ( woocommerce_product_loop() ) {
  */
 do_action( 'woocommerce_after_main_content' );
 ?>
-</div>
-</div>
-</div>
-</div>
+
 <?php
 get_footer( 'shop' );

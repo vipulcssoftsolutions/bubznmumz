@@ -21,23 +21,56 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 ?>
-<h5 class="arival_brand text-center">Fisher</h5>
-
+ <?php
+    $termsbrand =  get_the_terms($product->get_id(), 'product_brand');
+        if($termsbrand){
+            foreach($termsbrand as $terms){
+                echo '<h5 class="arival_brand text-center">'.$terms->name.'</h5>';
+                break;
+            }    
+        }
+?>
 <div class="arival-price text-center">
 <?php if ( $price_html = $product->get_price_html() ) : ?>
 	<span class="price"><?php echo $price_html; ?></span>
 <?php endif; ?>
 </div>
+<?php
+            $args = array(
+                 'post_type'     => 'product_variation',
+                 'post_status'   => array( 'private', 'publish' ),
+                 'numberposts'   => -1,
+                 'orderby'       => 'menu_order',
+                 'order'         => 'asc',
+                 'post_parent'   => $product->get_id() // get parent post-ID
+            );
+
+            $variations = get_posts( $args );
+            $rrp_price = array();
+            if($variations){
+              foreach ( $variations as $variation ) {
+                    // get variation ID
+                     $variation_ID = $variation->ID;
+                    // get variations meta
+                    $product_variation = new WC_Product_Variation( $variation_ID );
+                    // get variation featured image
+                    $variation_image = $product_variation->get_image();
+                    // get variation price
+                    $variation_price = $product_variation->get_price_html();
+                    $rrp_price[] = get_post_meta( $variation_ID , 'rrp_price', true );
+                }
+            }
+
+                 $woocsdata = get_option('woocs');
+                              global $WOOCS;
+                              $currencurrency = $WOOCS->current_currency;
+                              $updateprice = $woocsdata[$currencurrency]['rate'];
+                              $updatedsymbol = $woocsdata[$currencurrency]['symbol'];
+                              $updatedposition = $woocsdata[$currencurrency]['position'];
+                              $min_rrp_price_in_dollar = min($rrp_price);
+                              $rrppricewithcurrencywitcher = $min_rrp_price_in_dollar * $updateprice;
+	                       ?>
 <div class="rrp_price">
-RRP: $30.00
+        RRP: <?php echo $updatedsymbol.round($rrppricewithcurrencywitcher,2); ?>
 </div>
-<div class="arival_rating text-center">
-<ul class="list-inline">
-<li><i class="fa fa-star-o filled" aria-hidden="true"></i></li>
-<li><i class="fa fa-star-o filled" aria-hidden="true"></i></li>
-<li><i class="fa fa-star-o filled" aria-hidden="true"></i></li>
-<li><i class="fa fa-star-o filled" aria-hidden="true"></i></li>
-<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-<li><span>(2)</span></li>
-</ul>
-</div>
+

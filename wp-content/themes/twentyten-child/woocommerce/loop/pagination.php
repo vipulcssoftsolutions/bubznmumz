@@ -27,7 +27,7 @@ $format  = isset( $format ) ? $format : '';
 if ( $total <= 1 ) {
 	return;
 }
-?>
+?>		
 <nav class="woocommerce-pagination">
 	<?php
 	echo paginate_links(

@@ -27,11 +27,27 @@ if ( ! $short_description ) {
 	return;
 }
 
+
+function custom_echo($x, $length)
+{
+  if(strlen($x)<=$length)
+  {
+    echo $x;
+  }
+  else
+  {
+    $y=substr($x,0,$length) . '... <a href="#prdct_full_info">View Product Details</a>';
+    echo $y;
+  }
+}
+
 ?>
 <p>
 <div class="woocommerce-product-details__short-description">
-	<?php echo $short_description; // WPCS: XSS ok. ?>
+	<?php custom_echo($short_description, 120); ?>
 </div>
 </p>
+
+
 
 

@@ -23,6 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <div class="wrap-order-and-sort">
 <div class="woocommerce-result-count perpage">
+		 <div class="inner perpage">
+
 	<?php
 	if ( 1 === $total ) {
 		_e( 'Showing the single result', 'woocommerce' );
@@ -39,23 +41,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 		echo 'View <span>'.$per_page.'</span> per page';
 	}
 	?>
-</div>
-<div class="totalcount">
-<?php
-	if ( 1 === $total ) {
-		_e( 'Showing the single result', 'woocommerce' );
-	} elseif ( $total <= $per_page || -1 === $per_page ) {
-		/* translators: %d: total results */
-		printf( _n( 'Showing all %d result', 'Showing all %d results', $total, 'woocommerce' ), $total );
-	} else {
-		$first = ( $per_page * $current ) - $per_page + 1;
-		$last  = min( $total, $per_page * $current );
-		/* translators: 1: first result 2: last result 3: total results */
-		?>
+	</div>
+	 <div class="totalcount">
 		<?php
-		//printf( _nx( '%3$d results', '%3$d results', $total, 'with first and last result', 'woocommerce' ), $first, $last, $total );
-		echo '<span>'.$total.'</span> Results';
-	}
-	
-?>
+			if ( 1 === $total ) {
+				_e( 'Showing the single result', 'woocommerce' );
+			} elseif ( $total <= $per_page || -1 === $per_page ) {
+				/* translators: %d: total results */
+				printf( _n( 'Showing all %d result', 'Showing all %d results', $total, 'woocommerce' ), $total );
+			} else {
+				$first = ( $per_page * $current ) - $per_page + 1;
+				$last  = min( $total, $per_page * $current );
+				/* translators: 1: first result 2: last result 3: total results */
+				?>
+				<?php
+				//printf( _nx( '%3$d results', '%3$d results', $total, 'with first and last result', 'woocommerce' ), $first, $last, $total );
+				echo '<span>'.$total.'</span> Results';
+			}
+			
+		?>
+	</div>
 </div>
+

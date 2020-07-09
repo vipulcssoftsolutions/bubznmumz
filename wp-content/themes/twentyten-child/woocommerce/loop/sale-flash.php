@@ -31,7 +31,7 @@ endif;
 
 ?>
 <div class="liking text-right">
-<i class="fa fa-heart-o" aria-hidden="true"></i>
+     <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]') ?>
 </div>
 <?php
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

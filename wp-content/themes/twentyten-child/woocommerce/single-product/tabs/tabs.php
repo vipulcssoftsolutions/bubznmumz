@@ -28,48 +28,43 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 ?>
 
-
-
-
-  <?php
+<?php
 $product_tabs = apply_filters( 'woocommerce_product_tabs', array() );
-
 if ( ! empty( $product_tabs ) ) : ?>
+<div class="prdct_full_info" id="prdct_full_info">
+    <div class="prdct_info_inner">
+      <div class="panel-group" id="prdct_dtl_list">
+        <div class="panel panel-default">
 
-
-
-
-
-	<div class="woocommerce-tabs wc-tabs-wrapper">
-		<div class="prdct_full_info" id="prdct_full_info">
-  <div class="container">
-
-		<ul class="tabs wc-tabs" role="tablist">
-
-			<?php foreach ( $product_tabs as $key => $product_tab ) : ?>
-				<li class="<?php echo esc_attr( $key ); ?>_tab" id="tab-title-<?php echo esc_attr( $key ); ?>" role="tab" aria-controls="tab-<?php echo esc_attr( $key ); ?>">
-					<div class="panel-heading">
-					<a data-parent="#prdct_dtl_list" href="#tab-<?php echo esc_attr( $key ); ?>">
+		<?php 
+		$i=0;
+	
+		foreach ( $product_tabs as $key => $product_tab ) : 
+		$i++;
+		?>
+		  <div class="panel-heading">
+            <h4 class="panel-title">
+            <a data-parent="#prdct_dtl_list" data-toggle="collapse" href="#tab-<?php echo esc_attr( $key ); ?>">
 						<?php echo wp_kses_post( apply_filters( 'woocommerce_product_' . $key . '_tab_title', $product_tab['title'], $key ) ); ?>
-					</a>
-				</div>
-				</li>
-			<?php endforeach; ?>
-		</ul>
-		<?php foreach ( $product_tabs as $key => $product_tab ) : ?>
-			<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr( $key ); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>" role="tabpanel" aria-labelledby="tab-title-<?php echo esc_attr( $key ); ?>">
-				<?php
+			</a>
+            </h4>
+          </div>
+           <div id="tab-<?php echo esc_attr( $key ); ?>" class="panel-collapse collapse <?php if($i==1) echo 'in'; ?>">
+            <div class="panel-body"><?php
 				if ( isset( $product_tab['callback'] ) ) {
 					call_user_func( $product_tab['callback'], $key, $product_tab );
 				}
 				?>
 			</div>
-		<?php endforeach; ?>
+          </div>
+		  <?php endforeach; ?>
+</div>
 
 		<?php do_action( 'woocommerce_product_after_tabs' ); ?>
-		</div>
+ </div>
+    </div>
 </div>
-	</div>
+
 
 
 

@@ -26,6 +26,7 @@
 <?php wp_body_open(); ?>
 <a href="#" id="back-to-top" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     <!--******************************Top Bar Start****************************-->
+    <div class="wrap-main-head stick-scrl">
     <div class="top_bar">
       <div class="container">
         <div class="row">
@@ -38,7 +39,7 @@
 		$updateprice = $woocsdata[$currencurrency]['rate']; 
 		$updatedsymbol =  $woocsdata[$currencurrency]['symbol'];
 		$updatedposition =   $woocsdata[$currencurrency]['position'];
-		$shippingprc = 69 * $updateprice;
+		$shippingprc = get_field('free_shipping_price','option') * $updateprice;
 	     ?>
             <p>FREE Shipping on orders over <?php echo $updatedsymbol.round($shippingprc,2) ?></p>
           </div>
@@ -53,7 +54,8 @@
         </div>
       </div>
     </div>
-    <div class="fix_head">
+    
+        <div class="fix_head">
       <!--******************************Logo Bar Start****************************-->
       <div class="logo_bar">
         <div class="container">
@@ -83,7 +85,7 @@
                     </ul>
                   </div>
                   <div class="wishlist_box pull-left">
-                    <a href="#">
+                    <a href="<?php echo site_url(); ?>/wishlist">
                       <img src="<?php echo site_url(); ?>/wp-content/uploads/2020/06/heart_icon.png" alt="" class="img-responsive pull-left">
                       <span>Wishlist</span>
                     </a>
@@ -140,7 +142,7 @@
         ?>
                       </ul>
                       <?php
-                       $shipprcwdcur = 69 * $updateprice;
+                       $shipprcwdcur = get_field('free_shipping_price','option') * $updateprice;
                         $newpricestr =  preg_replace('/&#36;/','',$amount2); 
                         $amount = floatval(preg_replace( "/[^0-9\.]/",'',$newpricestr));
                        $shippingprc = round($shipprcwdcur - $amount,2); 
@@ -169,3 +171,6 @@
     </div>
 </div>      
 </div>
+    </div>    
+    
+ 

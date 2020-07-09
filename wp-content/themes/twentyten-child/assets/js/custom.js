@@ -1,6 +1,4 @@
 
-
-
 jQuery(".navbar-nav > li ").click(function(){
     jQuery(this).children(".submenu_outer").toggleClass("mob_open");
 });
@@ -22,6 +20,41 @@ jQuery(document).ready(function(){
     jQuery(".mobile-toggle").click(function(){
         jQuery("#navbar1.mobile-menu").toggleClass("menu-show");
     });
+
+jQuery(".arival_img").on('click',function(){
+var redirect = jQuery(this).find('a').attr('href');
+window.location.replace(redirect);
+});
+
+
+jQuery(".row-column-switcher .column-switcher").on('change',function(){
+var colperrow = jQuery(this).val();
+jQuery(".products_outer_box ul.products").removeClass('columns-2');
+jQuery(".products_outer_box ul.products").removeClass('columns-3');
+jQuery(".products_outer_box ul.products").removeClass('columns-4');
+jQuery(".products_outer_box ul.products ").addClass("columns-"+colperrow);
+});
+
+
+jQuery("div[data-attribute_name='attribute_pa_size'] input").on('change',function(){
+var changedsize = jQuery(this).val();
+jQuery(this).parents('tr').children('td.label').html('<label for="pa_size">Size </label><span class="varlabelval">: '+changedsize+'</span>');
+var prdcode = jQuery(".stock_block").find('.sku').text();
+jQuery(".prdct_code").html('SKU: <span>'+prdcode+'</span>');
+});
+
+jQuery("select[data-attribute_name='attribute_pa_color']").on('change',function(){
+var changedcolor = jQuery(this).val();
+jQuery(this).parents('tr').children('td.label').html('<label for="pa_size">Colour </label><span class="varlabelval">: '+changedcolor+'</span>');
+var prdcode = jQuery(".stock_block").find('.sku').text();
+jQuery(".prdct_code").html('SKU:<span>'+prdcode+'</span>');
+});
+
+
+});
+
+jQuery(document).on("click",".reset_variations",function() {
+jQuery(".varlabelval").remove();
 });
 
 jQuery('.main_banner').slick({
@@ -80,7 +113,11 @@ jQuery('.blog_outer').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   dots:false,
-  arrows:true,
+  autoplay:false,
+  autoplaySpeed: 3000,
+  draggable: false,
+  speed:500,
+  arrows:true,    
       responsive: [
     {
       breakpoint: 991,
@@ -155,9 +192,6 @@ jQuery(document).ready(function () {
   );
 });
 
-
-
-
 jQuery(document).ready(function () {
    jQuery(".radio_label_box label").click(function() {
       // remove classes from all
@@ -169,28 +203,30 @@ jQuery(document).ready(function () {
 
 jQuery(window).scroll(function() {    
     var scroll = jQuery(window).scrollTop();
-
-    if(scroll >= 87) {
-        jQuery(".fix_head").addClass("fixed_nav");
+    if(scroll >= 2) {
+        jQuery(".wrap-main-head").addClass("fixed_nav");
+        jQuery(".top_bar").slideUp().hide();
     } else {
-        jQuery(".fix_head").removeClass("fixed_nav");
+        jQuery(".wrap-main-head").removeClass("fixed_nav");
+        jQuery(".top_bar").slideDown().show();
     }
-});
-
-
-
-
-
-	
+});	
 	
 jQuery(document).on("mouseenter", '.new-arival_box .arival_img img', function(event) { 
         jQuery(this).closest(".new-arival_box").addClass("hover-active");
         jQuery(".new_arival_outer .slick-list").css("z-index", "700");
 });
 
+jQuery(".yith-wfbt-images .image-td").each(function(){
+var datarel = jQuery(this).data('rel');
+var prodname = jQuery("ul.yith-wfbt-items li label[for="+datarel+"] span.product-name").text();
+prodname = prodname.replace('This Product:','');
+jQuery(this).append('<h5 class="prct_name text-center">'+prodname+'</h5>');
+});
+
 jQuery(document).on("mouseleave", '.new-arival_box', function(event) { 
 	  jQuery(this).removeClass("hover-active");
-        jQuery(".new_arival_outer .slick-list").css("z-index", "500");
+      jQuery(".new_arival_outer .slick-list").css("z-index", "500");
 });
   
 
@@ -247,7 +283,17 @@ var headerHeight = jQuery(".fix_head").height() + 30; // Get fixed header height
  
 
 jQuery('.product_list_content .new-arival_box').equalHeights();
-
 jQuery(".srchsubmit").on('click',function(){
 jQuery("input#searchsubmit").click();
+})
+
+jQuery(".woocommerce-checkout .coun-code-btn").on('click',function(){
+    var couponcode = jQuery(".promo_box_coupon").children('input').val();
+    if(couponcode == ""){
+       jQuery(".promo_box_coupon").children('input').addClass('error');
+    }else{
+      jQuery(".woocommerce-form-coupon").find('#coupon_code').val(couponcode);
+      jQuery("form.woocommerce-form-coupon").submit();
+      window.scrollTo(0, 0);     
+    }
 })

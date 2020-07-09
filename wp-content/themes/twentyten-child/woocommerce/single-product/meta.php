@@ -42,42 +42,6 @@ global $product;
 
 </div>
 
-
-</div>
-</div>
-
- <div class="col-lg-2 col-md-2 col-sm-0 hidden-sm hidden-xs">
-        <div class="right_slider_outer">
-             <h2>You May Also Like</h2>
-             <button class="top_btn"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
-             <button class="bottom_btn"><i class="fa fa-angle-down" aria-hidden="true"></i></button>  
-        <div class="side_prdct_slider">
-          <div>
-            <div class="side_product_slide">
-              <img src="https://woocommerce-427082-1340050.cloudwaysapps.com/wp-content/uploads/2020/06/arival-3.jpg" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div>
-            <div class="side_product_slide">
-              <img src="https://woocommerce-427082-1340050.cloudwaysapps.com/wp-content/uploads/2020/06/arival-4.jpg" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div>
-            <div class="side_product_slide">
-              <img src="https://woocommerce-427082-1340050.cloudwaysapps.com/wp-content/uploads/2020/06/arival-5.jpg" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div>
-            <div class="side_product_slide">
-              <img src="https://woocommerce-427082-1340050.cloudwaysapps.com/wp-content/uploads/2020/06/arival-6.jpg" alt="" class="img-responsive">
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-      
-
-</div>
 </div>
 </div>
 

@@ -19,13 +19,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
+
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
         <div class="product_full_dtail">
-<?php
-the_title( '<h3 class="product_title entry-title arrival_name text-center">', '</h3>' );
-
-
-?>
-<h5 class="arival_brand text-center">Fisher</h5>
+<?php do_action('new_arrival_single_product_hook'); ?>        	
+<?php the_title( '<h3 class="product_title entry-title arrival_name text-center">', '</h3>' ); ?>
+<?php do_action('brand_single_product_hook'); ?>        
+        
+           
 
 

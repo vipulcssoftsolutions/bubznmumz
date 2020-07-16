@@ -1,0 +1,16 @@
+2020-07-01T07:54:25+00:00 CRITICAL syntax error, unexpected '$current_date' (T_VARIABLE) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/title.php on line 31
+
+2020-07-01T08:14:12+00:00 CRITICAL syntax error, unexpected '<' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 751
+
+2020-07-01T08:14:12+00:00 CRITICAL syntax error, unexpected '<' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 751
+
+2020-07-01T08:14:19+00:00 CRITICAL syntax error, unexpected '<' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 751
+
+2020-07-01T08:15:04+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 791
+
+2020-07-01T13:46:33+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/price.php on line 33
+
+2020-07-01T13:46:34+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/price.php on line 33
+
+2020-07-01T13:48:39+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/price.php on line 33
+

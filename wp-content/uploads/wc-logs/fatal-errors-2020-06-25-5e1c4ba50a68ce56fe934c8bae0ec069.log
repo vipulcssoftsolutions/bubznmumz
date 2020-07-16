@@ -26,3 +26,14 @@ Stack trace:
 #5 [internal function]: do_shortcode_tag(Array)
 #6 /home in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php on line 101
 
+2020-06-25T13:43:02+00:00 CRITICAL Cannot redeclare add_to_cart_form_shortcode() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:511) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 692
+
+2020-06-25T14:08:04+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::get_brand() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:567
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(287): so_43922864_add_content('')
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/add-to-cart/variable.php(29): do_action('woocommerce_bef...')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include('/home/427082.cl...')
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1630): wc_ in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 567
+

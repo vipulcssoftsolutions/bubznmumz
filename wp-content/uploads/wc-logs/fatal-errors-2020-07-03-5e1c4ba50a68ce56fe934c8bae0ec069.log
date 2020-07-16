@@ -1,0 +1,21 @@
+2020-07-03T07:33:03+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::get_the_permalink() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/loop/add-to-cart.php:29
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1268): wc_get_template('loop/add-to-car...', Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php(330): woocommerce_template_loop_add_to_cart(Array, Object(WC_Product_Variable))
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/shortcodes.php(343): product_slider_with_category(Array, '', 'product_slider_...')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/shortcodes.php(218): preg_replace_call in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/loop/add-to-cart.php on line 29
+
+2020-07-03T08:48:28+00:00 CRITICAL Cannot redeclare my_shipping_tab() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:795) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 820
+
+2020-07-03T08:48:32+00:00 CRITICAL Cannot redeclare my_shipping_tab() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:795) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 820
+
+2020-07-03T08:48:44+00:00 CRITICAL Cannot redeclare my_shipping_tab() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:795) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 820
+
+2020-07-03T08:49:11+00:00 CRITICAL Cannot redeclare my_shipping_tab() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:795) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 820
+
+2020-07-03T08:49:14+00:00 CRITICAL Cannot redeclare my_shipping_tab() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:795) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 820
+
+2020-07-03T08:49:41+00:00 CRITICAL Cannot redeclare my_shipping_tab() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:795) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 820
+

@@ -122,10 +122,11 @@ function bubznmumz_scripts_styles() {
 	wp_enqueue_script('slick-min-js', get_stylesheet_directory_uri().'/assets/js/slick.min.js');
 	wp_enqueue_script('bootstrap-slider-js', get_stylesheet_directory_uri().'/assets/js/bootstrap-slider.min.js');
     wp_enqueue_script('custom-js',get_stylesheet_directory_uri().'/assets/js/custom.js');
-	
+	wp_enqueue_script( 'frontend-custom', get_stylesheet_directory_uri() . '/assets/js/frontendwoo.js', array("jquery"));
 	
 }
 add_action( 'wp_enqueue_scripts', 'bubznmumz_scripts_styles' );
+
 
 
 
@@ -190,7 +191,7 @@ function woo_cart_but_count( $fragments ) {
 
 
 // Woocommerce rating stars always
-add_filter('woocommerce_product_get_rating_html', 'your_get_rating_html', 10, 2);
+//add_filter('woocommerce_product_get_rating_html', 'your_get_rating_html', 10, 2);
 function your_get_rating_html($rating_html, $rating) {
         if ( $rating > 0 ) {
             $title = sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $rating );

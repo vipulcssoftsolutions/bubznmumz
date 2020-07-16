@@ -1,4 +1,4 @@
-/*! elementor-pro - v2.10.2 - 16-06-2020 */
+/*! elementor-pro - v2.10.3 - 29-06-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -82,7 +82,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 136);
+/******/ 	return __webpack_require__(__webpack_require__.s = 132);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -101,6 +101,19 @@ module.exports = _interopRequireDefault;
 /* 1 */
 /***/ (function(module, exports) {
 
+function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+module.exports = _getPrototypeOf;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -110,7 +123,25 @@ function _classCallCheck(instance, Constructor) {
 module.exports = _classCallCheck;
 
 /***/ }),
-/* 2 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(8);
+
+var assertThisInitialized = __webpack_require__(7);
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return assertThisInitialized(self);
+}
+
+module.exports = _possibleConstructorReturn;
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var setPrototypeOf = __webpack_require__(9);
@@ -133,36 +164,7 @@ function _inherits(subClass, superClass) {
 module.exports = _inherits;
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var getPrototypeOf = __webpack_require__(5);
-
-var isNativeReflectConstruct = __webpack_require__(10);
-
-var possibleConstructorReturn = __webpack_require__(11);
-
-function _createSuper(Derived) {
-  var hasNativeReflectConstruct = isNativeReflectConstruct();
-  return function _createSuperInternal() {
-    var Super = getPrototypeOf(Derived),
-        result;
-
-    if (hasNativeReflectConstruct) {
-      var NewTarget = getPrototypeOf(this).constructor;
-      result = Reflect.construct(Super, arguments, NewTarget);
-    } else {
-      result = Super.apply(this, arguments);
-    }
-
-    return possibleConstructorReturn(this, result);
-  };
-}
-
-module.exports = _createSuper;
-
-/***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 function _defineProperties(target, props) {
@@ -184,23 +186,10 @@ function _createClass(Constructor, protoProps, staticProps) {
 module.exports = _createClass;
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-function _getPrototypeOf(o) {
-  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-module.exports = _getPrototypeOf;
-
-/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var superPropBase = __webpack_require__(15);
+var superPropBase = __webpack_require__(13);
 
 function _get(target, property, receiver) {
   if (typeof Reflect !== "undefined" && Reflect.get) {
@@ -277,43 +266,6 @@ module.exports = _setPrototypeOf;
 
 /***/ }),
 /* 10 */
-/***/ (function(module, exports) {
-
-function _isNativeReflectConstruct() {
-  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-  if (Reflect.construct.sham) return false;
-  if (typeof Proxy === "function") return true;
-
-  try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-
-module.exports = _isNativeReflectConstruct;
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(8);
-
-var assertThisInitialized = __webpack_require__(7);
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return assertThisInitialized(self);
-}
-
-module.exports = _possibleConstructorReturn;
-
-/***/ }),
-/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -326,24 +278,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
-
-  var _super = (0, _createSuper2.default)(_default);
 
   function _default(settings, document) {
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
-    _this = _super.call(this, settings);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).call(this, settings));
     _this.document = document;
     return _this;
   }
@@ -360,8 +312,8 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 13 */,
-/* 14 */
+/* 11 */,
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -374,24 +326,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
-
-  var _super = (0, _createSuper2.default)(_default);
 
   function _default(settings, callback) {
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
-    _this = _super.call(this, settings);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).call(this, settings));
     _this.callback = callback;
     return _this;
   }
@@ -408,10 +360,10 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getPrototypeOf = __webpack_require__(5);
+var getPrototypeOf = __webpack_require__(1);
 
 function _superPropBase(object, property) {
   while (!Object.prototype.hasOwnProperty.call(object, property)) {
@@ -425,8 +377,8 @@ function _superPropBase(object, property) {
 module.exports = _superPropBase;
 
 /***/ }),
-/* 16 */,
-/* 17 */
+/* 14 */,
+/* 15 */
 /***/ (function(module, exports) {
 
 function _defineProperty(obj, key, value) {
@@ -447,7 +399,7 @@ function _defineProperty(obj, key, value) {
 module.exports = _defineProperty;
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -599,7 +551,7 @@ module.exports = elementorModules.frontend.handlers.Base.extend({
 });
 
 /***/ }),
-/* 19 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -612,9 +564,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
 var Scroll = /*#__PURE__*/function () {
   function Scroll() {
@@ -724,9 +676,8 @@ var Scroll = /*#__PURE__*/function () {
 exports.default = Scroll;
 
 /***/ }),
-/* 20 */,
-/* 21 */,
-/* 22 */
+/* 18 */,
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -739,30 +690,30 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(7));
 
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(1));
+
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(15));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(17));
-
-var _scroll = _interopRequireDefault(__webpack_require__(19));
+var _scroll = _interopRequireDefault(__webpack_require__(17));
 
 var _default = /*#__PURE__*/function (_elementorModules$Vie) {
   (0, _inherits2.default)(_default, _elementorModules$Vie);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
+    var _getPrototypeOf2;
+
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
@@ -771,7 +722,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Vie) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
     (0, _defineProperty2.default)((0, _assertThisInitialized2.default)(_this), "onInsideViewport", function () {
       _this.run();
 
@@ -834,7 +785,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Vie) {
   }, {
     key: "onInit",
     value: function onInit() {
-      (0, _get2.default)((0, _getPrototypeOf2.default)(_default.prototype), "onInit", this).call(this);
+      (0, _get2.default)((0, _getPrototypeOf3.default)(_default.prototype), "onInit", this).call(this);
     }
   }]);
   return _default;
@@ -843,10 +794,10 @@ var _default = /*#__PURE__*/function (_elementorModules$Vie) {
 exports.default = _default;
 
 /***/ }),
-/* 23 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var defineProperty = __webpack_require__(17);
+var defineProperty = __webpack_require__(15);
 
 function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
@@ -885,7 +836,7 @@ function _objectSpread2(target) {
 module.exports = _objectSpread2;
 
 /***/ }),
-/* 24 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1103,13 +1054,13 @@ module.exports = elementorModules.frontend.handlers.Base.extend({
 });
 
 /***/ }),
-/* 25 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Base = __webpack_require__(24),
+var Base = __webpack_require__(21),
     TestimonialCarousel;
 
 TestimonialCarousel = Base.extend({
@@ -1139,13 +1090,13 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 26 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var PostsHandler = __webpack_require__(18);
+var PostsHandler = __webpack_require__(16);
 
 module.exports = PostsHandler.extend({
   getSkinPrefix: function getSkinPrefix() {
@@ -1154,7 +1105,7 @@ module.exports = PostsHandler.extend({
 });
 
 /***/ }),
-/* 27 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1251,6 +1202,9 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
+/* 25 */,
+/* 26 */,
+/* 27 */,
 /* 28 */,
 /* 29 */,
 /* 30 */,
@@ -1355,11 +1309,7 @@ module.exports = function ($scope) {
 /* 129 */,
 /* 130 */,
 /* 131 */,
-/* 132 */,
-/* 133 */,
-/* 134 */,
-/* 135 */,
-/* 136 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1367,36 +1317,34 @@ module.exports = function ($scope) {
 
 var _interopRequireDefault = __webpack_require__(0);
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _frontend = _interopRequireDefault(__webpack_require__(133));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _frontend2 = _interopRequireDefault(__webpack_require__(151));
 
-var _frontend = _interopRequireDefault(__webpack_require__(137));
+var _frontend3 = _interopRequireDefault(__webpack_require__(157));
 
-var _frontend2 = _interopRequireDefault(__webpack_require__(155));
+var _frontend4 = _interopRequireDefault(__webpack_require__(159));
 
-var _frontend3 = _interopRequireDefault(__webpack_require__(161));
-
-var _frontend4 = _interopRequireDefault(__webpack_require__(163));
-
-var _frontend5 = _interopRequireDefault(__webpack_require__(165));
+var _frontend5 = _interopRequireDefault(__webpack_require__(161));
 
 var ElementorProFrontend = /*#__PURE__*/function (_elementorModules$Vie) {
   (0, _inherits2.default)(ElementorProFrontend, _elementorModules$Vie);
 
-  var _super = (0, _createSuper2.default)(ElementorProFrontend);
-
   function ElementorProFrontend() {
     (0, _classCallCheck2.default)(this, ElementorProFrontend);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ElementorProFrontend).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ElementorProFrontend, [{
@@ -1417,22 +1365,22 @@ var ElementorProFrontend = /*#__PURE__*/function (_elementorModules$Vie) {
       var _this = this;
 
       var handlers = {
-        animatedText: __webpack_require__(167),
-        carousel: __webpack_require__(169),
-        countdown: __webpack_require__(171),
-        form: __webpack_require__(173),
+        animatedText: __webpack_require__(163),
+        carousel: __webpack_require__(165),
+        countdown: __webpack_require__(167),
+        form: __webpack_require__(169),
         gallery: _frontend3.default,
-        nav_menu: __webpack_require__(180),
+        nav_menu: __webpack_require__(176),
         motionFX: _frontend2.default,
         popup: _frontend.default,
-        posts: __webpack_require__(182),
-        share_buttons: __webpack_require__(184),
-        slides: __webpack_require__(186),
-        social: __webpack_require__(188),
-        sticky: __webpack_require__(190),
-        themeBuilder: __webpack_require__(191),
-        themeElements: __webpack_require__(194),
-        woocommerce: __webpack_require__(196),
+        posts: __webpack_require__(178),
+        share_buttons: __webpack_require__(180),
+        slides: __webpack_require__(182),
+        social: __webpack_require__(184),
+        sticky: __webpack_require__(186),
+        themeBuilder: __webpack_require__(187),
+        themeElements: __webpack_require__(190),
+        woocommerce: __webpack_require__(192),
         tableOfContents: _frontend5.default,
         lottie: _frontend4.default
       };
@@ -1460,7 +1408,7 @@ var ElementorProFrontend = /*#__PURE__*/function (_elementorModules$Vie) {
 window.elementorProFrontend = new ElementorProFrontend();
 
 /***/ }),
-/* 137 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1473,28 +1421,28 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _document = _interopRequireDefault(__webpack_require__(138));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _formsAction = _interopRequireDefault(__webpack_require__(154));
+var _document = _interopRequireDefault(__webpack_require__(134));
+
+var _formsAction = _interopRequireDefault(__webpack_require__(150));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
-
-  var _super = (0, _createSuper2.default)(_default);
 
   function _default() {
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
-    _this = _super.call(this);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).call(this));
     elementorFrontend.hooks.addAction('elementor/frontend/documents-manager/init-classes', _this.addDocumentClass);
     elementorFrontend.hooks.addAction('frontend/element_ready/form.default', _formsAction.default);
     elementorFrontend.on('components:init', function () {
@@ -1576,7 +1524,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 138 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1589,30 +1537,28 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _triggers = _interopRequireDefault(__webpack_require__(135));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _triggers = _interopRequireDefault(__webpack_require__(139));
-
-var _timing = _interopRequireDefault(__webpack_require__(146));
+var _timing = _interopRequireDefault(__webpack_require__(142));
 
 var _default = /*#__PURE__*/function (_elementorModules$fro) {
   (0, _inherits2.default)(_default, _elementorModules$fro);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -1883,7 +1829,7 @@ var _default = /*#__PURE__*/function (_elementorModules$fro) {
 exports.default = _default;
 
 /***/ }),
-/* 139 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1896,36 +1842,36 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _pageLoad = _interopRequireDefault(__webpack_require__(140));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _scrolling = _interopRequireDefault(__webpack_require__(141));
+var _pageLoad = _interopRequireDefault(__webpack_require__(136));
 
-var _scrollingTo = _interopRequireDefault(__webpack_require__(142));
+var _scrolling = _interopRequireDefault(__webpack_require__(137));
 
-var _click = _interopRequireDefault(__webpack_require__(143));
+var _scrollingTo = _interopRequireDefault(__webpack_require__(138));
 
-var _inactivity = _interopRequireDefault(__webpack_require__(144));
+var _click = _interopRequireDefault(__webpack_require__(139));
 
-var _exitIntent = _interopRequireDefault(__webpack_require__(145));
+var _inactivity = _interopRequireDefault(__webpack_require__(140));
+
+var _exitIntent = _interopRequireDefault(__webpack_require__(141));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
-
-  var _super = (0, _createSuper2.default)(_default);
 
   function _default(settings, document) {
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
-    _this = _super.call(this, settings);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).call(this, settings));
     _this.document = document;
     _this.triggers = [];
     _this.triggerClasses = {
@@ -1982,7 +1928,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 140 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1995,24 +1941,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(14));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _base = _interopRequireDefault(__webpack_require__(12));
 
 var _default = /*#__PURE__*/function (_BaseTrigger) {
   (0, _inherits2.default)(_default, _BaseTrigger);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2037,7 +1983,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
 exports.default = _default;
 
 /***/ }),
-/* 141 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2050,24 +1996,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(1));
 
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(7));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _base = _interopRequireDefault(__webpack_require__(14));
+var _base = _interopRequireDefault(__webpack_require__(12));
 
 var _default = /*#__PURE__*/function (_BaseTrigger) {
   (0, _inherits2.default)(_default, _BaseTrigger);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
+    var _getPrototypeOf2;
+
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
@@ -2076,7 +2024,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
     _this.checkScroll = _this.checkScroll.bind((0, _assertThisInitialized2.default)(_this));
     _this.lastScrollOffset = 0;
     return _this;
@@ -2127,7 +2075,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
 exports.default = _default;
 
 /***/ }),
-/* 142 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2140,24 +2088,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(14));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _base = _interopRequireDefault(__webpack_require__(12));
 
 var _default = /*#__PURE__*/function (_BaseTrigger) {
   (0, _inherits2.default)(_default, _BaseTrigger);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2192,7 +2140,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
 exports.default = _default;
 
 /***/ }),
-/* 143 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2205,24 +2153,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(1));
 
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(7));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _base = _interopRequireDefault(__webpack_require__(14));
+var _base = _interopRequireDefault(__webpack_require__(12));
 
 var _default = /*#__PURE__*/function (_BaseTrigger) {
   (0, _inherits2.default)(_default, _BaseTrigger);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
+    var _getPrototypeOf2;
+
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
@@ -2231,7 +2181,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
     _this.checkClick = _this.checkClick.bind((0, _assertThisInitialized2.default)(_this));
     _this.clicksCount = 0;
     return _this;
@@ -2268,7 +2218,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
 exports.default = _default;
 
 /***/ }),
-/* 144 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2281,24 +2231,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(1));
 
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(7));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _base = _interopRequireDefault(__webpack_require__(14));
+var _base = _interopRequireDefault(__webpack_require__(12));
 
 var _default = /*#__PURE__*/function (_BaseTrigger) {
   (0, _inherits2.default)(_default, _BaseTrigger);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
+    var _getPrototypeOf2;
+
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
@@ -2307,7 +2259,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
     _this.restartTimer = _this.restartTimer.bind((0, _assertThisInitialized2.default)(_this));
     return _this;
   }
@@ -2352,7 +2304,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
 exports.default = _default;
 
 /***/ }),
-/* 145 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2365,24 +2317,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(1));
 
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(7));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _base = _interopRequireDefault(__webpack_require__(14));
+var _base = _interopRequireDefault(__webpack_require__(12));
 
 var _default = /*#__PURE__*/function (_BaseTrigger) {
   (0, _inherits2.default)(_default, _BaseTrigger);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
+    var _getPrototypeOf2;
+
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
@@ -2391,7 +2345,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
     _this.detectExitIntent = _this.detectExitIntent.bind((0, _assertThisInitialized2.default)(_this));
     return _this;
   }
@@ -2425,7 +2379,7 @@ var _default = /*#__PURE__*/function (_BaseTrigger) {
 exports.default = _default;
 
 /***/ }),
-/* 146 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2438,38 +2392,38 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _pageViews = _interopRequireDefault(__webpack_require__(147));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _sessions = _interopRequireDefault(__webpack_require__(148));
+var _pageViews = _interopRequireDefault(__webpack_require__(143));
 
-var _url = _interopRequireDefault(__webpack_require__(149));
+var _sessions = _interopRequireDefault(__webpack_require__(144));
 
-var _sources = _interopRequireDefault(__webpack_require__(150));
+var _url = _interopRequireDefault(__webpack_require__(145));
 
-var _loggedIn = _interopRequireDefault(__webpack_require__(151));
+var _sources = _interopRequireDefault(__webpack_require__(146));
 
-var _devices = _interopRequireDefault(__webpack_require__(152));
+var _loggedIn = _interopRequireDefault(__webpack_require__(147));
 
-var _times = _interopRequireDefault(__webpack_require__(153));
+var _devices = _interopRequireDefault(__webpack_require__(148));
+
+var _times = _interopRequireDefault(__webpack_require__(149));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
-
-  var _super = (0, _createSuper2.default)(_default);
 
   function _default(settings, document) {
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
-    _this = _super.call(this, settings);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).call(this, settings));
     _this.document = document;
     _this.timingClasses = {
       page_views: _pageViews.default,
@@ -2510,7 +2464,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 147 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2523,24 +2477,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(12));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _base = _interopRequireDefault(__webpack_require__(10));
 
 var _default = /*#__PURE__*/function (_BaseTiming) {
   (0, _inherits2.default)(_default, _BaseTiming);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2569,7 +2523,7 @@ var _default = /*#__PURE__*/function (_BaseTiming) {
 exports.default = _default;
 
 /***/ }),
-/* 148 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2582,24 +2536,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(12));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _base = _interopRequireDefault(__webpack_require__(10));
 
 var _default = /*#__PURE__*/function (_BaseTiming) {
   (0, _inherits2.default)(_default, _BaseTiming);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2628,7 +2582,7 @@ var _default = /*#__PURE__*/function (_BaseTiming) {
 exports.default = _default;
 
 /***/ }),
-/* 149 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2641,24 +2595,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(12));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _base = _interopRequireDefault(__webpack_require__(10));
 
 var _default = /*#__PURE__*/function (_BaseTiming) {
   (0, _inherits2.default)(_default, _BaseTiming);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2694,7 +2648,7 @@ var _default = /*#__PURE__*/function (_BaseTiming) {
 exports.default = _default;
 
 /***/ }),
-/* 150 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2707,24 +2661,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(12));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _base = _interopRequireDefault(__webpack_require__(10));
 
 var _default = /*#__PURE__*/function (_BaseTiming) {
   (0, _inherits2.default)(_default, _BaseTiming);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2765,7 +2719,7 @@ var _default = /*#__PURE__*/function (_BaseTiming) {
 exports.default = _default;
 
 /***/ }),
-/* 151 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2778,24 +2732,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(12));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _base = _interopRequireDefault(__webpack_require__(10));
 
 var _default = /*#__PURE__*/function (_BaseTiming) {
   (0, _inherits2.default)(_default, _BaseTiming);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2828,7 +2782,7 @@ var _default = /*#__PURE__*/function (_BaseTiming) {
 exports.default = _default;
 
 /***/ }),
-/* 152 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2841,24 +2795,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(12));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _base = _interopRequireDefault(__webpack_require__(10));
 
 var _default = /*#__PURE__*/function (_BaseTiming) {
   (0, _inherits2.default)(_default, _BaseTiming);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2878,7 +2832,7 @@ var _default = /*#__PURE__*/function (_BaseTiming) {
 exports.default = _default;
 
 /***/ }),
-/* 153 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2891,24 +2845,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(12));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _base = _interopRequireDefault(__webpack_require__(10));
 
 var _default = /*#__PURE__*/function (_BaseTiming) {
   (0, _inherits2.default)(_default, _BaseTiming);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2929,7 +2883,7 @@ var _default = /*#__PURE__*/function (_BaseTiming) {
 exports.default = _default;
 
 /***/ }),
-/* 154 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2976,7 +2930,7 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 155 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2989,24 +2943,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _handler = _interopRequireDefault(__webpack_require__(156));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _handler = _interopRequireDefault(__webpack_require__(152));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
-
-  var _super = (0, _createSuper2.default)(_default);
 
   function _default() {
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
-    _this = _super.call(this);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).call(this));
     elementorFrontend.hooks.addAction('frontend/element_ready/global', function ($element) {
       elementorFrontend.elementsHandler.addHandler(_handler.default, {
         $element: $element
@@ -3021,7 +2975,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 156 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3036,28 +2990,26 @@ exports.default = void 0;
 
 var _typeof2 = _interopRequireDefault(__webpack_require__(8));
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get3 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _motionFx = _interopRequireDefault(__webpack_require__(157));
+var _motionFx = _interopRequireDefault(__webpack_require__(153));
 
 var _default = /*#__PURE__*/function (_elementorModules$fro) {
   (0, _inherits2.default)(_default, _elementorModules$fro);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -3323,7 +3275,7 @@ var _default = /*#__PURE__*/function (_elementorModules$fro) {
 exports.default = _default;
 
 /***/ }),
-/* 157 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3336,32 +3288,30 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _scroll = _interopRequireDefault(__webpack_require__(154));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _mouseMove = _interopRequireDefault(__webpack_require__(155));
 
-var _scroll = _interopRequireDefault(__webpack_require__(158));
-
-var _mouseMove = _interopRequireDefault(__webpack_require__(159));
-
-var _actions = _interopRequireDefault(__webpack_require__(160));
+var _actions = _interopRequireDefault(__webpack_require__(156));
 
 var _default = /*#__PURE__*/function (_elementorModules$Vie) {
   (0, _inherits2.default)(_default, _elementorModules$Vie);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -3594,7 +3544,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Vie) {
 exports.default = _default;
 
 /***/ }),
-/* 158 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3607,26 +3557,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _base = _interopRequireDefault(__webpack_require__(22));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _scroll = _interopRequireDefault(__webpack_require__(19));
+var _base = _interopRequireDefault(__webpack_require__(19));
+
+var _scroll = _interopRequireDefault(__webpack_require__(17));
 
 var _default = /*#__PURE__*/function (_BaseInteraction) {
   (0, _inherits2.default)(_default, _BaseInteraction);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -3676,7 +3626,7 @@ var _default = /*#__PURE__*/function (_BaseInteraction) {
 exports.default = _default;
 
 /***/ }),
-/* 159 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3689,28 +3639,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _base = _interopRequireDefault(__webpack_require__(22));
+var _base = _interopRequireDefault(__webpack_require__(19));
 
 var MouseMoveInteraction = /*#__PURE__*/function (_BaseInteraction) {
   (0, _inherits2.default)(MouseMoveInteraction, _BaseInteraction);
 
-  var _super = (0, _createSuper2.default)(MouseMoveInteraction);
-
   function MouseMoveInteraction() {
     (0, _classCallCheck2.default)(this, MouseMoveInteraction);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(MouseMoveInteraction).apply(this, arguments));
   }
 
   (0, _createClass2.default)(MouseMoveInteraction, [{
@@ -3760,7 +3708,7 @@ MouseMoveInteraction.updateMousePosition = function (event) {
 };
 
 /***/ }),
-/* 160 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3773,22 +3721,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -4015,7 +3963,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 161 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4028,24 +3976,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _handler = _interopRequireDefault(__webpack_require__(162));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _handler = _interopRequireDefault(__webpack_require__(158));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
-
-  var _super = (0, _createSuper2.default)(_default);
 
   function _default() {
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
-    _this = _super.call(this);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).call(this));
     elementorFrontend.hooks.addAction('frontend/element_ready/gallery.default', function ($element) {
       elementorFrontend.elementsHandler.addHandler(_handler.default, {
         $element: $element
@@ -4060,7 +4008,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 162 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4073,26 +4021,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get3 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var galleryHandler = /*#__PURE__*/function (_elementorModules$fro) {
   (0, _inherits2.default)(galleryHandler, _elementorModules$fro);
 
-  var _super = (0, _createSuper2.default)(galleryHandler);
-
   function galleryHandler() {
     (0, _classCallCheck2.default)(this, galleryHandler);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(galleryHandler).apply(this, arguments));
   }
 
   (0, _createClass2.default)(galleryHandler, [{
@@ -4353,7 +4299,7 @@ var galleryHandler = /*#__PURE__*/function (_elementorModules$fro) {
 exports.default = galleryHandler;
 
 /***/ }),
-/* 163 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4366,24 +4312,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _handler = _interopRequireDefault(__webpack_require__(164));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _handler = _interopRequireDefault(__webpack_require__(160));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
-
-  var _super = (0, _createSuper2.default)(_default);
 
   function _default() {
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
-    _this = _super.call(this);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).call(this));
     elementorFrontend.hooks.addAction('frontend/element_ready/lottie.default', function ($element) {
       elementorFrontend.elementsHandler.addHandler(_handler.default, {
         $element: $element
@@ -4398,7 +4344,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 164 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4411,30 +4357,28 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _objectSpread2 = _interopRequireDefault(__webpack_require__(23));
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(20));
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get3 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _scroll = _interopRequireDefault(__webpack_require__(19));
+var _scroll = _interopRequireDefault(__webpack_require__(17));
 
 var lottieHandler = /*#__PURE__*/function (_elementorModules$fro) {
   (0, _inherits2.default)(lottieHandler, _elementorModules$fro);
 
-  var _super = (0, _createSuper2.default)(lottieHandler);
-
   function lottieHandler() {
     (0, _classCallCheck2.default)(this, lottieHandler);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(lottieHandler).apply(this, arguments));
   }
 
   (0, _createClass2.default)(lottieHandler, [{
@@ -4895,7 +4839,7 @@ var lottieHandler = /*#__PURE__*/function (_elementorModules$fro) {
     key: "getLottieSettings",
     value: function getLottieSettings() {
       var lottieSettings = this.getElementSettings();
-      return (0, _objectSpread2.default)((0, _objectSpread2.default)({}, lottieSettings), {}, {
+      return (0, _objectSpread2.default)({}, lottieSettings, {
         lazyload: 'yes' === lottieSettings.lazyload,
         loop: 'yes' === lottieSettings.loop
       });
@@ -5277,7 +5221,7 @@ var lottieHandler = /*#__PURE__*/function (_elementorModules$fro) {
 exports.default = lottieHandler;
 
 /***/ }),
-/* 165 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5290,24 +5234,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _tableOfContents = _interopRequireDefault(__webpack_require__(166));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _tableOfContents = _interopRequireDefault(__webpack_require__(162));
 
 var _default = /*#__PURE__*/function (_elementorModules$Mod) {
   (0, _inherits2.default)(_default, _elementorModules$Mod);
-
-  var _super = (0, _createSuper2.default)(_default);
 
   function _default() {
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
-    _this = _super.call(this);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).call(this));
     elementorFrontend.hooks.addAction('frontend/element_ready/table-of-contents.default', function ($element) {
       elementorFrontend.elementsHandler.addHandler(_tableOfContents.default, {
         $element: $element
@@ -5322,7 +5266,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
 exports.default = _default;
 
 /***/ }),
-/* 166 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5335,26 +5279,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get3 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var TOCHandler = /*#__PURE__*/function (_elementorModules$fro) {
   (0, _inherits2.default)(TOCHandler, _elementorModules$fro);
 
-  var _super = (0, _createSuper2.default)(TOCHandler);
-
   function TOCHandler() {
     (0, _classCallCheck2.default)(this, TOCHandler);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(TOCHandler).apply(this, arguments));
   }
 
   (0, _createClass2.default)(TOCHandler, [{
@@ -5792,18 +5734,18 @@ var TOCHandler = /*#__PURE__*/function (_elementorModules$fro) {
 exports.default = TOCHandler;
 
 /***/ }),
-/* 167 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  elementorFrontend.hooks.addAction('frontend/element_ready/animated-headline.default', __webpack_require__(168));
+  elementorFrontend.hooks.addAction('frontend/element_ready/animated-headline.default', __webpack_require__(164));
 };
 
 /***/ }),
-/* 168 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6072,26 +6014,26 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 169 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  elementorFrontend.hooks.addAction('frontend/element_ready/media-carousel.default', __webpack_require__(170));
-  elementorFrontend.hooks.addAction('frontend/element_ready/testimonial-carousel.default', __webpack_require__(25));
-  elementorFrontend.hooks.addAction('frontend/element_ready/reviews.default', __webpack_require__(25));
+  elementorFrontend.hooks.addAction('frontend/element_ready/media-carousel.default', __webpack_require__(166));
+  elementorFrontend.hooks.addAction('frontend/element_ready/testimonial-carousel.default', __webpack_require__(22));
+  elementorFrontend.hooks.addAction('frontend/element_ready/reviews.default', __webpack_require__(22));
 };
 
 /***/ }),
-/* 170 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Base = __webpack_require__(24),
+var Base = __webpack_require__(21),
     MediaCarousel;
 
 MediaCarousel = Base.extend({
@@ -6224,18 +6166,18 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 171 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  elementorFrontend.hooks.addAction('frontend/element_ready/countdown.default', __webpack_require__(172));
+  elementorFrontend.hooks.addAction('frontend/element_ready/countdown.default', __webpack_require__(168));
 };
 
 /***/ }),
-/* 172 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6390,7 +6332,7 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 173 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6398,11 +6340,11 @@ module.exports = function ($scope) {
 
 var _interopRequireDefault = __webpack_require__(0);
 
-var _formSteps = _interopRequireDefault(__webpack_require__(174));
+var _formSteps = _interopRequireDefault(__webpack_require__(170));
 
-var _formSender = _interopRequireDefault(__webpack_require__(175));
+var _formSender = _interopRequireDefault(__webpack_require__(171));
 
-var _formRedirect = _interopRequireDefault(__webpack_require__(176));
+var _formRedirect = _interopRequireDefault(__webpack_require__(172));
 
 module.exports = function () {
   var handlersInit = function handlersInit($scope) {
@@ -6419,13 +6361,13 @@ module.exports = function () {
 
   elementorFrontend.hooks.addAction('frontend/element_ready/form.default', handlersInit);
   elementorFrontend.hooks.addAction('frontend/element_ready/subscribe.default', handlersInit);
-  elementorFrontend.hooks.addAction('frontend/element_ready/form.default', __webpack_require__(177));
-  elementorFrontend.hooks.addAction('frontend/element_ready/form.default', __webpack_require__(178));
-  elementorFrontend.hooks.addAction('frontend/element_ready/form.default', __webpack_require__(179));
+  elementorFrontend.hooks.addAction('frontend/element_ready/form.default', __webpack_require__(173));
+  elementorFrontend.hooks.addAction('frontend/element_ready/form.default', __webpack_require__(174));
+  elementorFrontend.hooks.addAction('frontend/element_ready/form.default', __webpack_require__(175));
 };
 
 /***/ }),
-/* 174 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6438,28 +6380,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _objectSpread2 = _interopRequireDefault(__webpack_require__(23));
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(20));
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get3 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var FormSteps = /*#__PURE__*/function (_elementorModules$fro) {
   (0, _inherits2.default)(FormSteps, _elementorModules$fro);
 
-  var _super = (0, _createSuper2.default)(FormSteps);
-
   function FormSteps() {
     (0, _classCallCheck2.default)(this, FormSteps);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(FormSteps).apply(this, arguments));
   }
 
   (0, _createClass2.default)(FormSteps, [{
@@ -6549,7 +6489,7 @@ var FormSteps = /*#__PURE__*/function (_elementorModules$fro) {
         stepsShape: ''
       };
       this.buildSteps();
-      this.elements = (0, _objectSpread2.default)((0, _objectSpread2.default)((0, _objectSpread2.default)({}, this.elements), this.createStepsIndicators()), this.createStepsButtons());
+      this.elements = (0, _objectSpread2.default)({}, this.elements, {}, this.createStepsIndicators(), {}, this.createStepsButtons());
       this.initProgressBar();
       this.extractResponsiveSizeFromSubmitWrapper();
     }
@@ -6959,7 +6899,7 @@ var FormSteps = /*#__PURE__*/function (_elementorModules$fro) {
 
       if ('progress_bar' === this.state.stepsType) {
         this.setProgressBar();
-      } else {
+      } else if ('none' !== this.state.stepsType) {
         this.updateIndicatorsState(direction);
       }
     }
@@ -6993,12 +6933,12 @@ var FormSteps = /*#__PURE__*/function (_elementorModules$fro) {
     key: "resetForm",
     value: function resetForm() {
       this.state.currentStep = 0;
-      this.elements.$currentIndicator = this.elements.$indicators.eq(this.state.currentStep);
       this.resetSteps();
 
       if ('progress_bar' === this.state.stepsType) {
         this.setProgressBar();
-      } else {
+      } else if ('none' !== this.state.stepsType) {
+        this.elements.$currentIndicator = this.elements.$indicators.eq(this.state.currentStep);
         this.resetIndicators();
       }
     }
@@ -7085,7 +7025,7 @@ var FormSteps = /*#__PURE__*/function (_elementorModules$fro) {
   }, {
     key: "rebuildIndicators",
     value: function rebuildIndicators() {
-      this.elements = (0, _objectSpread2.default)((0, _objectSpread2.default)({}, this.elements), this.createStepsIndicators());
+      this.elements = (0, _objectSpread2.default)({}, this.elements, {}, this.createStepsIndicators());
       this.initProgressBar();
     }
   }, {
@@ -7142,7 +7082,7 @@ var FormSteps = /*#__PURE__*/function (_elementorModules$fro) {
 exports.default = FormSteps;
 
 /***/ }),
-/* 175 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7271,7 +7211,7 @@ module.exports = elementorModules.frontend.handlers.Base.extend({
 });
 
 /***/ }),
-/* 176 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7302,7 +7242,7 @@ module.exports = elementorModules.frontend.handlers.Base.extend({
 });
 
 /***/ }),
-/* 177 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7368,7 +7308,7 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 178 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7400,7 +7340,7 @@ module.exports = function ($scope, $) {
 };
 
 /***/ }),
-/* 179 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7431,7 +7371,7 @@ module.exports = function ($scope, $) {
 };
 
 /***/ }),
-/* 180 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7449,11 +7389,11 @@ module.exports = function () {
     }
   }
 
-  elementorFrontend.hooks.addAction('frontend/element_ready/nav-menu.default', __webpack_require__(181));
+  elementorFrontend.hooks.addAction('frontend/element_ready/nav-menu.default', __webpack_require__(177));
 };
 
 /***/ }),
-/* 181 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7605,16 +7545,16 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 182 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  var PostsModule = __webpack_require__(18),
-      CardsModule = __webpack_require__(26),
-      PortfolioModule = __webpack_require__(183);
+  var PostsModule = __webpack_require__(16),
+      CardsModule = __webpack_require__(23),
+      PortfolioModule = __webpack_require__(179);
 
   elementorFrontend.hooks.addAction('frontend/element_ready/posts.classic', function ($scope) {
     new PostsModule({
@@ -7643,13 +7583,13 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 183 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var PostsHandler = __webpack_require__(18);
+var PostsHandler = __webpack_require__(16);
 
 module.exports = PostsHandler.extend({
   getSkinPrefix: function getSkinPrefix() {
@@ -7857,7 +7797,7 @@ module.exports = PostsHandler.extend({
 });
 
 /***/ }),
-/* 184 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7865,12 +7805,12 @@ module.exports = PostsHandler.extend({
 
 module.exports = function () {
   if (!elementorFrontend.isEditMode()) {
-    elementorFrontend.hooks.addAction('frontend/element_ready/share-buttons.default', __webpack_require__(185));
+    elementorFrontend.hooks.addAction('frontend/element_ready/share-buttons.default', __webpack_require__(181));
   }
 };
 
 /***/ }),
-/* 185 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7930,18 +7870,18 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 186 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  elementorFrontend.hooks.addAction('frontend/element_ready/slides.default', __webpack_require__(187));
+  elementorFrontend.hooks.addAction('frontend/element_ready/slides.default', __webpack_require__(183));
 };
 
 /***/ }),
-/* 187 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8153,13 +8093,13 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 188 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var facebookHandler = __webpack_require__(189);
+var facebookHandler = __webpack_require__(185);
 
 module.exports = function () {
   elementorFrontend.hooks.addAction('frontend/element_ready/facebook-button.default', facebookHandler);
@@ -8169,7 +8109,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 189 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8216,27 +8156,27 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 190 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  elementorFrontend.hooks.addAction('frontend/element_ready/section', __webpack_require__(27));
-  elementorFrontend.hooks.addAction('frontend/element_ready/widget', __webpack_require__(27));
+  elementorFrontend.hooks.addAction('frontend/element_ready/section', __webpack_require__(24));
+  elementorFrontend.hooks.addAction('frontend/element_ready/widget', __webpack_require__(24));
 };
 
 /***/ }),
-/* 191 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  var PostsArchiveClassic = __webpack_require__(192),
-      PostsArchiveCards = __webpack_require__(193);
+  var PostsArchiveClassic = __webpack_require__(188),
+      PostsArchiveCards = __webpack_require__(189);
 
   elementorFrontend.hooks.addAction('frontend/element_ready/archive-posts.archive_classic', function ($scope) {
     new PostsArchiveClassic({
@@ -8267,13 +8207,13 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 192 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var PostsClassicHandler = __webpack_require__(18);
+var PostsClassicHandler = __webpack_require__(16);
 
 module.exports = PostsClassicHandler.extend({
   getSkinPrefix: function getSkinPrefix() {
@@ -8282,13 +8222,13 @@ module.exports = PostsClassicHandler.extend({
 });
 
 /***/ }),
-/* 193 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var PostsCardHandler = __webpack_require__(26);
+var PostsCardHandler = __webpack_require__(23);
 
 module.exports = PostsCardHandler.extend({
   getSkinPrefix: function getSkinPrefix() {
@@ -8297,18 +8237,18 @@ module.exports = PostsCardHandler.extend({
 });
 
 /***/ }),
-/* 194 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  elementorFrontend.hooks.addAction('frontend/element_ready/search-form.default', __webpack_require__(195));
+  elementorFrontend.hooks.addAction('frontend/element_ready/search-form.default', __webpack_require__(191));
 };
 
 /***/ }),
-/* 195 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8408,14 +8348,14 @@ module.exports = function ($scope) {
 };
 
 /***/ }),
-/* 196 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  elementorFrontend.hooks.addAction('frontend/element_ready/woocommerce-menu-cart.default', __webpack_require__(197));
+  elementorFrontend.hooks.addAction('frontend/element_ready/woocommerce-menu-cart.default', __webpack_require__(193));
 
   if (elementorFrontend.isEditMode()) {
     return;
@@ -8429,7 +8369,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 197 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

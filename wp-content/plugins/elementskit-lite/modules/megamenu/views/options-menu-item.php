@@ -9,6 +9,8 @@
                             data-attr-toggle="tab"><?php esc_html_e('Icon', 'elementskit'); ?></a></li>
                     <li role="presentation" id="attr_badge_nav"><a class="attr-nav-link ekit-pro-labal" href="#attr_badge_tab" aria-controls="attr_badge_tab"
                             role="tab" data-attr-toggle="tab"><?php esc_html_e('Badge', 'elementskit'); ?></a></li>
+                    <li role="presentation" id="attr_badge_nav"><a class="attr-nav-link" href="#attr_vertical_menu_setting_tab" aria-controls="attr_vertical_menu_setting_tab"
+                            role="tab" data-attr-toggle="tab"><?php esc_html_e('Settings', 'elementskit'); ?></a></li>
                 </ul>
             </div>
             <div class="attr-modal-body ekit-wid-con">
@@ -100,6 +102,38 @@
                                     </td>
                                 </tr>
 
+                            </tbody>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="attr-tab-pane" id="attr_vertical_menu_setting_tab">
+                        <table class="option-table">
+                            <tbody class="xs_menu_settings_panel">
+                                <tr id="xs_megamenu_width_type">
+                                    <td><strong><?php esc_html_e('Mega Menu Width as:', 'elementskit'); ?></strong></td>
+                                    <td class="alignright ekit_width_lists">
+                                        <input type="radio" name="width_type" id="width_type_default" value="default_width" checked>
+                                        <label for="width_type_default"><?php esc_html_e('Default Width', 'elementskit'); ?></label>
+                                        <input type="radio" id="width_type_full" name="width_type" value="full_width">
+                                        <label for="width_type_full"><?php esc_html_e('Full Width', 'elementskit'); ?></label>
+                                        <input type="radio" id="width_type_custom" name="width_type" value="custom_width">
+                                        <label for="width_type_custom"><?php esc_html_e('Custom Width', 'elementskit'); ?></label>
+                                    </td>
+                                </tr>
+                                <tr class="menu-width-container">
+                                    <td><strong><?php esc_html_e('Menu Width', 'elementskit'); ?></strong></td>
+                                    <td class="alignright">
+                                        <input type="text" placeholder="<?php esc_html_e('750px', 'elementskit'); ?>" id="elementskit-menu-vertical-menu-width-field" />
+                                    </td>
+                                </tr>
+                                <tr id="vertical_megamenu_position_type">
+                                    <td><strong><?php esc_html_e('Mega Menu Position as:', 'elementskit'); ?></strong></td>
+                                    <td class="alignright">
+                                        <input type="radio" id="position_type_top" name="position_type" value="top_position">
+                                        <label for="position_type_top"><?php esc_html_e('Default', 'elementskit'); ?></label>
+                                        <input type="radio" name="position_type" id="position_type_relative" checked value="relative_position">
+                                        <label for="position_type_relative"><?php esc_html_e('Relative', 'elementskit'); ?></label>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

@@ -701,7 +701,7 @@ function braapf_filtered_filters_set() {
             $('.bapf_sngl_hd_desktop').remove();
         }
         $('.bapf_sfilter .bapf_body.bapf_mcs:not(.bapf_mcs_ready)').each(function() {
-            $(this).mCustomScrollbar({setHeight:$(this).data('mcs-h'), scrollInertia: 300}).addClass('bapf_mcs_ready');
+            $(this).css('max-height', $(this).data('mcs-h')).mCustomScrollbar({scrollInertia: 300}).addClass('bapf_mcs_ready');
         });
         $('.berocket_single_filter_widget').each(function() {
             var data_id = $(this).data('id');
@@ -729,17 +729,20 @@ function braapf_filtered_filters_set() {
             var html = '';
             $.each(braapf_filtered_filters, function(i, taxonomy) {
                 if( taxonomy.values.length > 0 ) {
-                    html += '<span>' + taxonomy.name + '</span>';
-                    html += '<ul>';
+                    var html2 = '<div class="bapf_sfa_taxonomy"><span>' + taxonomy.name + '</span>';
+                    html2 += '<ul>';
+                    var html2_elements = '';
                     $.each(taxonomy.values, function(i2, val) {
-                        html += berocket_apply_filters('default_selected_filters_area_single', '<li><a href="#unselect_'+val.value+'" class="braapf_unselect" data-taxonomy="'+taxonomy.taxonomy+'" data-value="'+val.value+'"><i class="fa fa-times"></i>'+val.html+'</a></li>', val);
+                        html2_elements += berocket_apply_filters('default_selected_filters_area_single', '<li><a href="#unselect_'+val.value+'" class="braapf_unselect" data-taxonomy="'+taxonomy.taxonomy+'" data-value="'+val.value+'"><i class="fa fa-times"></i>'+val.html+'</a></li>', val);
                     });
-                    html += '</ul>';
+                    html2 += html2_elements;
+                    html2 += '</ul></div>';
+                    html += berocket_apply_filters('default_selected_filters_area_single_taxonomy', html2, taxonomy, html2_elements);
                 }
             });
             if( html ) {
                 $('.bapf_sfa_mt_hide').show().parent().removeClass('bapf_mt_none');
-                html = berocket_apply_filters('default_selected_filters_area_full_exist', '<div class="berocket_aapf_widget_selected_filter">' + html + '<ul><li><a href="#Unselect_all" class="braapf_unselect_all"><i class="fa fa-times"></i> '+the_ajax_script.translate.unselect_all+'</a></li></ul>', html, braapf_filtered_filters);
+                html = berocket_apply_filters('default_selected_filters_area_full_exist', '<div class="berocket_aapf_widget_selected_filter">' + html + '<ul class="bapf_sfa_unall"><li><a href="#Unselect_all" class="braapf_unselect_all"><i class="fa fa-times"></i> '+the_ajax_script.translate.unselect_all+'</a></li></ul>', html, braapf_filtered_filters);
             } else {
                 html = berocket_apply_filters('default_selected_filters_area_full_notexist', the_ajax_script.translate.nothing_selected, html, braapf_filtered_filters);
                 $('.bapf_sfa_mt_hide').hide().parent().addClass('bapf_mt_none');
@@ -903,7 +906,8 @@ berocket_custom_sidebar_open;
     berocket_add_filter('input_ckbox_changed', braapf_convert_ckbox_to_radio);
     //CHILD HIERARCHICAL
     $(document).on('click', '.bapf_ochild, .bapf_cchild', function(e) {
-        e.preventDefault;
+        e.preventDefault();
+        e.stopPropagation();
         if( $(this).is('.bapf_ochild' ) ) {
             $(this).trigger('bapf_ochild');
         } else {
@@ -912,13 +916,17 @@ berocket_custom_sidebar_open;
     });
     $(document).on('bapf_ochild', '.bapf_sfilter.bapf_ckbox ul li', function(e) {
         e.stopPropagation();
-        $(this).find('.bapf_ochild, .bapf_cchild').first().removeClass('bapf_ochild').removeClass('fa-plus').addClass('bapf_cchild').addClass('fa-minus');
-        $(this).find('ul').first().show();
+        if( berocket_apply_filters('colaps_child_open_apply', true, $(this)) ) {
+            $(this).find('.bapf_ochild, .bapf_cchild').first().removeClass('bapf_ochild').removeClass('fa-plus').addClass('bapf_cchild').addClass('fa-minus');
+            $(this).find('ul').first().show();
+        }
     });
     $(document).on('bapf_cchild', '.bapf_sfilter.bapf_ckbox ul li', function(e) {
         e.stopPropagation();
-        $(this).find('.bapf_ochild, .bapf_cchild').first().addClass('bapf_ochild').addClass('fa-plus').removeClass('bapf_cchild').removeClass('fa-minus');
-        $(this).find('ul').first().hide();
+        if( berocket_apply_filters('colaps_child_close_apply', true, $(this)) ) {
+            $(this).find('.bapf_ochild, .bapf_cchild').first().addClass('bapf_ochild').addClass('fa-plus').removeClass('bapf_cchild').removeClass('fa-minus');
+            $(this).find('ul').first().hide();
+        }
     });
     var braapf_hierarhical_values = [];
     braapf_hierarhical_save = function(data) {
@@ -946,17 +954,21 @@ berocket_custom_sidebar_open;
         }
     });
     $(document).on('bapf_ocolaps', '.bapf_sfilter.bapf_ocolaps, .bapf_sfilter.bapf_ccolaps', function(e) {
-        $(this).find('.bapf_body').first().show();
         $(this).removeClass('bapf_ocolaps').addClass('bapf_ccolaps');
-        if( $(this).find('.bapf_colaps_smb').length ) {
-            $(this).find('.bapf_colaps_smb').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+        if( berocket_apply_filters('colaps_smb_open_apply', true, $(this)) ) {
+            $(this).find('.bapf_body').first().show();
+            if( $(this).find('.bapf_colaps_smb').length ) {
+                $(this).find('.bapf_colaps_smb').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            }
         }
     });
     $(document).on('bapf_ccolaps', '.bapf_sfilter.bapf_ocolaps, .bapf_sfilter.bapf_ccolaps', function(e) {
-        $(this).find('.bapf_body').first().hide();
         $(this).addClass('bapf_ocolaps').removeClass('bapf_ccolaps');
-        if( $(this).find('.bapf_colaps_smb').length ) {
-            $(this).find('.bapf_colaps_smb').addClass('fa-chevron-down').removeClass('fa-chevron-up');
+        if( berocket_apply_filters('colaps_smb_close_apply', true, $(this)) ) {
+            $(this).find('.bapf_body').first().hide();
+            if( $(this).find('.bapf_colaps_smb').length ) {
+                $(this).find('.bapf_colaps_smb').addClass('fa-chevron-down').removeClass('fa-chevron-up');
+            }
         }
     });
     var braapf_collapse_status = {open:[], close:[]};
@@ -1099,7 +1111,7 @@ berocket_custom_sidebar_open;
         if( the_ajax_script.seo_uri_decode ) {
             filter = encodeURIComponent(filter);
             if( the_ajax_script.nice_urls ) {
-                filter = filter.replace('%2F', '/');
+                filter = filter.replace(/%2F/g, '/');
             }
         }
         return filter;

@@ -112,7 +112,7 @@
 
 
 			if ($scope.find('.elementskit-megamenu-has').length > 0) {
-				let date_breakpoint = $scope.find('.ekit-wid-con').data('responsive-breakpoint');
+				let data_breakpoint = $scope.find('.ekit-wid-con').data('responsive-breakpoint');
 				let target = $scope.find('.elementskit-megamenu-has');
 				let menu_height = $scope.find('.elementskit-menu-container').outerHeight();
 
@@ -136,41 +136,45 @@
 						}).trigger('resize');
 					}
 
+					if (!$(this).hasClass('elementskit-dropdown-menu-full_width') && $(this).hasClass('top_position')) {
+						$(this).on({
+							mouseenter: function() {
+								if ($('.default_menu_position').length === 0) {
+									$(this).parents('.elementor-section-wrap').addClass('default_menu_position');
+								}
+							},
+							mouseleave: function() {
+								if ($('.default_menu_position').length !== 0) {
+									$(this).parents('.elementor-section-wrap').removeClass('default_menu_position');
+								}
+							}
+						})
+						}
+
+					function menu_width_tigger_on_resize() {
+						$(window).on('resize', function () {
+							if (!($(window).width() > Number(data_breakpoint))) {
+								megamenu_panel.removeAttr('style');
+							} else {
+								megamenu_panel.css({
+									width: data_width
+								})
+							}
+						}).trigger('resize');
+					}
+
 					if (data_width && data_width !== undefined) {
 						if (typeof data_width === 'string') {
 							if (/^[0-9]/.test(data_width)) {
-								$(window).on('resize', function () {
-									megamenu_panel.css({
-										width: data_width
-									})
-									if (!($(document).width() > Number(date_breakpoint))) {
-										megamenu_panel.removeAttr('style');
-									}
-								}).trigger('resize');
+								menu_width_tigger_on_resize();
 							} else {
-								$(window).on('resize', function () {
-									megamenu_panel.css({
-										width: data_width + 'px'
-									})
-									if (!($(document).width() > Number(date_breakpoint))) {
-										megamenu_panel.removeAttr('style');
-									}
-								}).trigger('resize');
+								menu_width_tigger_on_resize();
 							}
 						} else {
-							megamenu_panel.css({
-								width: data_width + 'px'
-							})
+							menu_width_tigger_on_resize();
 						}
 					} else {
-						$(window).on('resize', function () {
-							megamenu_panel.css({
-								width: data_width + 'px'
-							})
-							if (!($(document).width() > Number(date_breakpoint))) {
-								megamenu_panel.removeAttr('style');
-							}
-						}).trigger('resize');
+						menu_width_tigger_on_resize();
 					}
 				})
 			}
@@ -970,6 +974,20 @@
 				target.on('click', function (e) {
 					e.preventDefault();
 					menu_container.toggleClass('vertical-menu-active');
+					if (!$('body').hasClass('is-vertical-menu-active')) {
+						$('body').addClass('is-vertical-menu-active');
+					} else {
+						$('body').removeClass('is-vertical-menu-active');
+					}
+				})
+
+				$scope.find('.xs-vertical-menu-backdrop').on('click', function () {
+					if ($(this).parents('.ekit-vertical-main-menu-wraper').hasClass('vertical-menu-active')) {
+						$(this).parents('.ekit-vertical-main-menu-wraper').removeClass('vertical-menu-active')
+					}
+					if ($('body').hasClass('is-vertical-menu-active')) {
+						$('body').removeClass('is-vertical-menu-active');
+					}
 				})
 			}
 
@@ -979,42 +997,44 @@
 					vertical_menu_wraper = $scope.find('.ekit-vertical-main-menu-wraper'),
 					final_width = Math.floor((parents_container.width() - vertical_menu_wraper.width())) + 'px';
 
-				target.each(function () {
-					let data_width = $(this).data('vertical-menu'),
-						megamenu_panel = $(this).children('.elementskit-megamenu-panel');
+				function calculate_menu_width($this) {
+					let data_width = $this.data('vertical-menu'),
+						megamenu_panel = $this.children('.elementskit-megamenu-panel');
 
-					if (data_width && data_width !== undefined && !(final_width <= data_width)) {
-						if (typeof data_width === 'string') {
-							if (/^[0-9]/.test(data_width)) {
-								megamenu_panel.css({
-									width: data_width
-								})
-							} else {
-								$(window).bind('resize', function () {
-									if ($(document).width() > 1024) {
-										megamenu_panel.css({
-											width: Math.floor((parents_container.width() - vertical_menu_wraper.width()) - 10) + 'px'
-										})
-									} else {
-										megamenu_panel.removeAttr('style');
-									}
-								}).trigger('resize');
-							}
+					if (typeof data_width === 'string') {
+						if (/^[0-9]/.test(data_width)) {
+							megamenu_panel.css({
+								width: data_width
+							})
 						} else {
 							megamenu_panel.css({
-								width: data_width + 'px'
+								width: Math.floor((parents_container.width() - vertical_menu_wraper.width()) - 10) + 'px'
 							})
+							$(window).bind('resize', function () {
+								if (!$(window).width() > 1024) {
+									megamenu_panel.removeAttr('style');
+								}
+							}).trigger('resize');
 						}
 					} else {
+						megamenu_panel.css({
+							width: data_width + 'px'
+						})
 						$(window).bind('resize', function () {
-							if ($(document).width() > 1024) {
-								megamenu_panel.css({
-									width: Math.floor((parents_container.width() - vertical_menu_wraper.width()) - 10) + 'px'
-								})
-							} else {
+							if (!$(window).width() > 1024) {
 								megamenu_panel.removeAttr('style');
 							}
 						}).trigger('resize');
+					}
+				}
+
+				target.each(function () {
+					let data_width = $(this).data('vertical-menu');
+
+					if (data_width && data_width !== undefined && !(final_width <= data_width)) {
+						calculate_menu_width($(this));
+					} else {
+						calculate_menu_width($(this));
 					}
 				})
 			}

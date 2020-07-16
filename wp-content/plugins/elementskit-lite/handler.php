@@ -56,9 +56,6 @@ class Handler{
         // Register ElementsKit supported widgets to Elementor from 3rd party plugins.
         add_action( 'elementor/widgets/widgets_registered', [$this, 'register_widgets'],  1050);
 
-        // Register ElementsKit's custom endpoints for WP RESTful APIs and 3rd party hooks.
-        add_action( 'init', [$this, 'register_apis'],  1055);
-
         // Adding pro lebel
         new Libs\Pro_Label\Init();
 
@@ -142,21 +139,6 @@ class Handler{
      */
     public function register_control($widgets_manager){
         do_action('elementskit/widgets/widgets_registered', $widgets_manager);
-    }
-
-
-    /**
-     * Api registrar.
-     *
-     * Retrieve all the registered API's endpoints
-     * using `elementskit/apis/apis_registered/post` action (for POST method).
-     * using `elementskit/apis/apis_registered/get` action (for GET method).
-     *
-     * @since 1.0.0
-     * @access public
-     */
-    public function register_apis(){
-        new Core\Build_Apis();
     }
 
 

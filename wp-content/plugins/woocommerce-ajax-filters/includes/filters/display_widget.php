@@ -569,6 +569,7 @@ class BeRocket_AAPF_Widget {
         $set_query_var_title['color_image_block_size_height'] = berocket_isset($color_image_block_size_height);
         $set_query_var_title['color_image_block_size_width'] = berocket_isset($color_image_block_size_width);
         $set_query_var_title['use_value_with_color'] = berocket_isset($use_value_with_color);
+        $set_query_var_title['additional_data_options'] = berocket_isset($additional_data_options);
         $set_query_var_title = apply_filters('berocket_aapf_query_var_title_filter', $set_query_var_title, $instance, $br_options);
 
         if( ! empty($set_query_var_title['new_template']) ) {

@@ -70,6 +70,22 @@ BUBznMUMZ © 2020 All RIGHTS ARE RESERVED.
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/bootstrap-slider.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/custom.js"></script>
 
+<?php //if(is_product_category()){ ?>
+<script>
+jQuery( document ).ajaxComplete(function() {
+  if(jQuery( "ul.products").find('div').hasClass("bapf_no_products")){
+   jQuery(".bapf_no_products").css('width','100%');
+   jQuery(".products_outer_box").css('margin-top','0px');
+   jQuery(".sort_bar").hide();
+   jQuery(".product_info2").hide();
+  }else{
+   jQuery(".products_outer_box").css('margin-top','200px');
+   jQuery(".sort_bar").show();
+   jQuery(".product_info2").show();  
+  }
+ });	
+</script>	
+<?php// } ?>
 <?php wp_footer(); ?>
 
 </body>

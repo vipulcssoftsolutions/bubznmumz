@@ -1,4 +1,4 @@
-/*! elementor-pro - v2.10.2 - 16-06-2020 */
+/*! elementor-pro - v2.10.3 - 29-06-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -82,7 +82,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 135);
+/******/ 	return __webpack_require__(__webpack_require__.s = 131);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -103,56 +103,18 @@ module.exports = _interopRequireDefault;
 /***/ 1:
 /***/ (function(module, exports) {
 
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
+function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
 }
 
-module.exports = _classCallCheck;
+module.exports = _getPrototypeOf;
 
 /***/ }),
 
-/***/ 10:
-/***/ (function(module, exports) {
-
-function _isNativeReflectConstruct() {
-  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-  if (Reflect.construct.sham) return false;
-  if (typeof Proxy === "function") return true;
-
-  try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-
-module.exports = _isNativeReflectConstruct;
-
-/***/ }),
-
-/***/ 11:
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(8);
-
-var assertThisInitialized = __webpack_require__(7);
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return assertThisInitialized(self);
-}
-
-module.exports = _possibleConstructorReturn;
-
-/***/ }),
-
-/***/ 135:
+/***/ 131:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -165,24 +127,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var Preview = /*#__PURE__*/function (_elementorModules$Vie) {
   (0, _inherits2.default)(Preview, _elementorModules$Vie);
-
-  var _super = (0, _createSuper2.default)(Preview);
 
   function Preview() {
     var _this;
 
     (0, _classCallCheck2.default)(this, Preview);
-    _this = _super.call(this);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Preview).call(this));
     elementorFrontend.on('components:init', function () {
       return _this.onFrontendComponentsInit();
     });
@@ -254,6 +216,38 @@ window.elementorProPreview = new Preview();
 /***/ }),
 
 /***/ 2:
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+module.exports = _classCallCheck;
+
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(8);
+
+var assertThisInitialized = __webpack_require__(7);
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return assertThisInitialized(self);
+}
+
+module.exports = _possibleConstructorReturn;
+
+/***/ }),
+
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 var setPrototypeOf = __webpack_require__(9);
@@ -277,37 +271,7 @@ module.exports = _inherits;
 
 /***/ }),
 
-/***/ 3:
-/***/ (function(module, exports, __webpack_require__) {
-
-var getPrototypeOf = __webpack_require__(5);
-
-var isNativeReflectConstruct = __webpack_require__(10);
-
-var possibleConstructorReturn = __webpack_require__(11);
-
-function _createSuper(Derived) {
-  var hasNativeReflectConstruct = isNativeReflectConstruct();
-  return function _createSuperInternal() {
-    var Super = getPrototypeOf(Derived),
-        result;
-
-    if (hasNativeReflectConstruct) {
-      var NewTarget = getPrototypeOf(this).constructor;
-      result = Reflect.construct(Super, arguments, NewTarget);
-    } else {
-      result = Super.apply(this, arguments);
-    }
-
-    return possibleConstructorReturn(this, result);
-  };
-}
-
-module.exports = _createSuper;
-
-/***/ }),
-
-/***/ 4:
+/***/ 5:
 /***/ (function(module, exports) {
 
 function _defineProperties(target, props) {
@@ -327,20 +291,6 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
-
-/***/ }),
-
-/***/ 5:
-/***/ (function(module, exports) {
-
-function _getPrototypeOf(o) {
-  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-module.exports = _getPrototypeOf;
 
 /***/ }),
 

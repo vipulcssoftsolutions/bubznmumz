@@ -10,7 +10,7 @@ if(!class_exists('ElementsKit')):
 		 * @since 1.0.0
 		 * @var string The plugin version.
 		 */
-		const VERSION = '1.5.6';
+		const VERSION = '1.5.8';
 
 		/**
 		 * Package type
@@ -376,6 +376,7 @@ if(!class_exists('ElementsKit')):
 				'header-footer',
 				'megamenu',
 				'onepage-scroll',
+				'widget-builder'
 			];
 			
 			$optional_list =[

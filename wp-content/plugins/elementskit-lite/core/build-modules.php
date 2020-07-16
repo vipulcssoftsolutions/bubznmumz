@@ -47,12 +47,19 @@ class Build_Modules{
     private $active_modules;
 
     public function __construct(){
+        $hotfix = apply_filters('elementskit/modules/list', []);
+
         $this->core_modules = array_merge($this->system_modules, \ElementsKit::default_modules());
         $this->active_modules = Attr::instance()->utils->get_option('module_list', $this->core_modules);
         $this->active_modules = array_merge($this->active_modules, $this->system_modules);
 
         foreach($this->active_modules as $module){
             if(in_array($module, $this->core_modules)){
+
+                if(isset($hotfix[$module])){
+                    include_once $hotfix[$module]['path'] . 'init.php';
+                }
+
                 // make the class name and call it.
                 $class_name = '\ElementsKit\Modules\\'. \ElementsKit\Utils::make_classname($module) .'\Init';
                 if(class_exists($class_name)){

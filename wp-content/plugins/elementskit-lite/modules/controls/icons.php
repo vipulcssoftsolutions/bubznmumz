@@ -13,8 +13,8 @@ class Icons{
         $font_new['ekiticons'] = [
 			'name' => 'ekiticons',
 			'label' => __( 'ElementsKit - Icons', 'elementskit' ),
-			'url' => Init::get_url() . 'assets/css/ekiticons.css',
-			'enqueue' => [Init::get_url() . 'assets/css/ekiticons.css'],
+			'url' => \ElementsKit::widget_url() . 'init/assets/css/admin-ekiticon.css',
+			'enqueue' => [\ElementsKit::widget_url() . 'init/assets/css/admin-ekiticon.css'],
 			'prefix' => 'icon-',
 			'displayPrefix' => 'icon',
 			'labelIcon' => 'icon icon-ekit',
@@ -30,8 +30,8 @@ class Icons{
 		global $wp_filesystem;
 		require_once ( ABSPATH . '/wp-admin/includes/file.php' );
 		WP_Filesystem();
-		//$css_file =  \ElementsKit::widget_dir() . 'init/assets/css/admin-ekiticon.css';
-		$css_file =  Init::get_dir() . 'assets/css/ekiticons.css';
+		$css_file =  \ElementsKit::widget_url() . 'init/assets/css/admin-ekiticon.css';
+		// $css_file =  Init::get_dir() . 'assets/css/ekiticons.css';
 		if ( $wp_filesystem->exists( $css_file ) ) {
 			$css_source = $wp_filesystem->get_contents( $css_file );
 		} 

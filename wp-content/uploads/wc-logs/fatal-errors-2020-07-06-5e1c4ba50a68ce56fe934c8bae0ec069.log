@@ -1,0 +1,64 @@
+2020-07-06T05:28:23+00:00 CRITICAL syntax error, unexpected ',' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php on line 354
+
+2020-07-06T06:26:14+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_directory_url() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php:16
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php on line 16
+
+2020-07-06T06:26:15+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_directory_url() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php:16
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php on line 16
+
+2020-07-06T06:26:15+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_directory_url() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php:16
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php on line 16
+
+2020-07-06T06:26:16+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_directory_url() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php:16
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php on line 16
+
+2020-07-06T06:26:19+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_directory_url() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php:16
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php on line 16
+
+2020-07-06T06:26:19+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_directory_url() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php:16
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php on line 16
+
+2020-07-06T06:26:23+00:00 CRITICAL Uncaught Error: Call to undefined function get_template_directory_url() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php:16
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/404.php on line 16
+
+2020-07-06T08:15:49+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php on line 66
+
+2020-07-06T11:58:18+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 717
+
+2020-07-06T11:58:32+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 717
+

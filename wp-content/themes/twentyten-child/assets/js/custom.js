@@ -1,4 +1,3 @@
-
 jQuery(".navbar-nav > li ").click(function(){
     jQuery(this).children(".submenu_outer").toggleClass("mob_open");
 });
@@ -71,7 +70,7 @@ jQuery('.main_banner').slick({
 jQuery('.new_arival_outer').slick({
   infinite: true,
   slidesToShow: 5,
-  slidesToScroll: 1,
+  slidesToScroll: 5,
   dots:true,
   autoplay:false,
   autoplaySpeed: 3000,
@@ -83,24 +82,28 @@ jQuery('.new_arival_outer').slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 4,
+        slidesToScroll: 4,
       }
     },
         {
       breakpoint: 991,
       settings: {
         slidesToShow: 3,
+        slidesToScroll:3,
       }
     },
             {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 2,
       }
     },
                 {
       breakpoint: 400,
       settings: {
         slidesToShow: 2,
+        slidesToScroll:2,
         autoplay:false
       }
     },
@@ -201,7 +204,8 @@ jQuery(document).ready(function () {
    });
 });
 
-jQuery(window).scroll(function() {    
+	if(jQuery(window).width() >= 1024){
+jQuery(window).scroll(function() { 
     var scroll = jQuery(window).scrollTop();
     if(scroll >= 2) {
         jQuery(".wrap-main-head").addClass("fixed_nav");
@@ -209,13 +213,24 @@ jQuery(window).scroll(function() {
     } else {
         jQuery(".wrap-main-head").removeClass("fixed_nav");
         jQuery(".top_bar").slideDown().show();
-    }
+    }	
 });	
+	}
 	
+jQuery(document).ready(function () {	
+if(jQuery(window).width() <= 991){
+var searchboxhtml = jQuery("#responsive-menu-search-box").html();
+jQuery("#responsive-menu-search-box").remove();
+jQuery("#responsive-menu-wrapper").prepend('<div id="responsive-menu-search-box">'+searchboxhtml+'</div>');
+}
+});
+
+if(jQuery(window).width() > 1024){	
 jQuery(document).on("mouseenter", '.new-arival_box .arival_img img', function(event) { 
         jQuery(this).closest(".new-arival_box").addClass("hover-active");
         jQuery(".new_arival_outer .slick-list").css("z-index", "700");
 });
+}
 
 jQuery(".yith-wfbt-images .image-td").each(function(){
 var datarel = jQuery(this).data('rel');
@@ -224,11 +239,12 @@ prodname = prodname.replace('This Product:','');
 jQuery(this).append('<h5 class="prct_name text-center">'+prodname+'</h5>');
 });
 
+if(jQuery(window).width() >= 1024){
 jQuery(document).on("mouseleave", '.new-arival_box', function(event) { 
 	  jQuery(this).removeClass("hover-active");
       jQuery(".new_arival_outer .slick-list").css("z-index", "500");
 });
-  
+}  
 
 
   //Click event to scroll to top
@@ -297,3 +313,6 @@ jQuery(".woocommerce-checkout .coun-code-btn").on('click',function(){
       window.scrollTo(0, 0);     
     }
 })
+
+
+

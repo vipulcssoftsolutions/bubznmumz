@@ -1,4 +1,4 @@
-/*! elementor-pro - v2.10.2 - 16-06-2020 */
+/*! elementor-pro - v2.10.3 - 29-06-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -82,7 +82,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 113);
+/******/ 	return __webpack_require__(__webpack_require__.s = 110);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -101,6 +101,19 @@ module.exports = _interopRequireDefault;
 /* 1 */
 /***/ (function(module, exports) {
 
+function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+module.exports = _getPrototypeOf;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -110,7 +123,25 @@ function _classCallCheck(instance, Constructor) {
 module.exports = _classCallCheck;
 
 /***/ }),
-/* 2 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(8);
+
+var assertThisInitialized = __webpack_require__(7);
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return assertThisInitialized(self);
+}
+
+module.exports = _possibleConstructorReturn;
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var setPrototypeOf = __webpack_require__(9);
@@ -133,36 +164,7 @@ function _inherits(subClass, superClass) {
 module.exports = _inherits;
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var getPrototypeOf = __webpack_require__(5);
-
-var isNativeReflectConstruct = __webpack_require__(10);
-
-var possibleConstructorReturn = __webpack_require__(11);
-
-function _createSuper(Derived) {
-  var hasNativeReflectConstruct = isNativeReflectConstruct();
-  return function _createSuperInternal() {
-    var Super = getPrototypeOf(Derived),
-        result;
-
-    if (hasNativeReflectConstruct) {
-      var NewTarget = getPrototypeOf(this).constructor;
-      result = Reflect.construct(Super, arguments, NewTarget);
-    } else {
-      result = Super.apply(this, arguments);
-    }
-
-    return possibleConstructorReturn(this, result);
-  };
-}
-
-module.exports = _createSuper;
-
-/***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 function _defineProperties(target, props) {
@@ -184,23 +186,10 @@ function _createClass(Constructor, protoProps, staticProps) {
 module.exports = _createClass;
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-function _getPrototypeOf(o) {
-  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-module.exports = _getPrototypeOf;
-
-/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var superPropBase = __webpack_require__(15);
+var superPropBase = __webpack_require__(13);
 
 function _get(target, property, receiver) {
   if (typeof Reflect !== "undefined" && Reflect.get) {
@@ -276,50 +265,13 @@ function _setPrototypeOf(o, p) {
 module.exports = _setPrototypeOf;
 
 /***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-function _isNativeReflectConstruct() {
-  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-  if (Reflect.construct.sham) return false;
-  if (typeof Proxy === "function") return true;
-
-  try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-
-module.exports = _isNativeReflectConstruct;
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(8);
-
-var assertThisInitialized = __webpack_require__(7);
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return assertThisInitialized(self);
-}
-
-module.exports = _possibleConstructorReturn;
-
-/***/ }),
+/* 10 */,
+/* 11 */,
 /* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getPrototypeOf = __webpack_require__(5);
+var getPrototypeOf = __webpack_require__(1);
 
 function _superPropBase(object, property) {
   while (!Object.prototype.hasOwnProperty.call(object, property)) {
@@ -333,11 +285,11 @@ function _superPropBase(object, property) {
 module.exports = _superPropBase;
 
 /***/ }),
+/* 14 */,
+/* 15 */,
 /* 16 */,
 /* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -350,22 +302,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var CustomAssetsBase = /*#__PURE__*/function (_elementorModules$Vie) {
   (0, _inherits2.default)(CustomAssetsBase, _elementorModules$Vie);
 
-  var _super = (0, _createSuper2.default)(CustomAssetsBase);
-
   function CustomAssetsBase() {
     (0, _classCallCheck2.default)(this, CustomAssetsBase);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(CustomAssetsBase).apply(this, arguments));
   }
 
   (0, _createClass2.default)(CustomAssetsBase, [{
@@ -445,22 +397,9 @@ var _default = CustomAssetsBase;
 exports.default = _default;
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports) {
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
-  }
-
-  return arr2;
-}
-
-module.exports = _arrayLikeToArray;
-
-/***/ }),
+/* 19 */,
+/* 20 */,
+/* 21 */,
 /* 22 */,
 /* 23 */,
 /* 24 */,
@@ -549,21 +488,18 @@ module.exports = _arrayLikeToArray;
 /* 107 */,
 /* 108 */,
 /* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var modules = {
-  widget_template_edit_button: __webpack_require__(114),
-  forms_integrations: __webpack_require__(116),
-  AssetsManager: __webpack_require__(118),
-  RoleManager: __webpack_require__(131),
-  ThemeBuilder: __webpack_require__(133)
+  widget_template_edit_button: __webpack_require__(111),
+  forms_integrations: __webpack_require__(113),
+  AssetsManager: __webpack_require__(115),
+  RoleManager: __webpack_require__(127),
+  ThemeBuilder: __webpack_require__(129)
 };
 window.elementorProAdmin = {
   widget_template_edit_button: new modules.widget_template_edit_button(),
@@ -577,20 +513,20 @@ jQuery(function () {
 });
 
 /***/ }),
-/* 114 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  var EditButton = __webpack_require__(115);
+  var EditButton = __webpack_require__(112);
 
   this.editButton = new EditButton();
 };
 
 /***/ }),
-/* 115 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -621,14 +557,14 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 116 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  var ApiValidations = __webpack_require__(117);
+  var ApiValidations = __webpack_require__(114);
 
   this.dripButton = new ApiValidations('drip_api_token');
   this.getResponse = new ApiValidations('getresponse_api_key');
@@ -639,7 +575,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 117 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -721,7 +657,7 @@ module.exports = function (key, fieldID) {
 };
 
 /***/ }),
-/* 118 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -729,14 +665,14 @@ module.exports = function (key, fieldID) {
 
 var _interopRequireDefault = __webpack_require__(0);
 
-var _elementorFontManager = _interopRequireDefault(__webpack_require__(119));
+var _elementorFontManager = _interopRequireDefault(__webpack_require__(116));
 
-var _elementorCustomIcons = _interopRequireDefault(__webpack_require__(127));
+var _elementorCustomIcons = _interopRequireDefault(__webpack_require__(123));
 
 module.exports = function () {
-  var TypekitAdmin = __webpack_require__(129),
+  var TypekitAdmin = __webpack_require__(125),
       CustomIcon = _elementorCustomIcons.default,
-      FontAwesomeProAdmin = __webpack_require__(130).default;
+      FontAwesomeProAdmin = __webpack_require__(126).default;
 
   this.fontManager = new _elementorFontManager.default();
   this.typekit = new TypekitAdmin();
@@ -745,7 +681,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 119 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -758,32 +694,30 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get3 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _customAssetsBase = _interopRequireDefault(__webpack_require__(18));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _elementorProUpload = _interopRequireDefault(__webpack_require__(117));
 
-var _customAssetsBase = _interopRequireDefault(__webpack_require__(20));
-
-var _elementorProUpload = _interopRequireDefault(__webpack_require__(120));
-
-var _elementorProRepeater = _interopRequireDefault(__webpack_require__(126));
+var _elementorProRepeater = _interopRequireDefault(__webpack_require__(122));
 
 var CustomFontsManager = /*#__PURE__*/function (_CustomAssetsBase) {
   (0, _inherits2.default)(CustomFontsManager, _CustomAssetsBase);
 
-  var _super = (0, _createSuper2.default)(CustomFontsManager);
-
   function CustomFontsManager() {
     (0, _classCallCheck2.default)(this, CustomFontsManager);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(CustomFontsManager).apply(this, arguments));
   }
 
   (0, _createClass2.default)(CustomFontsManager, [{
@@ -989,7 +923,7 @@ var CustomFontsManager = /*#__PURE__*/function (_CustomAssetsBase) {
 exports.default = CustomFontsManager;
 
 /***/ }),
-/* 120 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -997,7 +931,7 @@ exports.default = CustomFontsManager;
 
 var _interopRequireDefault = __webpack_require__(0);
 
-var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(121));
+var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(118));
 
 module.exports = {
   $btn: null,
@@ -1188,74 +1122,59 @@ module.exports = {
 };
 
 /***/ }),
-/* 121 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayWithoutHoles = __webpack_require__(122);
+var arrayWithoutHoles = __webpack_require__(119);
 
-var iterableToArray = __webpack_require__(123);
+var iterableToArray = __webpack_require__(120);
 
-var unsupportedIterableToArray = __webpack_require__(124);
-
-var nonIterableSpread = __webpack_require__(125);
+var nonIterableSpread = __webpack_require__(121);
 
 function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
 }
 
 module.exports = _toConsumableArray;
 
 /***/ }),
-/* 122 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayLikeToArray = __webpack_require__(21);
+/* 119 */
+/***/ (function(module, exports) {
 
 function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return arrayLikeToArray(arr);
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
 }
 
 module.exports = _arrayWithoutHoles;
 
 /***/ }),
-/* 123 */
+/* 120 */
 /***/ (function(module, exports) {
 
 function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
 }
 
 module.exports = _iterableToArray;
 
 /***/ }),
-/* 124 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayLikeToArray = __webpack_require__(21);
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
-}
-
-module.exports = _unsupportedIterableToArray;
-
-/***/ }),
-/* 125 */
+/* 121 */
 /***/ (function(module, exports) {
 
 function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
 }
 
 module.exports = _nonIterableSpread;
 
 /***/ }),
-/* 126 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1400,7 +1319,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 127 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1413,30 +1332,28 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _customAssetsBase = _interopRequireDefault(__webpack_require__(18));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _customAssetsBase = _interopRequireDefault(__webpack_require__(20));
-
-var _elementorProDropzone = _interopRequireDefault(__webpack_require__(128));
+var _elementorProDropzone = _interopRequireDefault(__webpack_require__(124));
 
 var CustomIcons = /*#__PURE__*/function (_CustomAssetsBase) {
   (0, _inherits2.default)(CustomIcons, _CustomAssetsBase);
 
-  var _super = (0, _createSuper2.default)(CustomIcons);
-
   function CustomIcons() {
     (0, _classCallCheck2.default)(this, CustomIcons);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(CustomIcons).apply(this, arguments));
   }
 
   (0, _createClass2.default)(CustomIcons, [{
@@ -1706,7 +1623,7 @@ var _default = CustomIcons;
 exports.default = _default;
 
 /***/ }),
-/* 128 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1719,26 +1636,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var DropZoneField = /*#__PURE__*/function (_elementorModules$Vie) {
   (0, _inherits2.default)(DropZoneField, _elementorModules$Vie);
 
-  var _super = (0, _createSuper2.default)(DropZoneField);
-
   function DropZoneField() {
     (0, _classCallCheck2.default)(this, DropZoneField);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(DropZoneField).apply(this, arguments));
   }
 
   (0, _createClass2.default)(DropZoneField, [{
@@ -1905,7 +1820,7 @@ var _default = DropZoneField;
 exports.default = _default;
 
 /***/ }),
-/* 129 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1985,7 +1900,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 130 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1998,22 +1913,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_elementorModules$Vie) {
   (0, _inherits2.default)(_default, _elementorModules$Vie);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2101,20 +2016,20 @@ var _default = /*#__PURE__*/function (_elementorModules$Vie) {
 exports.default = _default;
 
 /***/ }),
-/* 131 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  var AdvancedRoleManager = __webpack_require__(132);
+  var AdvancedRoleManager = __webpack_require__(128);
 
   this.advancedRoleManager = new AdvancedRoleManager();
 };
 
 /***/ }),
-/* 132 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2160,20 +2075,20 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 133 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = function () {
-  var CreateTemplateDialog = __webpack_require__(134);
+  var CreateTemplateDialog = __webpack_require__(130);
 
   this.createTemplateDialog = new CreateTemplateDialog();
 };
 
 /***/ }),
-/* 134 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

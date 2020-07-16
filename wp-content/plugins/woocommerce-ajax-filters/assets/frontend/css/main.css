@@ -9,6 +9,9 @@
     padding: 0!important;
     max-width: 100%;
 }
+.bapf_sfilter .bapf_body ul li ul {
+   margin-left: 15px;
+}
 /*JQUERY UI*/
 .bapf_slidr_main.ui-widget-content, .berocket_filter_price_slider.ui-widget-content{
     background: none repeat scroll 0 0 #b0b5b9;
@@ -491,11 +494,13 @@ body.berocket_ajax_filters_sidebar_active {
 .bapf_sfilter .bapf_body .mCSB_container > ul,
 .bapf_sfilter .bapf_body > ul {
     margin-left: 0;
+    margin-top: 0!important;
+    margin-bottom:0!important;
 }
-.bapf_sfilter.bapf_vpr_1 .bapf_body  ul,
-.bapf_sfilter.bapf_vpr_2 .bapf_body  ul,
-.bapf_sfilter.bapf_vpr_3 .bapf_body  ul,
-.bapf_sfilter.bapf_vpr_4 .bapf_body  ul {
+.bapf_sfilter.bapf_vpr_1 .bapf_body ul,
+.bapf_sfilter.bapf_vpr_2 .bapf_body ul,
+.bapf_sfilter.bapf_vpr_3 .bapf_body ul,
+.bapf_sfilter.bapf_vpr_4 .bapf_body ul {
     display: flex;
     flex-wrap: wrap;
 }
@@ -504,6 +509,7 @@ body.berocket_ajax_filters_sidebar_active {
 .bapf_sfilter.bapf_vpr_3 .bapf_body  ul > li,
 .bapf_sfilter.bapf_vpr_4 .bapf_body  ul > li {
     white-space: nowrap;
+    flex-grow: 1;
 }
 .bapf_sfilter.bapf_vpr_1 .bapf_body  ul > li {
     flex-basis:100%;
@@ -532,16 +538,31 @@ body.berocket_ajax_filters_sidebar_active {
 .bapf_sfilter .bapf_hasdesc {
     position: relative;
     padding-right: 25px;
+    display: flex;
+    align-items: center;
+}
+.bapf_sfilter .bapf_hascolarr.bapf_hasdesc {
+    padding-right: 45px;
 }
 .bapf_sfilter .bapf_desci,
 .bapf_sfilter .bapf_colaps_smb {
     position: absolute;
     right: 0;
-    top: 0;
     line-height: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+.bapf_sfilter .bapf_desci {
+    padding: 4px 8px;
 }
 .bapf_sfilter .bapf_hasdesc .bapf_colaps_smb {
     right: 25px;
+}
+
+.bapf_sfilter .bapf_ochild,
+.bapf_sfilter .bapf_cchild {
+    cursor: pointer;
+    padding: 0 5px;
 }
 
 #berocket-ajax-filters-sidebar .berocket_single_filter_widget.berocket_hidden_clickable .bapf_sfilter .bapf_head,
@@ -557,6 +578,9 @@ body.berocket_ajax_filters_sidebar_active {
 }
 .berocket_single_filter_widget.berocket_hidden_clickable .berocket_aapf_widget-wrapper {
     padding-bottom: 5px!important;
+}
+.berocket_single_filter_widget.berocket_hidden_clickable .bapf_sfilter .bapf_head {
+    cursor: pointer;
 }
 .berocket_single_filter_widget.berocket_hidden_clickable .bapf_sfilter .bapf_head h3 {
     margin: 0;
@@ -796,6 +820,29 @@ body.berocket_ajax_filters_sidebar_active {
 .bapf_hideckbox li input:checked + label a,
 .bapf_hideckbox li input:checked + label {
     color: #222;
+}
+.bapf_sfilter.bapf_clr_txt_left .bapf_body ul,
+.bapf_sfilter.bapf_clr_txt_right .bapf_body ul {
+    width: 100%;
+    flex-basis: 100%;
+}
+.bapf_sfilter.bapf_clr_txt_left .bapf_body ul li,
+.bapf_sfilter.bapf_clr_txt_right .bapf_body ul li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bapf_sfilter.bapf_clr_txt_right .bapf_body ul li label,
+.bapf_sfilter.bapf_clr_txt_left .bapf_body ul li label {
+    display: flex!important;
+    flex-direction: row!important;
+    align-items: center!important;
+}
+.bapf_sfilter.bapf_clr_txt_right .bapf_body ul li label .bapf_img_span,
+.bapf_sfilter.bapf_clr_txt_right .bapf_body ul li label .bapf_clr_span,
+.bapf_sfilter.bapf_clr_txt_left .bapf_body ul li label .bapf_img_span,
+.bapf_sfilter.bapf_clr_txt_left .bapf_body ul li label .bapf_clr_span {
+    flex-shrink: 0;
 }
 .bapf_sfilter.bapf_button_berocket .bapf_button {
     font-size: 20px;

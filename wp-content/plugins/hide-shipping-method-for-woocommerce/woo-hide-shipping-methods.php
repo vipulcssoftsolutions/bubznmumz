@@ -16,7 +16,7 @@
  * Plugin Name: Hide Shipping Method For WooCommerce
  * Plugin URI:        https://www.thedotstore.com/hide-shipping-method-for-woocommerce
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            theDotstore
  * Author URI:        https://www.thedotstore.com/
  * License:           GPL-2.0+
@@ -94,7 +94,7 @@ if ( function_exists( 'whsm_fs' ) ) {
 }
 
 if ( !defined( 'WOO_HIDE_SHIPPING_METHODS_VERSION' ) ) {
-    define( 'WOO_HIDE_SHIPPING_METHODS_VERSION', '1.0.1' );
+    define( 'WOO_HIDE_SHIPPING_METHODS_VERSION', '1.0.2' );
 }
 if ( !defined( 'WHSM_PLUGIN_URL' ) ) {
     define( 'WHSM_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

@@ -1,0 +1,10 @@
+2020-07-07T05:45:52+00:00 CRITICAL Uncaught Error: Call to a member function get_sku() on null in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/checkout/form-checkout.php:44
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(294): wc_get_template('checkout/form-c...', Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wr in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/checkout/form-checkout.php on line 44
+
+2020-07-07T15:33:58+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/checkout/form-checkout.php on line 117
+

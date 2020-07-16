@@ -1,13 +1,13 @@
 === Hide Shipping Method For WooCommerce ===
 Plugin URI: https://www.thedotstore.com/hide-shipping-method-for-woocommerce
-Author: theDotstore
+Author: Thedotstore
 Author URI: https://www.thedotstore.com/
 Contributors: dots, jitendrabanjara1991
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Tags: free shipping, hide shipping method, free shipping, local pickup, WooCommerce
 Requires PHP: 5.3
 Requires at least: 3.8
-Tested up to: 5.4
+Tested up to: 5.4.2
 Donate link: https://www.thedotstore.com/
 Copyright: (c) 2015-2019 Thedotstore all rights reserved (support@thedotstore.com)
 Here is a short description of the plugin.  This should be no more than 150 characters. No markup here.
@@ -20,18 +20,18 @@ The plugin automatically hides all other shipping methods when â€œfree shippingâ
 
 Conditional Hide Shipping Method Rules, you can hide shipping method by to hide WooCommerce Shipping methods on your cart and checkout pages.
 
-Pro Plugin Demo : <a href ="http://pluginsdemo.thedotstore.com/hide-shipping-method-for-woocommerce/" target="_blank">View Demo</a>
+Pro Plugin Demo : <a href ="https://pluginsdemo.thedotstore.com/hide-shipping-method-for-woocommerce/" target="_blank">View Demo</a>
 
 = Key Features: =
 
-* Hide all other shipping methods and when "Free Shipping" available on the cart page.
-* Hide all other shipping methods and when "Free Shipping" and "Local Pickup" available on the cart page.
-* Conditional Hide shipping method Rules - you can hide different shipping methods as per different sets of rules.
 * Hide Shipping Methods & Options based on Various Conditions. 
 * Conditional Hide Shipping Method Rules-based by Product
 * Conditional Hide Shipping Method Rules-based by category product 
 * Conditional Hide Shipping Method Rules-based by Tag's Product
 * Conditional Hide Shipping Method Rules-based by user-specific
+* Hide all other shipping methods and when "Free Shipping" available on the cart page.
+* Hide all other shipping methods and when "Free Shipping" and "Local Pickup" available on the cart page.
+* Conditional Hide shipping method Rules - you can hide different shipping methods as per different sets of rules.
 * Conditional Hide Shipping Method Rules-based by Order Cart sub-total (Before discount)
 * Conditional Hide Shipping Method Rules-based by Quantity 
 
@@ -163,6 +163,10 @@ Yes, you can set by its slug. Kindly please <a href ="https://ibb.co/P50C70x">cl
 Automatic updates should work great for you.  As always, though, we recommend backing up your site prior to making any updates just to be sure nothing goes wrong.
 
 == Changelog ==
+= 1.0.2 - 10-07-2020 =
+* Compatible with WooCommerce 4.3.x
+* UpdateCompatible with WordPress 5.4.x
+
 = 1.0.1 -28-04-2019 =
 * Compatible with WooCommerce 4.0.x
 * UpdateCompatible with WordPress 5.4.x

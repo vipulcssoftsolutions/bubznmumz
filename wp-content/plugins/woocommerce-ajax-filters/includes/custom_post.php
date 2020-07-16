@@ -506,7 +506,9 @@ class BeRocket_AAPF_single_filter extends BeRocket_custom_post_class {
                             $taxonomy_details_label = $taxonomy_details->label;
                             echo $data_get['name'] . '<strong>' . $taxonomy_details_label . '</strong>';
                         } else {
-                            echo '<strong style="color:red;">' . $data_get['error'] . '</strong>';
+                            if( $filter['filter_type'] != 'attribute' || $filter['attribute'] != 'price' ) { 
+                                echo '<strong style="color:red;">' . $data_get['error'] . '</strong>';
+                            }
                         }
                     }
                 }

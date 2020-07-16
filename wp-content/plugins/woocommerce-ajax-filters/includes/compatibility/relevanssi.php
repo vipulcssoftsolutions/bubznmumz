@@ -10,7 +10,16 @@ if( ! class_exists('BeRocket_AAPF_compat_Relevanssi') ) {
         }
         static function count_before_update($query) {
             if( function_exists('relevanssi_do_query') ) {
-                relevanssi_do_query($query);
+                $search_ok = true;
+                if ( ! $query->is_search() ) {
+                    $search_ok = false;
+                }
+                if ( ! $query->is_main_query() ) {
+                    $search_ok = false;
+                }
+                if( apply_filters('bapf_compat_relevansi_apply_count_before_update', $search_ok) ) {
+                    relevanssi_do_query($query);
+                }
             }
             return $query;
         }
@@ -18,7 +27,8 @@ if( ! class_exists('BeRocket_AAPF_compat_Relevanssi') ) {
             extract($taxonomy_data);
             if( ! empty($use_filters) ) {
                 $WC_query = WC_Query::get_main_query();
-                if( ! empty($WC_query) && ! empty($WC_query->query_vars['s']) ) {
+                $search_ok = (! empty($WC_query) && ! empty($WC_query->query_vars['s']));
+                if( apply_filters('bapf_compat_relevansi_apply_search_query', $search_ok) ) {
                     $args  = array(
                         's'           => $WC_query->query_vars['s'],
                         'nopaging '   => true,

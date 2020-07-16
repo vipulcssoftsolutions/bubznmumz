@@ -250,7 +250,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     }
                 }
                 ?>
-                        <a href="<?php echo site_url(); ?>/shop" class="pink_btn">Continue Shopping</a>
+                        <a href="<?php echo site_url(); ?>" class="pink_btn">Continue Shopping</a>
                       </div>
                       <div class="col-md-6 padd0 col-sm-7 col-xs-12">
 						  <div class="payment_dlt_box">

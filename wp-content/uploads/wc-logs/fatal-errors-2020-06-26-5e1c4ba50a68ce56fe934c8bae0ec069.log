@@ -1,0 +1,98 @@
+2020-06-26T07:48:35+00:00 CRITICAL Cannot use [] for reading in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 242
+
+2020-06-26T08:21:06+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:306
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/shortcodes.php(343): new_arrivals_section_on_home_page('', '', 'new_arrivals_se...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(new_ar...', 'do_shortcode_ta...', '[new_arrivals_s...')
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor/includes/widgets/shortcode.php(130): do_shortcode('[new_arrivals_s...')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(531): Elementor\Widget_Shortcode->render()
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(661): Elementor\Widget_Base- in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 306
+
+2020-06-26T08:22:36+00:00 CRITICAL Object of class WP_Term could not be converted to string in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 306
+
+2020-06-26T09:44:36+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::get_the_id() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:220
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/shortcodes.php(343): product_slider_with_category(Array, '', 'product_slider_...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(produc...', 'do_shortcode_ta...', '[product_slider...')
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor/includes/widgets/shortcode.php(130): do_shortcode('[product_slider...')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(531): Elementor\Widget_Shortcode->render()
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(661): Elemento in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 220
+
+2020-06-26T10:56:57+00:00 CRITICAL Uncaught Error: Call to undefined function site_ur() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php:86
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(723): require_once()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(672): load_template('/home/427082.cl...', true)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/page.php(15): get_header()
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include('/home/427082.cl...')
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#6 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#7 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php on line 86
+
+2020-06-26T10:56:58+00:00 CRITICAL Uncaught Error: Call to undefined function site_ur() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php:86
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(723): require_once()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(672): load_template('/home/427082.cl...', true)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten/404.php(10): get_header()
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include('/home/427082.cl...')
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#6 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#7 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php on line 86
+
+2020-06-26T10:56:58+00:00 CRITICAL Uncaught Error: Call to undefined function site_ur() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php:86
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(723): require_once()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(672): load_template('/home/427082.cl...', true)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten/404.php(10): get_header()
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include('/home/427082.cl...')
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#6 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#7 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php on line 86
+
+2020-06-26T10:57:19+00:00 CRITICAL Uncaught Error: Call to undefined function site_ur() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php:86
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(723): require_once()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(672): load_template('/home/427082.cl...', true)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/page.php(15): get_header()
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include('/home/427082.cl...')
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#6 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#7 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php on line 86
+
+2020-06-26T10:57:20+00:00 CRITICAL Uncaught Error: Call to undefined function site_ur() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php:86
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(723): require_once()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(672): load_template('/home/427082.cl...', true)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten/404.php(10): get_header()
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include('/home/427082.cl...')
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#6 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#7 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php on line 86
+
+2020-06-26T10:57:20+00:00 CRITICAL Uncaught Error: Call to undefined function site_ur() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php:86
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(723): require_once()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(672): load_template('/home/427082.cl...', true)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten/404.php(10): get_header()
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template-loader.php(106): include('/home/427082.cl...')
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-blog-header.php(19): require_once('/home/427082.cl...')
+#6 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/index.php(17): require('/home/427082.cl...')
+#7 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/header.php on line 86
+
+2020-06-26T12:52:15+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/archive-product.php on line 168
+
+2020-06-26T12:52:16+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/archive-product.php on line 168
+

@@ -1,0 +1,28 @@
+2020-07-04T07:02:35+00:00 CRITICAL syntax error, unexpected ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 866
+
+2020-07-04T07:02:50+00:00 CRITICAL syntax error, unexpected ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 866
+
+2020-07-04T07:03:56+00:00 CRITICAL syntax error, unexpected ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 866
+
+2020-07-04T07:04:23+00:00 CRITICAL syntax error, unexpected ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 866
+
+2020-07-04T07:04:50+00:00 CRITICAL syntax error, unexpected ';' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 866
+
+2020-07-04T08:51:48+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php on line 234
+
+2020-07-04T12:49:27+00:00 CRITICAL syntax error, unexpected '?' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php on line 151
+
+2020-07-04T13:53:48+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php:192
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+# in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php on line 192
+
+2020-07-04T15:14:55+00:00 CRITICAL syntax error, unexpected ',' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php on line 354
+
+2020-07-04T15:15:34+00:00 CRITICAL syntax error, unexpected ',' in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/cart/cart.php on line 354
+

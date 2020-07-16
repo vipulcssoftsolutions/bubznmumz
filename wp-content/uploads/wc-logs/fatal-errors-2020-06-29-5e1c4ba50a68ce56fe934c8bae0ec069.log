@@ -1,0 +1,51 @@
+2020-06-29T05:43:07+00:00 CRITICAL syntax error, unexpected end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 838
+
+2020-06-29T05:43:07+00:00 CRITICAL syntax error, unexpected end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 838
+
+2020-06-29T06:31:41+00:00 CRITICAL Object of class WP_Error could not be converted to string in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 837
+
+2020-06-29T09:56:01+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php:56
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1930): wc_get_template('single-product/...', Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1893): woocommerce_related_products(Array)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(287): woocommerce_output_related_products('')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/plug in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php on line 56
+
+2020-06-29T09:57:21+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php:56
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1930): wc_get_template('single-product/...', Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1893): woocommerce_related_products(Array)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(287): woocommerce_output_related_products('')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/plug in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php on line 56
+
+2020-06-29T10:16:13+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::have_posts() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php:41
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1930): wc_get_template('single-product/...', Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1893): woocommerce_related_products(Array)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(287): woocommerce_output_related_products('')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/plugin.p in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php on line 41
+
+2020-06-29T11:21:53+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php:33
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1930): wc_get_template('single-product/...', Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1893): woocommerce_related_products(Array)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(287): woocommerce_output_related_products('')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/plugin.p in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php on line 33
+
+2020-06-29T11:22:41+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php:52
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(251): include()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1930): wc_get_template('single-product/...', Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1893): woocommerce_related_products(Array)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(287): woocommerce_output_related_products('')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#5 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/plug in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/single-product/related.php on line 52
+

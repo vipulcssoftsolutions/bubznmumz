@@ -71,6 +71,9 @@ if ( woocommerce_product_loop() ) {
 ?>        
 		<div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
 			<div class="product_list_content">
+				
+				
+				
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="row">
               <div class="sort_bar">
@@ -150,11 +153,12 @@ if ( woocommerce_product_loop() ) {
                 </div>
               </div>
           </div>
+
+</div>
+</div>
 <?php	
 	do_action( 'shop_page_description' );
 ?>
-</div>
-</div>
 </div>
 </div>	
 <?php	

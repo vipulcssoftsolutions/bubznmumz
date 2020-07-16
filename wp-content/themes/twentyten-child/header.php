@@ -80,8 +80,8 @@
                   <div class="login_box pull-left">
                     <img src="<?php echo site_url(); ?>/wp-content/uploads/2020/06/user_icon-1.png" alt="" class="img-responsive pull-left">
                     <ul class="list-inline pull-left ">
-                      <li><a href="#">Login |</a></li>
-                      <li><a href="#">Join</a></li>
+                      <li><a href="<?php echo site_url(); ?>/my-account/">Login |</a></li>
+                      <li><a href="<?php echo site_url(); ?>/my-account/">Join</a></li>
                     </ul>
                   </div>
                   <div class="wishlist_box pull-left">

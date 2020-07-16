@@ -245,7 +245,9 @@ class BeRocket_AAPF_dynamic_data_template {
     function element_hide_show_filter($template_content, $berocket_query_var_title) {
         if( ! empty($berocket_query_var_title['widget_collapse']) && ! empty($template_content['template']['content']['header']) ) {
             $widget_is_hide = ! empty($berocket_query_var_title['widget_is_hide']);
-            $widget_is_hide = br_widget_is_hide($berocket_query_var_title['attribute'], $widget_is_hide);
+            if( empty($berocket_query_var_title['additional_data_options']) || empty($berocket_query_var_title['additional_data_options']['widget_is_hide_on_load']) ) {
+                $widget_is_hide = br_widget_is_hide($berocket_query_var_title['attribute'], $widget_is_hide);
+            }
             $widget_collapse = $berocket_query_var_title['widget_collapse'];
             $template_content['template']['attributes']['class'][] = ($widget_is_hide ? 'bapf_ocolaps' : 'bapf_ccolaps');
             $template_content['template']['content']['header']['attributes'] = self::create_element_arrays($template_content['template']['content']['header']['attributes'], array('class'));

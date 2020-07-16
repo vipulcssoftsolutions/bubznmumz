@@ -1,4 +1,4 @@
-/*! elementor-pro - v2.10.2 - 16-06-2020 */
+/*! elementor-pro - v2.10.3 - 29-06-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -82,7 +82,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 28);
+/******/ 	return __webpack_require__(__webpack_require__.s = 25);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -101,6 +101,19 @@ module.exports = _interopRequireDefault;
 /* 1 */
 /***/ (function(module, exports) {
 
+function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+module.exports = _getPrototypeOf;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -110,7 +123,25 @@ function _classCallCheck(instance, Constructor) {
 module.exports = _classCallCheck;
 
 /***/ }),
-/* 2 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(8);
+
+var assertThisInitialized = __webpack_require__(7);
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return assertThisInitialized(self);
+}
+
+module.exports = _possibleConstructorReturn;
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var setPrototypeOf = __webpack_require__(9);
@@ -133,36 +164,7 @@ function _inherits(subClass, superClass) {
 module.exports = _inherits;
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var getPrototypeOf = __webpack_require__(5);
-
-var isNativeReflectConstruct = __webpack_require__(10);
-
-var possibleConstructorReturn = __webpack_require__(11);
-
-function _createSuper(Derived) {
-  var hasNativeReflectConstruct = isNativeReflectConstruct();
-  return function _createSuperInternal() {
-    var Super = getPrototypeOf(Derived),
-        result;
-
-    if (hasNativeReflectConstruct) {
-      var NewTarget = getPrototypeOf(this).constructor;
-      result = Reflect.construct(Super, arguments, NewTarget);
-    } else {
-      result = Super.apply(this, arguments);
-    }
-
-    return possibleConstructorReturn(this, result);
-  };
-}
-
-module.exports = _createSuper;
-
-/***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 function _defineProperties(target, props) {
@@ -184,23 +186,10 @@ function _createClass(Constructor, protoProps, staticProps) {
 module.exports = _createClass;
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-function _getPrototypeOf(o) {
-  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-module.exports = _getPrototypeOf;
-
-/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var superPropBase = __webpack_require__(15);
+var superPropBase = __webpack_require__(13);
 
 function _get(target, property, receiver) {
   if (typeof Reflect !== "undefined" && Reflect.get) {
@@ -276,51 +265,14 @@ function _setPrototypeOf(o, p) {
 module.exports = _setPrototypeOf;
 
 /***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-function _isNativeReflectConstruct() {
-  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-  if (Reflect.construct.sham) return false;
-  if (typeof Proxy === "function") return true;
-
-  try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-
-module.exports = _isNativeReflectConstruct;
-
-/***/ }),
+/* 10 */,
 /* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(8);
-
-var assertThisInitialized = __webpack_require__(7);
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return assertThisInitialized(self);
-}
-
-module.exports = _possibleConstructorReturn;
-
-/***/ }),
-/* 12 */,
-/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var ElementEditorModule = __webpack_require__(89);
+var ElementEditorModule = __webpack_require__(86);
 
 module.exports = ElementEditorModule.extend({
   __construct: function __construct() {
@@ -367,11 +319,11 @@ module.exports = ElementEditorModule.extend({
 });
 
 /***/ }),
-/* 14 */,
-/* 15 */
+/* 12 */,
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getPrototypeOf = __webpack_require__(5);
+var getPrototypeOf = __webpack_require__(1);
 
 function _superPropBase(object, property) {
   while (!Object.prototype.hasOwnProperty.call(object, property)) {
@@ -385,7 +337,7 @@ function _superPropBase(object, property) {
 module.exports = _superPropBase;
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _typeof = __webpack_require__(8);
@@ -445,7 +397,7 @@ function _interopRequireWildcard(obj) {
 module.exports = _interopRequireWildcard;
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, exports) {
 
 function _defineProperty(obj, key, value) {
@@ -466,6 +418,8 @@ function _defineProperty(obj, key, value) {
 module.exports = _defineProperty;
 
 /***/ }),
+/* 16 */,
+/* 17 */,
 /* 18 */,
 /* 19 */,
 /* 20 */,
@@ -473,10 +427,7 @@ module.exports = _defineProperty;
 /* 22 */,
 /* 23 */,
 /* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -484,28 +435,28 @@ module.exports = _defineProperty;
 
 var _interopRequireDefault = __webpack_require__(0);
 
-var _editor = _interopRequireDefault(__webpack_require__(29));
+var _editor = _interopRequireDefault(__webpack_require__(26));
 
-var _editor2 = _interopRequireDefault(__webpack_require__(30));
+var _editor2 = _interopRequireDefault(__webpack_require__(27));
 
-var _module = _interopRequireDefault(__webpack_require__(31));
+var _module = _interopRequireDefault(__webpack_require__(28));
 
-var _module2 = _interopRequireDefault(__webpack_require__(44));
+var _module2 = _interopRequireDefault(__webpack_require__(41));
 
-var _module3 = _interopRequireDefault(__webpack_require__(57));
+var _module3 = _interopRequireDefault(__webpack_require__(54));
 
-var _module4 = _interopRequireDefault(__webpack_require__(77));
+var _module4 = _interopRequireDefault(__webpack_require__(74));
 
 var ElementorPro = Marionette.Application.extend({
   config: {},
   modules: {},
   initModules: function initModules() {
-    var QueryControl = __webpack_require__(103),
-        Library = __webpack_require__(105),
-        FlipBox = __webpack_require__(107),
-        ShareButtons = __webpack_require__(108),
-        AssetsManager = __webpack_require__(109),
-        ThemeElements = __webpack_require__(111);
+    var QueryControl = __webpack_require__(100),
+        Library = __webpack_require__(102),
+        FlipBox = __webpack_require__(104),
+        ShareButtons = __webpack_require__(105),
+        AssetsManager = __webpack_require__(106),
+        ThemeElements = __webpack_require__(108);
 
     this.modules = {
       queryControl: new QueryControl(),
@@ -580,7 +531,7 @@ window.elementorPro = new ElementorPro();
 elementorPro.start();
 
 /***/ }),
-/* 29 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -593,35 +544,33 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_elementorModules$edi) {
   (0, _inherits2.default)(_default, _elementorModules$edi);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
     key: "addCustomCss",
-    value: function addCustomCss(css, container) {
-      var model = container.model; // TODO: BC since 2.10.0
-      // The `container` parameter was previously `view`
-
-      if (container.getEditModel) {
-        model = container.getEditModel();
+    value: function addCustomCss(css, context) {
+      if (!context) {
+        return;
       }
 
-      var customCSS = model.get('settings').get('custom_css');
+      var model = context.model,
+          customCSS = model.get('settings').get('custom_css');
       var selector = '.elementor-element.elementor-element-' + model.get('id');
 
       if ('document' === model.get('elType')) {
@@ -657,7 +606,7 @@ var _default = /*#__PURE__*/function (_elementorModules$edi) {
 exports.default = _default;
 
 /***/ }),
-/* 30 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -670,22 +619,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_elementorModules$edi) {
   (0, _inherits2.default)(_default, _elementorModules$edi);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -710,7 +659,7 @@ var _default = /*#__PURE__*/function (_elementorModules$edi) {
 exports.default = _default;
 
 /***/ }),
-/* 31 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -718,22 +667,24 @@ exports.default = _default;
 
 var _interopRequireDefault = __webpack_require__(0);
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(1));
 
-var _component = _interopRequireDefault(__webpack_require__(32));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _component = _interopRequireDefault(__webpack_require__(29));
 
 var PopupModule = /*#__PURE__*/function (_elementorModules$edi) {
   (0, _inherits2.default)(PopupModule, _elementorModules$edi);
 
-  var _super = (0, _createSuper2.default)(PopupModule);
-
   function PopupModule() {
+    var _getPrototypeOf2;
+
     var _this;
 
     (0, _classCallCheck2.default)(this, PopupModule);
@@ -742,7 +693,7 @@ var PopupModule = /*#__PURE__*/function (_elementorModules$edi) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(PopupModule)).call.apply(_getPrototypeOf2, [this].concat(args)));
     _this.displaySettingsTypes = {
       triggers: {
         icon: 'eicon-click'
@@ -768,13 +719,13 @@ var PopupModule = /*#__PURE__*/function (_elementorModules$edi) {
 module.exports = PopupModule;
 
 /***/ }),
-/* 32 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(16);
+var _interopRequireWildcard = __webpack_require__(14);
 
 var _interopRequireDefault = __webpack_require__(0);
 
@@ -783,24 +734,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var hooks = _interopRequireWildcard(__webpack_require__(33));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var hooks = _interopRequireWildcard(__webpack_require__(30));
 
 var Component = /*#__PURE__*/function (_$e$modules$Component) {
   (0, _inherits2.default)(Component, _$e$modules$Component);
 
-  var _super = (0, _createSuper2.default)(Component);
-
   function Component() {
     (0, _classCallCheck2.default)(this, Component);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Component).apply(this, arguments));
   }
 
   (0, _createClass2.default)(Component, [{
@@ -820,7 +771,7 @@ var Component = /*#__PURE__*/function (_$e$modules$Component) {
 exports.default = Component;
 
 /***/ }),
-/* 33 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -830,7 +781,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _data = __webpack_require__(34);
+var _data = __webpack_require__(31);
 
 Object.keys(_data).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -842,7 +793,7 @@ Object.keys(_data).forEach(function (key) {
   });
 });
 
-var _ui = __webpack_require__(36);
+var _ui = __webpack_require__(33);
 
 Object.keys(_ui).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -855,7 +806,7 @@ Object.keys(_ui).forEach(function (key) {
 });
 
 /***/ }),
-/* 34 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -871,10 +822,10 @@ Object.defineProperty(exports, "PopupSave", {
   }
 });
 
-var _save = __webpack_require__(35);
+var _save = __webpack_require__(32);
 
 /***/ }),
-/* 35 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -887,22 +838,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.PopupSave = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var PopupSave = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(PopupSave, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(PopupSave);
-
   function PopupSave() {
     (0, _classCallCheck2.default)(this, PopupSave);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(PopupSave).apply(this, arguments));
   }
 
   (0, _createClass2.default)(PopupSave, [{
@@ -944,7 +895,7 @@ var _default = PopupSave;
 exports.default = _default;
 
 /***/ }),
-/* 36 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -990,20 +941,20 @@ Object.defineProperty(exports, "PopupRemoveTriggers", {
   }
 });
 
-var _addInstructions = __webpack_require__(37);
+var _addInstructions = __webpack_require__(34);
 
-var _addLibraryTab = __webpack_require__(38);
+var _addLibraryTab = __webpack_require__(35);
 
-var _addTriggers = __webpack_require__(39);
+var _addTriggers = __webpack_require__(36);
 
-var _removeInstructions = __webpack_require__(41);
+var _removeInstructions = __webpack_require__(38);
 
-var _removeLibraryTab = __webpack_require__(42);
+var _removeLibraryTab = __webpack_require__(39);
 
-var _removeTriggers = __webpack_require__(43);
+var _removeTriggers = __webpack_require__(40);
 
 /***/ }),
-/* 37 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1016,22 +967,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.PopupAddInstructions = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var PopupAddInstructions = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(PopupAddInstructions, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(PopupAddInstructions);
-
   function PopupAddInstructions() {
     (0, _classCallCheck2.default)(this, PopupAddInstructions);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(PopupAddInstructions).apply(this, arguments));
   }
 
   (0, _createClass2.default)(PopupAddInstructions, [{
@@ -1096,7 +1047,7 @@ var _default = PopupAddInstructions;
 exports.default = _default;
 
 /***/ }),
-/* 38 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1109,22 +1060,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.PopupAddLibraryTab = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var PopupAddLibraryTab = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(PopupAddLibraryTab, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(PopupAddLibraryTab);
-
   function PopupAddLibraryTab() {
     (0, _classCallCheck2.default)(this, PopupAddLibraryTab);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(PopupAddLibraryTab).apply(this, arguments));
   }
 
   (0, _createClass2.default)(PopupAddLibraryTab, [{
@@ -1163,7 +1114,7 @@ var _default = PopupAddLibraryTab;
 exports.default = _default;
 
 /***/ }),
-/* 39 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1176,24 +1127,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.PopupAddTriggers = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _displaySettings = _interopRequireDefault(__webpack_require__(40));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _displaySettings = _interopRequireDefault(__webpack_require__(37));
 
 var PopupAddTriggers = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(PopupAddTriggers, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(PopupAddTriggers);
-
   function PopupAddTriggers() {
     (0, _classCallCheck2.default)(this, PopupAddTriggers);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(PopupAddTriggers).apply(this, arguments));
   }
 
   (0, _createClass2.default)(PopupAddTriggers, [{
@@ -1280,7 +1231,7 @@ var _default = PopupAddTriggers;
 exports.default = _default;
 
 /***/ }),
-/* 40 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1293,24 +1244,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(1));
 
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_elementorModules$edi) {
   (0, _inherits2.default)(_default, _elementorModules$edi);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
+    var _getPrototypeOf2;
+
     var _this;
 
     (0, _classCallCheck2.default)(this, _default);
@@ -1319,7 +1270,7 @@ var _default = /*#__PURE__*/function (_elementorModules$edi) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(_default)).call.apply(_getPrototypeOf2, [this].concat(args)));
     _this.template = _.noop;
     _this.activeTab = 'content';
 
@@ -1336,7 +1287,7 @@ var _default = /*#__PURE__*/function (_elementorModules$edi) {
   }, {
     key: "className",
     value: function className() {
-      return (0, _get2.default)((0, _getPrototypeOf2.default)(_default.prototype), "className", this).call(this) + ' elementor-popup__display-settings';
+      return (0, _get2.default)((0, _getPrototypeOf3.default)(_default.prototype), "className", this).call(this) + ' elementor-popup__display-settings';
     }
   }, {
     key: "toggleGroup",
@@ -1404,7 +1355,7 @@ var _default = /*#__PURE__*/function (_elementorModules$edi) {
 exports.default = _default;
 
 /***/ }),
-/* 41 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1417,22 +1368,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.PopupRemoveInstructions = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var PopupRemoveInstructions = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(PopupRemoveInstructions, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(PopupRemoveInstructions);
-
   function PopupRemoveInstructions() {
     (0, _classCallCheck2.default)(this, PopupRemoveInstructions);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(PopupRemoveInstructions).apply(this, arguments));
   }
 
   (0, _createClass2.default)(PopupRemoveInstructions, [{
@@ -1465,7 +1416,7 @@ var _default = PopupRemoveInstructions;
 exports.default = _default;
 
 /***/ }),
-/* 42 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1478,22 +1429,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.PopupRemoveLibraryTab = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var PopupRemoveLibraryTab = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(PopupRemoveLibraryTab, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(PopupRemoveLibraryTab);
-
   function PopupRemoveLibraryTab() {
     (0, _classCallCheck2.default)(this, PopupRemoveLibraryTab);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(PopupRemoveLibraryTab).apply(this, arguments));
   }
 
   (0, _createClass2.default)(PopupRemoveLibraryTab, [{
@@ -1526,7 +1477,7 @@ var _default = PopupRemoveLibraryTab;
 exports.default = _default;
 
 /***/ }),
-/* 43 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1539,22 +1490,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.PopupRemoveTriggers = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var PopupRemoveTriggers = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(PopupRemoveTriggers, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(PopupRemoveTriggers);
-
   function PopupRemoveTriggers() {
     (0, _classCallCheck2.default)(this, PopupRemoveTriggers);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(PopupRemoveTriggers).apply(this, arguments));
   }
 
   (0, _createClass2.default)(PopupRemoveTriggers, [{
@@ -1607,7 +1558,7 @@ var _default = PopupRemoveTriggers;
 exports.default = _default;
 
 /***/ }),
-/* 44 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1620,22 +1571,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(1));
 
-var _component = _interopRequireDefault(__webpack_require__(45));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _component = _interopRequireDefault(__webpack_require__(42));
 
 var Module = /*#__PURE__*/function (_elementorModules$edi) {
   (0, _inherits2.default)(Module, _elementorModules$edi);
 
-  var _super = (0, _createSuper2.default)(Module);
-
   function Module() {
+    var _getPrototypeOf2;
+
     var _this;
 
     (0, _classCallCheck2.default)(this, Module);
@@ -1644,7 +1597,7 @@ var Module = /*#__PURE__*/function (_elementorModules$edi) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(Module)).call.apply(_getPrototypeOf2, [this].concat(args)));
     _this.globalModels = {};
     _this.panelWidgets = null; // TODO: This property is unused.
 
@@ -1685,14 +1638,14 @@ var Module = /*#__PURE__*/function (_elementorModules$edi) {
     value: function setWidgetType() {
       elementor.hooks.addFilter('element/view', function (DefaultView, model) {
         if (model.get('templateID')) {
-          return __webpack_require__(52);
+          return __webpack_require__(49);
         }
 
         return DefaultView;
       });
       elementor.hooks.addFilter('element/model', function (DefaultModel, attrs) {
         if (attrs.templateID) {
-          return __webpack_require__(53);
+          return __webpack_require__(50);
         }
 
         return DefaultModel;
@@ -1729,7 +1682,7 @@ var Module = /*#__PURE__*/function (_elementorModules$edi) {
 
       elementor.hooks.addFilter('panel/elements/regionViews', function (regionViews) {
         _.extend(regionViews.global, {
-          view: __webpack_require__(54),
+          view: __webpack_require__(51),
           options: {
             collection: _this2.panelWidgets
           }
@@ -1742,7 +1695,7 @@ var Module = /*#__PURE__*/function (_elementorModules$edi) {
     key: "addPanelPage",
     value: function addPanelPage() {
       elementor.getPanelView().addPage('globalWidget', {
-        view: __webpack_require__(56)
+        view: __webpack_require__(53)
       });
     }
   }, {
@@ -1882,13 +1835,13 @@ var Module = /*#__PURE__*/function (_elementorModules$edi) {
 exports.default = Module;
 
 /***/ }),
-/* 45 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(16);
+var _interopRequireWildcard = __webpack_require__(14);
 
 var _interopRequireDefault = __webpack_require__(0);
 
@@ -1897,26 +1850,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var commands = _interopRequireWildcard(__webpack_require__(46));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var hooks = _interopRequireWildcard(__webpack_require__(49));
+var commands = _interopRequireWildcard(__webpack_require__(43));
+
+var hooks = _interopRequireWildcard(__webpack_require__(46));
 
 var Component = /*#__PURE__*/function (_$e$modules$Component) {
   (0, _inherits2.default)(Component, _$e$modules$Component);
 
-  var _super = (0, _createSuper2.default)(Component);
-
   function Component() {
     (0, _classCallCheck2.default)(this, Component);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Component).apply(this, arguments));
   }
 
   (0, _createClass2.default)(Component, [{
@@ -1941,7 +1894,7 @@ var Component = /*#__PURE__*/function (_$e$modules$Component) {
 exports.default = Component;
 
 /***/ }),
-/* 46 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1963,12 +1916,12 @@ Object.defineProperty(exports, "Unlink", {
   }
 });
 
-var _link = __webpack_require__(47);
+var _link = __webpack_require__(44);
 
-var _unlink = __webpack_require__(48);
+var _unlink = __webpack_require__(45);
 
 /***/ }),
-/* 47 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1981,22 +1934,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.Link = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var Link = /*#__PURE__*/function (_$e$modules$document$) {
   (0, _inherits2.default)(Link, _$e$modules$document$);
 
-  var _super = (0, _createSuper2.default)(Link);
-
   function Link() {
     (0, _classCallCheck2.default)(this, Link);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Link).apply(this, arguments));
   }
 
   (0, _createClass2.default)(Link, [{
@@ -2066,7 +2019,7 @@ var _default = Link;
 exports.default = _default;
 
 /***/ }),
-/* 48 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2079,22 +2032,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.Unlink = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var Unlink = /*#__PURE__*/function (_$e$modules$document$) {
   (0, _inherits2.default)(Unlink, _$e$modules$document$);
 
-  var _super = (0, _createSuper2.default)(Unlink);
-
   function Unlink() {
     (0, _classCallCheck2.default)(this, Unlink);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Unlink).apply(this, arguments));
   }
 
   (0, _createClass2.default)(Unlink, [{
@@ -2150,7 +2103,7 @@ var _default = Unlink;
 exports.default = _default;
 
 /***/ }),
-/* 49 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2160,7 +2113,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _data = __webpack_require__(50);
+var _data = __webpack_require__(47);
 
 Object.keys(_data).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -2173,7 +2126,7 @@ Object.keys(_data).forEach(function (key) {
 });
 
 /***/ }),
-/* 50 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2189,10 +2142,10 @@ Object.defineProperty(exports, "GlobalWidgetSave", {
   }
 });
 
-var _save = __webpack_require__(51);
+var _save = __webpack_require__(48);
 
 /***/ }),
-/* 51 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2205,22 +2158,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.GlobalWidgetSave = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var GlobalWidgetSave = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(GlobalWidgetSave, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(GlobalWidgetSave);
-
   function GlobalWidgetSave() {
     (0, _classCallCheck2.default)(this, GlobalWidgetSave);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(GlobalWidgetSave).apply(this, arguments));
   }
 
   (0, _createClass2.default)(GlobalWidgetSave, [{
@@ -2254,7 +2207,7 @@ var _default = GlobalWidgetSave;
 exports.default = _default;
 
 /***/ }),
-/* 52 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2334,7 +2287,7 @@ GlobalWidgetView = WidgetView.extend({
 module.exports = GlobalWidgetView;
 
 /***/ }),
-/* 53 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2399,7 +2352,7 @@ module.exports = elementor.modules.elements.models.Element.extend({
 });
 
 /***/ }),
-/* 54 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2412,13 +2365,13 @@ module.exports = elementor.modules.layouts.panel.pages.elements.views.Elements.e
       return null;
     }
 
-    return __webpack_require__(55);
+    return __webpack_require__(52);
   },
   onFilterEmpty: function onFilterEmpty() {}
 });
 
 /***/ }),
-/* 55 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2432,7 +2385,7 @@ module.exports = GlobalWidgetsView.extend({
 });
 
 /***/ }),
-/* 56 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2512,7 +2465,7 @@ module.exports = Marionette.ItemView.extend({
 });
 
 /***/ }),
-/* 57 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2525,28 +2478,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get3 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _component = _interopRequireDefault(__webpack_require__(58));
+var _component = _interopRequireDefault(__webpack_require__(55));
 
 var ThemeBuilderModule = /*#__PURE__*/function (_elementorModules$edi) {
   (0, _inherits2.default)(ThemeBuilderModule, _elementorModules$edi);
 
-  var _super = (0, _createSuper2.default)(ThemeBuilderModule);
-
   function ThemeBuilderModule() {
     (0, _classCallCheck2.default)(this, ThemeBuilderModule);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ThemeBuilderModule).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ThemeBuilderModule, [{
@@ -2682,13 +2633,13 @@ var ThemeBuilderModule = /*#__PURE__*/function (_elementorModules$edi) {
 exports.default = ThemeBuilderModule;
 
 /***/ }),
-/* 58 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(16);
+var _interopRequireWildcard = __webpack_require__(14);
 
 var _interopRequireDefault = __webpack_require__(0);
 
@@ -2697,32 +2648,30 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _content = _interopRequireDefault(__webpack_require__(56));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _layout = _interopRequireDefault(__webpack_require__(57));
 
-var _content = _interopRequireDefault(__webpack_require__(59));
-
-var _layout = _interopRequireDefault(__webpack_require__(60));
-
-var hooks = _interopRequireWildcard(__webpack_require__(61));
+var hooks = _interopRequireWildcard(__webpack_require__(58));
 
 var Component = /*#__PURE__*/function (_$e$modules$Component) {
   (0, _inherits2.default)(Component, _$e$modules$Component);
 
-  var _super = (0, _createSuper2.default)(Component);
-
   function Component() {
     (0, _classCallCheck2.default)(this, Component);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Component).apply(this, arguments));
   }
 
   (0, _createClass2.default)(Component, [{
@@ -2816,7 +2765,7 @@ var Component = /*#__PURE__*/function (_$e$modules$Component) {
 exports.default = Component;
 
 /***/ }),
-/* 59 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2829,22 +2778,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_Marionette$LayoutVie) {
   (0, _inherits2.default)(_default, _Marionette$LayoutVie);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2878,7 +2827,7 @@ var _default = /*#__PURE__*/function (_Marionette$LayoutVie) {
 exports.default = _default;
 
 /***/ }),
-/* 60 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2891,26 +2840,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get2 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_elementorModules$com) {
   (0, _inherits2.default)(_default, _elementorModules$com);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -2958,7 +2905,7 @@ var _default = /*#__PURE__*/function (_elementorModules$com) {
 exports.default = _default;
 
 /***/ }),
-/* 61 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2968,7 +2915,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _data = __webpack_require__(62);
+var _data = __webpack_require__(59);
 
 Object.keys(_data).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -2980,7 +2927,7 @@ Object.keys(_data).forEach(function (key) {
   });
 });
 
-var _ui = __webpack_require__(69);
+var _ui = __webpack_require__(66);
 
 Object.keys(_ui).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -2993,7 +2940,7 @@ Object.keys(_ui).forEach(function (key) {
 });
 
 /***/ }),
-/* 62 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3026,7 +2973,7 @@ Object.defineProperty(exports, "ThemeBuilderPreviewBreak", {
   }
 });
 
-var _settings = __webpack_require__(63);
+var _settings = __webpack_require__(60);
 
 Object.keys(_settings).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -3039,14 +2986,14 @@ Object.keys(_settings).forEach(function (key) {
   });
 });
 
-var _saveConditions = __webpack_require__(66);
+var _saveConditions = __webpack_require__(63);
 
-var _showConditions = __webpack_require__(67);
+var _showConditions = __webpack_require__(64);
 
-var _previewBreak = __webpack_require__(68);
+var _previewBreak = __webpack_require__(65);
 
 /***/ }),
-/* 63 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3068,12 +3015,12 @@ Object.defineProperty(exports, "ThemeBuilderUpdatePreviewOptions", {
   }
 });
 
-var _saveAndReload = __webpack_require__(64);
+var _saveAndReload = __webpack_require__(61);
 
-var _updatePreviewOptions = __webpack_require__(65);
+var _updatePreviewOptions = __webpack_require__(62);
 
 /***/ }),
-/* 64 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3086,13 +3033,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.ThemeBuilderSaveAndReload = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 /**
  * Hook fired when template: 'single' page layout changed.
@@ -3100,11 +3049,9 @@ var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
 var ThemeBuilderSaveAndReload = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(ThemeBuilderSaveAndReload, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(ThemeBuilderSaveAndReload);
-
   function ThemeBuilderSaveAndReload() {
     (0, _classCallCheck2.default)(this, ThemeBuilderSaveAndReload);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ThemeBuilderSaveAndReload).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ThemeBuilderSaveAndReload, [{
@@ -3149,7 +3096,7 @@ var _default = ThemeBuilderSaveAndReload;
 exports.default = _default;
 
 /***/ }),
-/* 65 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3162,22 +3109,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.ThemeBuilderUpdatePreviewOptions = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var ThemeBuilderUpdatePreviewOptions = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(ThemeBuilderUpdatePreviewOptions, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(ThemeBuilderUpdatePreviewOptions);
-
   function ThemeBuilderUpdatePreviewOptions() {
     (0, _classCallCheck2.default)(this, ThemeBuilderUpdatePreviewOptions);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ThemeBuilderUpdatePreviewOptions).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ThemeBuilderUpdatePreviewOptions, [{
@@ -3227,7 +3174,7 @@ var _default = ThemeBuilderUpdatePreviewOptions;
 exports.default = _default;
 
 /***/ }),
-/* 66 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3240,22 +3187,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.ThemeBuilderSaveConditions = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var ThemeBuilderSaveConditions = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(ThemeBuilderSaveConditions, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(ThemeBuilderSaveConditions);
-
   function ThemeBuilderSaveConditions() {
     (0, _classCallCheck2.default)(this, ThemeBuilderSaveConditions);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ThemeBuilderSaveConditions).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ThemeBuilderSaveConditions, [{
@@ -3295,7 +3242,7 @@ var _default = ThemeBuilderSaveConditions;
 exports.default = _default;
 
 /***/ }),
-/* 67 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3308,22 +3255,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.ThemeBuilderShowConditions = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var ThemeBuilderShowConditions = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(ThemeBuilderShowConditions, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(ThemeBuilderShowConditions);
-
   function ThemeBuilderShowConditions() {
     (0, _classCallCheck2.default)(this, ThemeBuilderShowConditions);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ThemeBuilderShowConditions).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ThemeBuilderShowConditions, [{
@@ -3376,7 +3323,7 @@ var _default = ThemeBuilderShowConditions;
 exports.default = _default;
 
 /***/ }),
-/* 68 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3389,22 +3336,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.ThemeBuilderPreviewBreak = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var ThemeBuilderPreviewBreak = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(ThemeBuilderPreviewBreak, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(ThemeBuilderPreviewBreak);
-
   function ThemeBuilderPreviewBreak() {
     (0, _classCallCheck2.default)(this, ThemeBuilderPreviewBreak);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ThemeBuilderPreviewBreak).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ThemeBuilderPreviewBreak, [{
@@ -3441,7 +3388,7 @@ var _default = ThemeBuilderPreviewBreak;
 exports.default = _default;
 
 /***/ }),
-/* 69 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3469,14 +3416,14 @@ Object.defineProperty(exports, "ThemeBuilderToggleMenuConditions", {
   }
 });
 
-var _addEditorUi = __webpack_require__(70);
+var _addEditorUi = __webpack_require__(67);
 
-var _removeEditorUi = __webpack_require__(75);
+var _removeEditorUi = __webpack_require__(72);
 
-var _toggleMenuConditions = __webpack_require__(76);
+var _toggleMenuConditions = __webpack_require__(73);
 
 /***/ }),
-/* 70 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3489,24 +3436,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.ThemeBuilderAddEditorUI = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _view = _interopRequireDefault(__webpack_require__(71));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _view = _interopRequireDefault(__webpack_require__(68));
 
 var ThemeBuilderAddEditorUI = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(ThemeBuilderAddEditorUI, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(ThemeBuilderAddEditorUI);
-
   function ThemeBuilderAddEditorUI() {
     (0, _classCallCheck2.default)(this, ThemeBuilderAddEditorUI);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ThemeBuilderAddEditorUI).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ThemeBuilderAddEditorUI, [{
@@ -3544,7 +3491,7 @@ var ThemeBuilderAddEditorUI = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   }, {
     key: "addRepeaterControlView",
     value: function addRepeaterControlView() {
-      elementor.addControlView('Conditions_repeater', __webpack_require__(73));
+      elementor.addControlView('Conditions_repeater', __webpack_require__(70));
     }
   }, {
     key: "addPublishTabs",
@@ -3594,13 +3541,13 @@ var _default = ThemeBuilderAddEditorUI;
 exports.default = _default;
 
 /***/ }),
-/* 71 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var inlineControlsStack = __webpack_require__(72);
+var inlineControlsStack = __webpack_require__(69);
 
 module.exports = inlineControlsStack.extend({
   id: 'elementor-theme-builder-conditions-view',
@@ -3614,7 +3561,7 @@ module.exports = inlineControlsStack.extend({
 });
 
 /***/ }),
-/* 72 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3642,7 +3589,7 @@ module.exports = elementorModules.editor.views.ControlsStack.extend({
 });
 
 /***/ }),
-/* 73 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3650,7 +3597,7 @@ module.exports = elementorModules.editor.views.ControlsStack.extend({
 
 var _interopRequireDefault = __webpack_require__(0);
 
-var _repeaterRow = _interopRequireDefault(__webpack_require__(74));
+var _repeaterRow = _interopRequireDefault(__webpack_require__(71));
 
 module.exports = elementor.modules.controls.Repeater.extend({
   childView: _repeaterRow.default,
@@ -3725,7 +3672,7 @@ module.exports = elementor.modules.controls.Repeater.extend({
 });
 
 /***/ }),
-/* 74 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3877,7 +3824,7 @@ module.exports = elementor.modules.controls.RepeaterRow.extend({
 });
 
 /***/ }),
-/* 75 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3890,22 +3837,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.ThemeBuilderRemoveEditorUI = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var ThemeBuilderRemoveEditorUI = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(ThemeBuilderRemoveEditorUI, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(ThemeBuilderRemoveEditorUI);
-
   function ThemeBuilderRemoveEditorUI() {
     (0, _classCallCheck2.default)(this, ThemeBuilderRemoveEditorUI);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ThemeBuilderRemoveEditorUI).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ThemeBuilderRemoveEditorUI, [{
@@ -3956,7 +3903,7 @@ var _default = ThemeBuilderRemoveEditorUI;
 exports.default = _default;
 
 /***/ }),
-/* 76 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3969,22 +3916,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.ThemeBuilderToggleMenuConditions = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var ThemeBuilderToggleMenuConditions = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(ThemeBuilderToggleMenuConditions, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(ThemeBuilderToggleMenuConditions);
-
   function ThemeBuilderToggleMenuConditions() {
     (0, _classCallCheck2.default)(this, ThemeBuilderToggleMenuConditions);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(ThemeBuilderToggleMenuConditions).apply(this, arguments));
   }
 
   (0, _createClass2.default)(ThemeBuilderToggleMenuConditions, [{
@@ -4022,7 +3969,7 @@ var _default = ThemeBuilderToggleMenuConditions;
 exports.default = _default;
 
 /***/ }),
-/* 77 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4035,37 +3982,37 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var _component = _interopRequireDefault(__webpack_require__(78));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var _component = _interopRequireDefault(__webpack_require__(75));
 
 var FormsModule = /*#__PURE__*/function (_elementorModules$edi) {
   (0, _inherits2.default)(FormsModule, _elementorModules$edi);
 
-  var _super = (0, _createSuper2.default)(FormsModule);
-
   function FormsModule() {
     (0, _classCallCheck2.default)(this, FormsModule);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(FormsModule).apply(this, arguments));
   }
 
   (0, _createClass2.default)(FormsModule, [{
     key: "onElementorInit",
     value: function onElementorInit() {
-      var ReplyToField = __webpack_require__(86),
-          Recaptcha = __webpack_require__(87),
-          MailerLite = __webpack_require__(88),
-          Mailchimp = __webpack_require__(90),
-          Drip = __webpack_require__(91),
-          ActiveCampaign = __webpack_require__(92),
-          GetResponse = __webpack_require__(93),
-          ConvertKit = __webpack_require__(94);
+      var ReplyToField = __webpack_require__(83),
+          Recaptcha = __webpack_require__(84),
+          MailerLite = __webpack_require__(85),
+          Mailchimp = __webpack_require__(87),
+          Drip = __webpack_require__(88),
+          ActiveCampaign = __webpack_require__(89),
+          GetResponse = __webpack_require__(90),
+          ConvertKit = __webpack_require__(91);
 
       this.replyToField = new ReplyToField();
       this.mailchimp = new Mailchimp('form');
@@ -4076,11 +4023,11 @@ var FormsModule = /*#__PURE__*/function (_elementorModules$edi) {
       this.convertkit = new ConvertKit('form');
       this.mailerlite = new MailerLite('form'); // Form fields
 
-      var TimeField = __webpack_require__(95),
-          DateField = __webpack_require__(96),
-          AcceptanceField = __webpack_require__(97),
-          UploadField = __webpack_require__(98),
-          TelField = __webpack_require__(99);
+      var TimeField = __webpack_require__(92),
+          DateField = __webpack_require__(93),
+          AcceptanceField = __webpack_require__(94),
+          UploadField = __webpack_require__(95),
+          TelField = __webpack_require__(96);
 
       this.Fields = {
         time: new TimeField('form'),
@@ -4089,8 +4036,8 @@ var FormsModule = /*#__PURE__*/function (_elementorModules$edi) {
         acceptance: new AcceptanceField('form'),
         upload: new UploadField('form')
       };
-      elementor.addControlView('Fields_map', __webpack_require__(100));
-      elementor.addControlView('form-fields-repeater', __webpack_require__(101));
+      elementor.addControlView('Fields_map', __webpack_require__(97));
+      elementor.addControlView('form-fields-repeater', __webpack_require__(98));
     }
   }, {
     key: "onElementorInitComponents",
@@ -4106,13 +4053,13 @@ var FormsModule = /*#__PURE__*/function (_elementorModules$edi) {
 exports.default = FormsModule;
 
 /***/ }),
-/* 78 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(16);
+var _interopRequireWildcard = __webpack_require__(14);
 
 var _interopRequireDefault = __webpack_require__(0);
 
@@ -4121,24 +4068,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
-var hooks = _interopRequireWildcard(__webpack_require__(79));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
+
+var hooks = _interopRequireWildcard(__webpack_require__(76));
 
 var Component = /*#__PURE__*/function (_$e$modules$Component) {
   (0, _inherits2.default)(Component, _$e$modules$Component);
 
-  var _super = (0, _createSuper2.default)(Component);
-
   function Component() {
     (0, _classCallCheck2.default)(this, Component);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Component).apply(this, arguments));
   }
 
   (0, _createClass2.default)(Component, [{
@@ -4158,7 +4105,7 @@ var Component = /*#__PURE__*/function (_$e$modules$Component) {
 exports.default = Component;
 
 /***/ }),
-/* 79 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4168,7 +4115,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _data = __webpack_require__(80);
+var _data = __webpack_require__(77);
 
 Object.keys(_data).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -4180,7 +4127,7 @@ Object.keys(_data).forEach(function (key) {
   });
 });
 
-var _ui = __webpack_require__(84);
+var _ui = __webpack_require__(81);
 
 Object.keys(_ui).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -4193,7 +4140,7 @@ Object.keys(_ui).forEach(function (key) {
 });
 
 /***/ }),
-/* 80 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4221,14 +4168,14 @@ Object.defineProperty(exports, "FormFieldsAddFirstStep", {
   }
 });
 
-var _formFieldsSanitizeCustomId = __webpack_require__(81);
+var _formFieldsSanitizeCustomId = __webpack_require__(78);
 
-var _formFieldsSetCustomId = __webpack_require__(82);
+var _formFieldsSetCustomId = __webpack_require__(79);
 
-var _formFieldsStep = __webpack_require__(83);
+var _formFieldsStep = __webpack_require__(80);
 
 /***/ }),
-/* 81 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4241,24 +4188,26 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.FormFieldsSanitizeCustomId = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf3 = _interopRequireDefault(__webpack_require__(1));
 
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(7));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(17));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(15));
 
 var FormFieldsSanitizeCustomId = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(FormFieldsSanitizeCustomId, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(FormFieldsSanitizeCustomId);
-
   function FormFieldsSanitizeCustomId() {
+    var _getPrototypeOf2;
+
     var _this;
 
     (0, _classCallCheck2.default)(this, FormFieldsSanitizeCustomId);
@@ -4267,7 +4216,7 @@ var FormFieldsSanitizeCustomId = /*#__PURE__*/function (_$e$modules$hookData$) {
       args[_key] = arguments[_key];
     }
 
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(FormFieldsSanitizeCustomId)).call.apply(_getPrototypeOf2, [this].concat(args)));
     (0, _defineProperty2.default)((0, _assertThisInitialized2.default)(_this), "ID_SANITIZE_FILTER", /[^\w]/g);
     return _this;
   }
@@ -4326,7 +4275,7 @@ var _default = FormFieldsSanitizeCustomId;
 exports.default = _default;
 
 /***/ }),
-/* 82 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4339,22 +4288,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.FormFieldsSetCustomId = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var FormFieldsSetCustomId = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(FormFieldsSetCustomId, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(FormFieldsSetCustomId);
-
   function FormFieldsSetCustomId() {
     (0, _classCallCheck2.default)(this, FormFieldsSetCustomId);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(FormFieldsSetCustomId).apply(this, arguments));
   }
 
   (0, _createClass2.default)(FormFieldsSetCustomId, [{
@@ -4420,7 +4369,7 @@ var _default = FormFieldsSetCustomId;
 exports.default = _default;
 
 /***/ }),
-/* 83 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4433,22 +4382,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.FormFieldsAddFirstStep = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var FormFieldsAddFirstStep = /*#__PURE__*/function (_$e$modules$hookData$) {
   (0, _inherits2.default)(FormFieldsAddFirstStep, _$e$modules$hookData$);
 
-  var _super = (0, _createSuper2.default)(FormFieldsAddFirstStep);
-
   function FormFieldsAddFirstStep() {
     (0, _classCallCheck2.default)(this, FormFieldsAddFirstStep);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(FormFieldsAddFirstStep).apply(this, arguments));
   }
 
   (0, _createClass2.default)(FormFieldsAddFirstStep, [{
@@ -4511,7 +4460,7 @@ var _default = FormFieldsAddFirstStep;
 exports.default = _default;
 
 /***/ }),
-/* 84 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4527,10 +4476,10 @@ Object.defineProperty(exports, "FormFieldsUpdateShortCode", {
   }
 });
 
-var _formFieldsUpdateShortcode = __webpack_require__(85);
+var _formFieldsUpdateShortcode = __webpack_require__(82);
 
 /***/ }),
-/* 85 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4543,22 +4492,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = exports.FormFieldsUpdateShortCode = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var FormFieldsUpdateShortCode = /*#__PURE__*/function (_$e$modules$hookUI$Af) {
   (0, _inherits2.default)(FormFieldsUpdateShortCode, _$e$modules$hookUI$Af);
 
-  var _super = (0, _createSuper2.default)(FormFieldsUpdateShortCode);
-
   function FormFieldsUpdateShortCode() {
     (0, _classCallCheck2.default)(this, FormFieldsUpdateShortCode);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(FormFieldsUpdateShortCode).apply(this, arguments));
   }
 
   (0, _createClass2.default)(FormFieldsUpdateShortCode, [{
@@ -4612,7 +4561,7 @@ var _default = FormFieldsUpdateShortCode;
 exports.default = _default;
 
 /***/ }),
-/* 86 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4701,7 +4650,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 87 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4758,13 +4707,13 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 88 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var BaseIntegrationModule = __webpack_require__(13);
+var BaseIntegrationModule = __webpack_require__(11);
 
 module.exports = BaseIntegrationModule.extend({
   fields: {},
@@ -4888,7 +4837,7 @@ module.exports = BaseIntegrationModule.extend({
 });
 
 /***/ }),
-/* 89 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4952,13 +4901,13 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 90 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var BaseIntegrationModule = __webpack_require__(13);
+var BaseIntegrationModule = __webpack_require__(11);
 
 module.exports = BaseIntegrationModule.extend({
   getName: function getName() {
@@ -5044,13 +4993,13 @@ module.exports = BaseIntegrationModule.extend({
 });
 
 /***/ }),
-/* 91 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var BaseIntegrationModule = __webpack_require__(13);
+var BaseIntegrationModule = __webpack_require__(11);
 
 module.exports = BaseIntegrationModule.extend({
   getName: function getName() {
@@ -5124,13 +5073,13 @@ module.exports = BaseIntegrationModule.extend({
 });
 
 /***/ }),
-/* 92 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var BaseIntegrationModule = __webpack_require__(13);
+var BaseIntegrationModule = __webpack_require__(11);
 
 module.exports = BaseIntegrationModule.extend({
   fields: {},
@@ -5235,13 +5184,13 @@ module.exports = BaseIntegrationModule.extend({
 });
 
 /***/ }),
-/* 93 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var BaseIntegrationModule = __webpack_require__(13);
+var BaseIntegrationModule = __webpack_require__(11);
 
 module.exports = BaseIntegrationModule.extend({
   getName: function getName() {
@@ -5323,13 +5272,13 @@ module.exports = BaseIntegrationModule.extend({
 });
 
 /***/ }),
-/* 94 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var BaseIntegrationModule = __webpack_require__(13);
+var BaseIntegrationModule = __webpack_require__(11);
 
 module.exports = BaseIntegrationModule.extend({
   getName: function getName() {
@@ -5409,7 +5358,7 @@ module.exports = BaseIntegrationModule.extend({
 });
 
 /***/ }),
-/* 95 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5441,7 +5390,7 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 96 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5483,7 +5432,7 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 97 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5516,7 +5465,7 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 98 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5546,7 +5495,7 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 99 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5575,7 +5524,7 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 100 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5648,7 +5597,7 @@ module.exports = elementor.modules.controls.Repeater.extend({
 });
 
 /***/ }),
-/* 101 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5656,28 +5605,26 @@ module.exports = elementor.modules.controls.Repeater.extend({
 
 var _interopRequireDefault = __webpack_require__(0);
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
 
 var _get3 = _interopRequireDefault(__webpack_require__(6));
 
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(5));
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
-
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
-
-var _fieldsRepeaterRow = _interopRequireDefault(__webpack_require__(102));
+var _fieldsRepeaterRow = _interopRequireDefault(__webpack_require__(99));
 
 module.exports = /*#__PURE__*/function (_elementor$modules$co) {
   (0, _inherits2.default)(_class, _elementor$modules$co);
 
-  var _super = (0, _createSuper2.default)(_class);
-
   function _class() {
     (0, _classCallCheck2.default)(this, _class);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_class).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_class, [{
@@ -5797,7 +5744,7 @@ module.exports = /*#__PURE__*/function (_elementor$modules$co) {
 }(elementor.modules.controls.Repeater);
 
 /***/ }),
-/* 102 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5810,22 +5757,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(1));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(2));
 
-var _createClass2 = _interopRequireDefault(__webpack_require__(4));
+var _createClass2 = _interopRequireDefault(__webpack_require__(5));
 
-var _inherits2 = _interopRequireDefault(__webpack_require__(2));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(3));
 
-var _createSuper2 = _interopRequireDefault(__webpack_require__(3));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(1));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(4));
 
 var _default = /*#__PURE__*/function (_elementor$modules$co) {
   (0, _inherits2.default)(_default, _elementor$modules$co);
 
-  var _super = (0, _createSuper2.default)(_default);
-
   function _default() {
     (0, _classCallCheck2.default)(this, _default);
-    return _super.apply(this, arguments);
+    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(_default).apply(this, arguments));
   }
 
   (0, _createClass2.default)(_default, [{
@@ -5854,7 +5801,7 @@ var _default = /*#__PURE__*/function (_elementor$modules$co) {
 exports.default = _default;
 
 /***/ }),
-/* 103 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5862,12 +5809,12 @@ exports.default = _default;
 
 module.exports = elementorModules.editor.utils.Module.extend({
   onElementorPreviewLoaded: function onElementorPreviewLoaded() {
-    elementor.addControlView('Query', __webpack_require__(104));
+    elementor.addControlView('Query', __webpack_require__(101));
   }
 });
 
 /***/ }),
-/* 104 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6012,7 +5959,7 @@ module.exports = elementor.modules.controls.Select2.extend({
 });
 
 /***/ }),
-/* 105 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6020,14 +5967,14 @@ module.exports = elementor.modules.controls.Select2.extend({
 
 module.exports = elementorModules.editor.utils.Module.extend({
   onElementorPreviewLoaded: function onElementorPreviewLoaded() {
-    var EditButton = __webpack_require__(106);
+    var EditButton = __webpack_require__(103);
 
     this.editButton = new EditButton();
   }
 });
 
 /***/ }),
-/* 106 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6078,7 +6025,7 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 107 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6112,7 +6059,7 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 108 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6143,7 +6090,7 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 109 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6151,7 +6098,7 @@ module.exports = elementorModules.editor.utils.Module.extend({
 
 module.exports = elementorModules.editor.utils.Module.extend({
   onElementorInit: function onElementorInit() {
-    var FontsManager = __webpack_require__(110);
+    var FontsManager = __webpack_require__(107);
 
     this.assets = {
       font: new FontsManager()
@@ -6160,7 +6107,7 @@ module.exports = elementorModules.editor.utils.Module.extend({
 });
 
 /***/ }),
-/* 110 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6215,7 +6162,7 @@ module.exports = elementorModules.Module.extend({
 });
 
 /***/ }),
-/* 111 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6223,14 +6170,14 @@ module.exports = elementorModules.Module.extend({
 
 module.exports = elementorModules.editor.utils.Module.extend({
   onElementorPreviewLoaded: function onElementorPreviewLoaded() {
-    var CommentsSkin = __webpack_require__(112);
+    var CommentsSkin = __webpack_require__(109);
 
     this.commentsSkin = new CommentsSkin();
   }
 });
 
 /***/ }),
-/* 112 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

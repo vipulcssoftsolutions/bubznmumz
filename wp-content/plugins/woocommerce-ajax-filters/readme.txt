@@ -5,7 +5,7 @@ Donate link: https://berocket.com/product/woocommerce-ajax-products-filter?utm_s
 Tags: filters, product filters, ajax product filters, ajax filter, ajax filter widget, color filter, size filter, product onsale filter, product preview, product category filter, product reset filter, product sort by filter, stock filter, product tag filter, price range filter, price box filter, advanced product filters, woocommerce filters, woocommerce product filters, woocommerce products filter, woocommerce ajax product filters, widget, plugin, woocommerce item filters, filters plugin, ajax filters plugin, filter woocommerce products, filter woocommerce products plugin, wc filters, wc filters products, wc products filters, wc ajax products filters, wc product filters, wc advanced product filters, woocommerce layered nav, woocommerce layered navigation, ajax filtered nav, ajax filtered navigation, price filter, ajax price filter, woocommerce product sorting, sidebar filter, sidebar ajax filter, taxonomy filter, category filter, attribute filter, attributes filter, woocommerce product sort, ajax products filter plugin for woocommerce, rocket, berocket, berocket woocommerce ajax products filter
 Requires at least: 5.0
 Tested up to: 5.4.2
-Stable tag: 1.5
+Stable tag: 1.5.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -185,6 +185,46 @@ You can try this plugin's admin side [here](https://berocket.com/product/woocomm
 
 == Changelog ==
 
+= 1.5.0.7 =
+* Fix - Filters not displayed after disable Deprecated Filters add-on
+* Fix - Empty sidebar not displayed
+* Fix - Hierarchical sorting prevent error on frontend and save error to database
+
+= 1.5.0.6 =
+* Enhancement - Sub-attribute for Nested filters add-on
+* Fix - Replacement for user custom CSS
+* Fix - Text style with image/color
+* Fix - Slash for canonical URL
+
+= 1.5.0.5 =
+* Enhancement - Deprecated Filters: Custom Class option for buttons
+* Fix - Deprecated Filters: Price Slider
+* Fix - PHP Warning for older PHP
+
+= 1.5.0.4 =
+* Enhancement - Additional JavaScript hook to override functions to hide/show filters
+* Fix - Deprecated Filters: Design styles in incorrect place
+* Fix - Autoptimize incompatibility
+* Fix - Incompatibility with iubenda – Cookie and Consent Solution
+* Fix - Compatibility with other JavaScript/CSS minify plugins
+
+= 1.5.0.3 =
+* Fix - Hierarchical style
+* Fix - CSS Minify script incompatibility
+* Fix - Deprecated Filters: Loading overlay and image
+* Fix - Deprecated Filters: Current page detection
+* Fix - Deprecated Filters: Design tab
+
+= 1.5.0.2 =
+* Fix - Link like WooCommerce add-on
+* Fix - Relevanssi script on page where it is not required
+* Fix - Max-Height instead Height for filter height limitation
+
+= 1.5.0.1 =
+* Enhancement - Change Cursor for some Elements
+* Fix - Collapse Icon and Description Icon Size
+* Fix - Remove error for deprecated price filter
+
 = 1.5 =
 * Enhancement - New styles for filters: Checkbox, Select, Slider, Color, Image
 * Enhancement - New slider styles
@@ -209,6 +249,7 @@ You can try this plugin's admin side [here](https://berocket.com/product/woocomm
 * Fix - Some incompatibility with MariaDB
 * Fix - Some issues with Nested Filters
 * Fix - A lot of small fixes
+
 
 = 1.4.2.3 =
 * Enhancement - Compatibility version: Wordpress 5.4.1 and WooCommerce 4.1

@@ -225,12 +225,12 @@ jQuery("#responsive-menu-wrapper").prepend('<div id="responsive-menu-search-box"
 }
 });
 
-if(jQuery(window).width() > 1024){	
-jQuery(document).on("mouseenter", '.new-arival_box .arival_img img', function(event) { 
-        jQuery(this).closest(".new-arival_box").addClass("hover-active");
-        jQuery(".new_arival_outer .slick-list").css("z-index", "700");
-});
-}
+//if(jQuery(window).width() > 1024){	
+//jQuery(document).on("mouseenter", '.new-arival_box .arival_img img', function(event) { 
+       // jQuery(this).closest(".new-arival_box").addClass("hover-active");
+        //jQuery(".new_arival_outer .slick-list").css("z-index", "700");
+//});
+//}
 
 jQuery(".yith-wfbt-images .image-td").each(function(){
 var datarel = jQuery(this).data('rel');
@@ -239,12 +239,12 @@ prodname = prodname.replace('This Product:','');
 jQuery(this).append('<h5 class="prct_name text-center">'+prodname+'</h5>');
 });
 
-if(jQuery(window).width() >= 1024){
-jQuery(document).on("mouseleave", '.new-arival_box', function(event) { 
-	  jQuery(this).removeClass("hover-active");
-      jQuery(".new_arival_outer .slick-list").css("z-index", "500");
-});
-}  
+//if(jQuery(window).width() >= 1024){
+//jQuery(document).on("mouseleave", '.new-arival_box', function(event) { 
+	  //jQuery(this).removeClass("hover-active");
+//jQuery(".new_arival_outer .slick-list").css("z-index", "500");
+//});
+//}  
 
 
   //Click event to scroll to top
@@ -314,5 +314,23 @@ jQuery(".woocommerce-checkout .coun-code-btn").on('click',function(){
     }
 })
 
-
+jQuery("body.single-product .single_add_to_cart_button").on('click',function(){
+	  var colorval = jQuery('#pa_color').val();
+	  var pa_size = jQuery("#pa_size").val();
+	  if(colorval == "" && pa_size == ""){
+		 jQuery(".single_variation_wrap .variation_error").remove();
+		 jQuery(".single_variation_wrap").prepend('<h4 class="variation_error">Please select the color and size from variations of the product</h4>');
+		return false;
+	  }else if(colorval == ""){
+		 jQuery(".single_variation_wrap .variation_error").remove();
+		 jQuery(".single_variation_wrap").prepend('<h4 class="variation_error">Please select the color from variations of the product</h4>');
+		 return false;
+	  }else if(pa_size == ""){
+		 jQuery(".single_variation_wrap .variation_error").remove();
+		 jQuery(".single_variation_wrap").prepend('<h4 class="variation_error">Please select the size from variations of the product</h4>'); 
+		 return false;
+	  }else{  
+		return true;
+	  }
+})
 

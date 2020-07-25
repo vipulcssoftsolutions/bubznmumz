@@ -52,7 +52,7 @@ do_action( 'woocommerce_before_main_content' );
 <div class="wrap-loop">
 	<div class="container">
 		<div class="row">
-		<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
+		<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 sticky-sidebar">
 <div class="product_filters">
 <h2>FILTER BY : <i class="fa fa-angle-down visible-xs" aria-hidden="true"></i></h2>			
 <?php
@@ -71,9 +71,6 @@ if ( woocommerce_product_loop() ) {
 ?>        
 		<div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
 			<div class="product_list_content">
-				
-				
-				
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="row">
               <div class="sort_bar">
@@ -156,10 +153,13 @@ if ( woocommerce_product_loop() ) {
 
 </div>
 </div>
-<?php	
-	do_action( 'shop_page_description' );
-?>
+
 </div>
+	<div class="row">
+	<?php	
+		do_action( 'shop_page_description' );
+	?>
+	</div>
 </div>	
 <?php	
 } else {

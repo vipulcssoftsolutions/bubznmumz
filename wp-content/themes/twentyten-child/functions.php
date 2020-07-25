@@ -354,7 +354,6 @@ function blog_sec_on_home_page(){
 	ob_start();
             ?>
             <div class="blog_area">
-                <div class="container">
                     <h2>FROM OUR BLOG</h2>
                     <div class="blog_outer">
                       
@@ -392,7 +391,6 @@ function blog_sec_on_home_page(){
                     }	
             ?>
                       
-                    </div>
                 </div>
 </div>    
             <?php	
@@ -503,9 +501,7 @@ function content_before_Cart(){
         <div class="breadcrumbs">
             <div class="">
                 <div class="inner_banner">
-                    <div class="container">
                         <?php  woocommerce_breadcrumb( $args );  ?>
-                    </div>
                 </div>
             </div>
         </div>
@@ -516,18 +512,14 @@ function content_before_Cart(){
              $img_src = $img_atts[0]; 
         ?>
         <div class="cart_banner_outer">
-            <div class="container">
                 <div class="cart_inner_banner">
                     <img src="<?php echo $img_src; ?>" alt="" class="img-responsive">
                 </div>
-            </div>
         </div>
        <?php } ?>
         <div class="cart_header">
-            <div class="container">
                 <h2 class="pull-left">My shopping bag</h2>
                 <a href="<?php echo wc_get_checkout_url(); ?>" class="pull-right blue_btn">Proceed to checkout</a>
-            </div>
         </div>
 <?php } 
   

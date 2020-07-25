@@ -20,7 +20,6 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_before_cart' ); ?>
 
 <div class="cart_content">
-	<div class="container">
 		<div class="row">
 <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
 	<div class="cart_left">
@@ -341,7 +340,6 @@ do_action( 'woocommerce_before_cart' ); ?>
                 } ?>  
              </div>
            </div> 
-           </div>
            </div>
            </div>
 

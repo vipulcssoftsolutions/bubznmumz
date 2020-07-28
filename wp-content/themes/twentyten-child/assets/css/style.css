@@ -5516,6 +5516,7 @@ div#reviews input#submit {
     -o-transition: .3s;
     transition: .3s;
     text-transform: uppercase;
+	width:100%;
 }
 div#reviews input#submit:hover {
     border: 2px solid #3bb0c9!important;
@@ -8277,3 +8278,147 @@ td.product-quantity .qib-button:focus:not(#qib_id):not(#qib_id)
     max-width: 100%;
     margin-bottom: 50px;
 }
+div#reviews h2 
+{
+    text-align: center;
+    margin: 0 0 30px;
+}
+div#reviews button.btn.btn-primary {
+ float: right;
+    background: #3bb0c9;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    font-family: "montserrat";
+    font-weight: 600;
+    display: block;
+    padding: 10px 20px;
+    margin: 0;
+    border: 2px solid #3bb0c9;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+div#reviews button.btn.btn-primary:hover
+{
+color:#3bb0c9;
+background:transparent;	
+}
+div#comments 
+{
+    clear: both;
+    margin-top: 50px;
+    float: left;
+    width: 100%;
+}
+div#exampleModal {
+    z-index: 99999999;
+    background: rgba(0,0,0,0.7);
+}
+div#exampleModal h5#exampleModalLabel {
+    display: none;
+}
+div#review_form span#reply-title {
+    font-size: 20px!important;
+    margin: 15px 0px!important;
+}
+.single-product div#exampleModal form#commentform label span.required {
+    color: #000;
+}
+.single-product  form#commentform input
+{
+    top: 2px;
+    position: relative;
+}
+.single-product div#exampleModal form#commentform label {
+margin: 0px 0px 10px;
+    padding-right: 10px;
+    color: #000;
+    font-family: "montserrat";
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.comment-form-rating label {
+    color: #b43034!important;
+    position: relative;
+    top: -4px;
+}
+p.comment-form-author label,p.comment-form-email label {
+    display: block;
+}
+
+.single-product div#exampleModal input[type="text"], .single-product div#exampleModal input[type="email"] {
+    border-bottom: 2px solid transparent!important;
+    box-shadow: 0 1px 3px rgba(29,29,29,.35)!important;
+    height: 50px;
+    width: 100%;
+		padding:10px;
+}
+.single-product div#exampleModal textarea#comment {
+    border-bottom: 2px solid transparent!important;
+    box-shadow: 0 1px 3px rgba(29,29,29,.35)!important;
+	padding:10px;
+}
+.single-product div#exampleModal form#commentform p.comment-form-cookies-consent label{
+    color: #737373!important;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: inherit;
+}
+.comment-form-rating 
+{
+    display: flex;
+    padding: 5px 0 0px!important;
+    border-bottom: 1px solid #ddd!important;
+    margin-bottom: 10px;
+    align-items: center;
+}
+div#exampleModal input#submit {
+    border-radius: 0!important;
+}
+div#comments h2.woocommerce-Reviews-title {
+    text-align: left;
+    margin-bottom: 35px;
+}
+ol.commentlist {
+    padding: 0;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+    margin: 0;
+}
+.woocommerce #reviews #comments ol.commentlist li .meta {
+    clear: both;
+    margin: 30px 0px 5px!important;
+}
+.woocommerce #reviews .star-rating {
+    float: left;
+}
+
+div#exampleModal .modal-header .close {
+    margin-top: -2px;
+    font-size: 30px;
+    color: #2d2d2d!important;
+    opacity: 1;
+    text-shadow: none;
+    font-weight: 400;
+}
+div#exampleModal .modal-header
+{
+background-color: #f9f9f9!important;
+    padding: 10px 15px;
+    border-bottom: 0;
+}
+.img-prdc {
+    padding-bottom: 2rem!important;
+    border-bottom: 2px solid #00a9e0!important;
+}
+.img-prdc img 
+{
+    max-width: 60px;
+}
+

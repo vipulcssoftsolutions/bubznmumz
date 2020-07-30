@@ -29,8 +29,10 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 	<?php do_action( 'woocommerce_before_variations_form' ); ?>
 
 	<?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
-		<p class="stock out-of-stock"><?php echo esc_html( apply_filters( 'woocommerce_out_of_stock_message', __( 'This product is currently out of stock and unavailable.', 'woocommerce' ) ) ); ?></p>
+		<div class="availebility pull-left"><?php echo esc_html( apply_filters( 'woocommerce_out_of_stock_message', __( 'Out of Stock.', 'woocommerce' ) ) ); ?></div>
 	<?php else : ?>
+    <div class="availebility pull-left">Availability: <span>In Stock</span></div>
+    <div class="prdct_code pull-left">SKU : <span> <?php echo $product->get_sku(); ?></span></div>
 		<table class="variations" cellspacing="0">
 			<tbody>
 				<?php foreach ( $attributes as $attribute_name => $options ) : ?>

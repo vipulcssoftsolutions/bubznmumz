@@ -314,6 +314,10 @@ jQuery(".woocommerce-checkout .coun-code-btn").on('click',function(){
     }
 })
 
+jQuery(".login-anch-for-pop").on('click',function(){
+  jQuery(".xoo-el-login-tgr").trigger('click');
+})
+
 jQuery("body.single-product .single_add_to_cart_button").on('click',function(){
 	  var colorval = jQuery('#pa_color').val();
 	  var pa_size = jQuery("#pa_size").val();

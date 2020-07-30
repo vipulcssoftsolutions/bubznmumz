@@ -33,8 +33,7 @@
           <div class="col-md-5 col-sm-4 col-xs-12">
 			  <?php
 			  $woocsdata = get_option('woocs');
-            global $WOOCS;
-            
+            global $WOOCS;          
         $currencurrency = $WOOCS->current_currency;
 		$updateprice = $woocsdata[$currencurrency]['rate']; 
 		$updatedsymbol =  $woocsdata[$currencurrency]['symbol'];
@@ -80,8 +79,22 @@
                   <div class="login_box pull-left">
                     <img src="<?php echo site_url(); ?>/wp-content/uploads/2020/06/user_icon-1.png" alt="" class="img-responsive pull-left">
                     <ul class="list-inline pull-left ">
-                      <li><a href="<?php echo site_url(); ?>/my-account/">Login |</a></li>
-                      <li><a href="<?php echo site_url(); ?>/my-account/">Join</a></li>
+						
+						<?php
+
+if ( is_user_logged_in() ) {
+    ?>
+		<li> <?php echo do_shortcode('[xoo_el_action type="login" display="button" change_to="logout" change_to_text="Logout"]')?></li>
+<?php 
+} else {
+    ?>
+		<li style="display:none"> <?php echo do_shortcode('[xoo_el_action type="login" display="button" change_to="logout" change_to_text="Logout"]')?></li>
+        <li><a class="login-anch-for-pop" href="#">Login | Join</a></li>					
+   <?php						
+}
+
+?>
+					
                     </ul>
                   </div>
                   <div class="wishlist_box pull-left">

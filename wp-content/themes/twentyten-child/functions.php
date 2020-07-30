@@ -627,26 +627,6 @@ function category_single_product(){
 <?php }
 }
 
-
-/* *****************Show product sku and product availebility**************** */
-add_action( 'woocommerce_before_variations_form', 'so_43922864_add_content', 15 );
-function so_43922864_add_content(){
-     global $product;
-     echo '<div class="availebility pull-left">Availability: <span>';
-     
-      if($product->get_stock_quantity() >= 1){ 
-		  echo 'In Stock'; }else{ 
-			  
-			  echo 'Out of Stock'; 
-			  
-		};
-		echo '</span></div>';
-      
-    if ( $product->get_sku() ) {
-    	echo '<div class="prdct_code pull-left">SKU : <span>' . $product->get_sku() . '</span></div>' ;       
-    }
-}
-
  /******************************FIND OUT MORE - ADD TO WISHLIST**************************************/
 function content_after_addtocart_button(){
 echo '<div class="shipping_note">

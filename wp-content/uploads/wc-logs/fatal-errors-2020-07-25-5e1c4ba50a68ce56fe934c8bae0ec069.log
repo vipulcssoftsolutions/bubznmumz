@@ -1,0 +1,30 @@
+2020-07-25T10:47:01+00:00 CRITICAL syntax error, unexpected end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 946
+
+2020-07-25T10:47:03+00:00 CRITICAL syntax error, unexpected end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 946
+
+2020-07-25T10:47:04+00:00 CRITICAL syntax error, unexpected end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 946
+
+2020-07-25T10:47:38+00:00 CRITICAL Cannot redeclare your_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:195) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 943
+
+2020-07-25T10:47:39+00:00 CRITICAL Cannot redeclare your_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:195) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 943
+
+2020-07-25T10:49:01+00:00 CRITICAL Cannot redeclare your_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:195) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 943
+
+2020-07-25T10:51:01+00:00 CRITICAL Cannot redeclare your_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:195) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 943
+
+2020-07-25T10:53:02+00:00 CRITICAL Cannot redeclare your_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:195) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 943
+
+2020-07-25T11:27:26+00:00 CRITICAL Cannot redeclare wc_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:929) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3434
+
+2020-07-25T11:27:46+00:00 CRITICAL Cannot redeclare wc_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:929) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3434
+
+2020-07-25T11:27:46+00:00 CRITICAL Cannot redeclare wc_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:929) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3434
+
+2020-07-25T11:28:26+00:00 CRITICAL Cannot redeclare wc_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:929) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3434
+
+2020-07-25T11:30:26+00:00 CRITICAL Cannot redeclare wc_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:929) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3434
+
+2020-07-25T11:32:26+00:00 CRITICAL Cannot redeclare wc_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:929) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3434
+
+2020-07-25T11:33:31+00:00 CRITICAL Cannot redeclare wc_get_rating_html() (previously declared in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:929) in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 3434
+

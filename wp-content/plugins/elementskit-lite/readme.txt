@@ -3,7 +3,7 @@ Contributors: Ataurr, wpmet, emrnco, pobonpaul1994, easin55474, khalidjubair
 Tags: elementor addons, mega menu, header footer builder, elements, elementor extensions, elementor modules, page builder addons, elementor addon, elementor widget, addons
 Requires at least: 4.6
 Tested up to: 5.4
-Stable tag: 1.5.8
+Stable tag: 1.5.10
 Requires PHP: 5.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -226,6 +226,15 @@ We have developed Awesome exclusive modules which saved tons of time when you ar
 
 
 == Changelog ==
+Version: 1.5.10
+
+- Fixed Nav menu issue
+
+version: 1.5.9
+- elementskit icon rendering issues fixed
+- social-media href duplication issues fixed
+- minor js issue fixed for Onepage Scroll Module
+
 version: 1.5.8
 - fixed elementskit icon conflict
 - added width control on megamenu settings

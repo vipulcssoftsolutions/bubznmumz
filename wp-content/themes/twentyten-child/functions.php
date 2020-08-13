@@ -681,19 +681,22 @@ function bbloomer_recently_viewed_shortcode() {
       $output .= '<div class="recent_view">
         <div class="container">
             <h2 class="text-center">RECENTLY VIEWED</h2>
-            <div class="row">';
+            <div class="row new_arival_outer">';
       $i=0;
+//       echo'<pre>';
+// print_r($product_ids_arr);
+//       echo'</pre>';
        foreach($product_ids_arr as $product_id){    
           $i++; 
            $imgs = wp_get_attachment_image_src( get_post_thumbnail_id($product_id));
-                $output .=  '<div class="col-md-3 col-sm-3 col-xs-6">
+                $output .=  '<div class="col-md-3 col-sm-3 col-xs-6 new-arival_box">
                         <div class="recent_prdct_box">
                             <a href="'.get_the_permalink($product_id).'"><img src="'.$imgs[0].'" alt="" class="img-responsive">
                         </div>
                     </div>';
-           if($i == 4){
-               break;
-           }
+        //    if($i == 4){
+        //        break;
+        //    }
        }
         $output .= '</div></div></div>'; 
   }                                         
@@ -903,3 +906,5 @@ function terms_and_conditions_default_checked_wc_terms( $terms_is_checked ) {
 }
 add_filter( 'woocommerce_terms_is_checked', 'terms_and_conditions_default_checked_wc_terms', 10 );
 add_filter( 'woocommerce_terms_is_checked_default', 'terms_and_conditions_default_checked_wc_terms', 10 );
+
+

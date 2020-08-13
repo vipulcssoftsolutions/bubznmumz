@@ -450,8 +450,10 @@ if( ! function_exists( 'berocket_isset' ) ){
     }
 }
 if( ! function_exists( 'berocket_sanitize_array' ) ){
-    function berocket_sanitize_array($array) {
-        if( is_array($array) ) {
+    function berocket_sanitize_array( $array ) {
+        if ( is_object( $array ) ) $array = (array) $array; // wp_check_invalid_utf8 is not working with objects
+
+        if ( is_array( $array ) ) {
             $array = array_map('berocket_sanitize_array', $array);
         } else {
             $filtered = wp_check_invalid_utf8( $array );

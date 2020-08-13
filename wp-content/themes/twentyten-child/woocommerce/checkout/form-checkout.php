@@ -127,27 +127,66 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
         </div>
 </div>
       <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="process_block">
+          <div class="process_block form-onchkout">
                 <div class="header2">
                   <div class="header_iner">
                     <img src="https://woocommerce-427082-1340050.cloudwaysapps.com/wp-content/uploads/2020/07/truck_icon2.png" alt="">
                     <h2>Delivery</h2>
                   </div>
                 </div>
-              <h4>Delivery Address</h4>
-        <div id="customer_details">
-        <div class="billing-fld">
-				<?php do_action( 'woocommerce_checkout_billing' ); ?>
-       </div>      
-        <div class="shipping-fld">
-				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-                  <div class="when_deliver">
-                      <h4>Shipping</h4>
-						<?php wc_cart_totals_shipping_html(); ?>
+                <?php
+                if (is_user_logged_in()) {
+                    ?>
+                    <h4>Delivery Address</h4>
+                    <div id="customer_details">
+                    <div class="billing-fld">
+                    <?php do_action('woocommerce_checkout_billing'); ?>
+                  </div>      
+                    <div class="shipping-fld">
+                    <?php do_action('woocommerce_checkout_shipping'); ?>
+                              <div class="when_deliver">
+                                  <h4>Shipping</h4>
+                        <?php wc_cart_totals_shipping_html(); ?>
+                                </div>
                     </div>
-        </div>
-  
-		</div>
+              
+                </div>
+              <?php
+                  }
+                  else
+                  {
+                  ?>
+                  </form>
+                  <h4>hi There!</h4>
+                  <p>Please Enter Your Email Address To Continue To Delivery And Payment.</p>
+                  <!-- <input type="text" placeholder="Email Address...">
+                  <a href="javascript:void(0);" class="blue_btn">Continue</a> -->
+                  <?php
+                  // wp_login_form();
+                  echo do_shortcode('[woocommerce_my_account] '); 
+                  ?>
+                  <a href="javascript:void(0);" class="pink_btn guest_btn">Login as Guest</a>
+                  <span class="or">or</span>
+                  <div class="social_btns2">
+                    <a href="https://www.facebook.com/" target="_blank" class="facebook_BTN">
+                      <span>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        Login With Facebook
+                      </span>
+                    </a>
+                    <a href="https://accounts.google.com" target="_blank" class="google_BTN">
+                      <span>
+                        <!-- <i class="fa fa-google-plus" aria-hidden="true"></i> -->
+                        <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+
+                        Sign in with google
+                      </span>
+                    </a>
+                  </div>
+              
+                    <?php
+                  }
+              ?>
         </div>
     </div>
           

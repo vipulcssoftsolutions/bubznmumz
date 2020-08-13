@@ -84,9 +84,38 @@ jQuery( document ).ajaxComplete(function() {
    jQuery(".product_info2").show();  
   }
  });	
-</script>	
-<?php// } ?>
-<?php wp_footer(); ?>
+ jQuery(document).ready(function(){
+  jQuery('.xoo-el-tabs').css('display','none');
+  jQuery(".xoo-el-header").append(" <span ='xoo-form-heading'>Log in to your account</span><br><span class='continue-with'>Continue with</span><div class='social-login-sectioin'><div class='facebooklogin'><img src='https://woocommerce-427082-1340050.cloudwaysapps.com/wp-content/uploads/2020/08/Facebook-Button.png'></div><div class='googlelogin'><img src='https://woocommerce-427082-1340050.cloudwaysapps.com/wp-content/uploads/2020/08/Gogole-Button.png'></div></div><div class='seprete-section'>OR</div>");
+  jQuery(".xoo-el-login-btn").html('Log in');
+  jQuery('.xoo-el-form-label').css('display','none');
+  jQuery(".xoo-el-action-form").append("<div class='section-signup'><span class='txt-gray'>Don't have an account?</span><a href='javascript:void(0);' class='signupform'>Sign Up</a></div>");
+  jQuery(".xoo-el-action-form").append("<span class='back-button' style='display:none'><a href='javascript:void(0);' class='loginform'>Back</a></span>");
+    jQuery(".signupform").click(function(){
+        jQuery(".xoo-el-register-ph").trigger('click');
+        jQuery(".section-signup").css('display','none');
+        jQuery(".back-button").css('display','block');
+    });
+    jQuery(".loginform").click(function(){
+        jQuery(".xoo-el-login-ph").trigger('click');
+        jQuery(".section-signup").css('display','block');
+        jQuery(".back-button").css('display','none');
+  });
+  jQuery(".form-onchkout .woocommerce-form-login__submit").html('Continue');
+  jQuery(".form-onchkout .woocommerce-form-row input[type=text]:first").attr("placeholder", "Email Address..");
+  jQuery(".form-onchkout .woocommerce-form-row input[type=password]:first").attr("placeholder", "Password");
+  jQuery('.woocommerce-form-login-toggle').css('display','none');
+  
+  
+  
+  
 
+  // jQuery(".xoo-el-login-btn").after(jQuery(".xoo-el-login-btm-field"));
+  // jQuery(".xoo-el-login-btn").before(jQuery(".xoo-el-login-btm-fields"));
+ });
+ 
+</script>	
+<?php // } ?>
+<?php wp_footer(); ?>
 </body>
 </html>

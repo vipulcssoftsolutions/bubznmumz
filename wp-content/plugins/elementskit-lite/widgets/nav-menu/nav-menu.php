@@ -1375,24 +1375,16 @@ class Elementskit_Widget_Nav_Menu extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 
 		if($settings['elementskit_nav_menu'] != '' && wp_get_nav_menu_items($settings['elementskit_nav_menu']) !== false && count(wp_get_nav_menu_items($settings['elementskit_nav_menu'])) > 0){
-			$link = '';
-			if ($settings['elementskit_nav_menu_logo_link_to'] == 'home') {
+			$link = $target = $nofollow = '';
+
+			if (isset($settings['elementskit_nav_menu_logo_link_to']) && $settings['elementskit_nav_menu_logo_link_to'] == 'home') {
 				$link = get_home_url();
-			} else {
+			}elseif(isset($settings['elementskit_nav_menu_logo_link'])){
 				$link = $settings['elementskit_nav_menu_logo_link']['url'];
+				$target = ($settings['elementskit_nav_menu_logo_link']['is_external'] != "on" ? "" : "_blank");
+				$nofollow = ($settings['elementskit_nav_menu_logo_link']['nofollow'] != "on" ? "" : "nofollow");
 			}
-			$target = '';
-			if ($settings['elementskit_nav_menu_logo_link']['is_external'] == "on") {
-				$target = "_blank";
-			} else {
-				$target = "_self";
-			}
-			$nofollow = '';
-			if ($settings['elementskit_nav_menu_logo_link']['nofollow'] == "on") {
-				$nofollow = "nofollow";
-			} else {
-				$nofollow = "";
-			}
+
 			$metadata = \ElementsKit\Utils::img_meta($settings['elementskit_nav_menu_logo']['id']);
 			$markup = '
 				<div class="elementskit-nav-identity-panel">

@@ -668,7 +668,7 @@ class Elementskit_Widget_Social extends Widget_Base {
 
 
 						$getClass = explode('-', ($is_new || $migrated) ? $icon['ekit_socialmedia_icons']['library'] != 'svg' ? $icon['ekit_socialmedia_icons']['value'] : '' : $icon['ekit_socialmedia_icon'] );
-						 $iconClass = !empty($getClass) ? end($getClass) : ''; ?> href="<?php echo esc_url( $icon['ekit_socialmedia_link']['url'] ); ?>" class="<?php echo esc_attr( $iconClass ); ?>" >
+						 $iconClass = !empty($getClass) ? end($getClass) : ''; ?> class="<?php echo esc_attr( $iconClass ); ?>" >
 							<?php if($settings['ekit_socialmedia_style'] != 'text' && $settings['ekit_socialmedia_style_icon_position'] == 'before'): ?>
 							
 							<?php

@@ -23,7 +23,7 @@ if( ! class_exists('BeRocket_AAPF_Template_Style') ) {
             $this->filters();
             $this->enqueue_all();
         }
-        function enqueue_all() {    
+        function enqueue_all() {
             if( ! empty($this->data['style_file']) && file_exists(dirname($this->data['file']).'/'.$this->data['style_file']) ) {
                 BeRocket_AAPF::wp_enqueue_style( 'BeRocket_AAPF_style-'.sanitize_title($this->data['style_file']), plugins_url( $this->data['style_file'], $this->data['file'] ), array(), $this->data['version'] );
             }

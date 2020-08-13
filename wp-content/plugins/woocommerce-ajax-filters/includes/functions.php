@@ -1,4 +1,9 @@
 <?php
+if( ! function_exists( 'bapf_template_styles_preview' ) ){
+    function bapf_template_styles_preview() {
+        include_once('template_styles_preview.php');
+    }
+}
 if( ! function_exists( 'br_set_value_to_array' ) ){
     function br_set_value_to_array(&$arr, $index, $value = '') {
         if( ! isset($arr) || ! is_array($arr) ) {

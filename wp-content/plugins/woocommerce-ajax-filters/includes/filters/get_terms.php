@@ -49,6 +49,7 @@ class BeRocket_AAPF_get_terms {
             'operator'              => 'OR',
             'additional_tax_query'  => false,
             'disable_recount'       => false,
+            'disable_hide_empty'    => false,
         ), $additional), $args);
         if( empty($args['taxonomy']) || is_array($args['taxonomy']) ) {
             return get_terms($args);
@@ -224,7 +225,7 @@ class BeRocket_AAPF_get_terms {
         return $terms;
     }
     public static function hide_empty($terms, $args = array(), $additional = array()) {
-        if( ! empty($additional['disable_recount']) ) return $terms;
+        if( ! empty($additional['disable_recount']) || ! empty($additional['disable_hide_empty']) ) return $terms;
         foreach($terms as $term_id => $term) {
             if( $term->count == 0 ) {
                 unset($terms[$term_id]);

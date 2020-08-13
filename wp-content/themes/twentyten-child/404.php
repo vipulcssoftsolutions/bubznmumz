@@ -10,21 +10,31 @@
 get_header(); ?>
     <div class="not-fd-main">
 	<div class="container">
-		<div row="row">
+		<div class="row">
+		<!--
             <div class="col-md-6 ">
               <div class="for-zero-form">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/404.jpg">
               </div>  
-            </div>    
-            <div class="col-md-6">
-			<div id="post-0" class="post error404 not-found">
-				<h1 class="entry-title"><?php _e( 'Not Found', 'twentyten' ); ?></h1>
-				<div class="entry-content">
-					<p><?php _e( 'Apologies, but the page you requested could not be found. Perhaps searching will help.', 'twentyten' ); ?></p>
-					<?php get_search_form(); ?>
-				</div><!-- .entry-content -->
-			</div><!-- #post-0 -->
-            </div>
+            </div>  
+            -->		
+			
+            <div class="col-md-12">
+				<div id="post-0" class="post error404 not-found">
+					<h1 class="entry-title"><?php _e( '404', 'twentyten' ); ?></h1>
+					<div class="entry-content">
+						<p><?php _e( "<span>Something's missing.</span>To find what you'are looking for,try our product search.", 'twentyten' ); ?></p>
+			<form role="search" method="get" id="searchform" class="searchform" action="<?php echo site_url(); ?>">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" placeholder="Search">
+					<input type="submit" id="searchsubmit" value="">
+				</div>
+			</form>
+			<a href="<?php echo site_url(); ?>">Go Back</a>
+					</div><!-- .entry-content -->
+				</div><!-- #post-0 -->
+            </div>			
             
 		</div><!-- #content -->
 	</div><!-- #container -->

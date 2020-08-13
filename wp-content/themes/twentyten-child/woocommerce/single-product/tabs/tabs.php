@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php
 $product_tabs = apply_filters( 'woocommerce_product_tabs', array() );
 if ( ! empty( $product_tabs ) ) : ?>
-<div class="prdct_full_info" id="prdct_full_info">
+<div class="prdct_full_info clsproduct-info" id="prdct_full_info">
     <div class="prdct_info_inner">
       <div class="panel-group" id="prdct_dtl_list">
         <div class="panel panel-default">

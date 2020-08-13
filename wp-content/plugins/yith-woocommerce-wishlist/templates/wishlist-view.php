@@ -45,7 +45,8 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 ?>
 
 <!-- WISHLIST TABLE -->
-<table
+
+<table style="display:none"
 	class="shop_table cart wishlist_table wishlist_view traditional responsive <?php echo $no_interactions ? 'no-interactions' : ''; ?> <?php echo $enable_drag_n_drop ? 'sortable' : ''; ?> "
 	data-pagination="<?php echo esc_attr( $pagination ); ?>" data-per-page="<?php echo esc_attr( $per_page ); ?>"
 	data-page="<?php echo esc_attr( $current_page ); ?>" data-id="<?php echo esc_attr( $wishlist_id ); ?>"
@@ -318,3 +319,85 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 	</tbody>
 
 </table>
+<!----------------------------------------------custom code for the wish list ------------------->
+<div class="row">
+<?php
+if ( $wishlist && $wishlist->has_items() ) :
+	foreach ( $wishlist_items as $item ) :
+		global $product;
+		$_product = wc_get_product( $item->get_product_id() );
+		?>
+		<div class="col-md-3 col-sm-3">
+			<div class="img-wishlist">
+				<?php
+				//echo 'product id'.$item->get_product_id().'<br>';
+				$image = wp_get_attachment_image_src( get_post_thumbnail_id( $item->get_product_id() ), 'single-post-thumbnail' );?>
+				<a href="<?php echo get_permalink( $item->get_product_id() ); ?>"><img src="<?php  echo $image[0]; ?>" data-id="<?php echo $loop->post->ID; ?>"></a>
+			</div>
+			<div class="wishlist-data-section">
+				<div class="withlist-category-section">
+					<?php
+					$product_cats_ids = wc_get_product_term_ids( $item->get_product_id(), 'product_cat' );
+					foreach( $product_cats_ids as $cat_id ) {
+						$term = get_term_by( 'id', $cat_id, 'product_cat' );
+					
+						echo $term->name;
+						break;
+					}
+					?>
+				</div>		
+				<div class="title-wishilisht-section">
+				<a href="<?php echo get_permalink( $item->get_product_id() ); ?>"><?php
+					echo get_the_title( $item->get_product_id() );
+					?></a>
+				</div>
+				<div class="wishlist-brand-name">
+				<?php
+				$wish_brand= get_the_terms($item->get_product_id(),'product_brand') ;
+				foreach($wish_brand as $wishbrand)
+				{
+					echo $wishbrand->name;
+				}
+				
+				?>
+				</div>
+				<div class="wishilist-price-section">
+					<div class="wishlist-sale_price">
+						<?php echo $_product->get_sale_price(); 
+						// echo'<pre>';
+						// print_r($_product);
+						// echo'</pre>';
+						?>
+					</div>
+					<div class="wishlist-regular-price">
+				
+						<?php $regprice= $_product->get_regular_price();
+						if($regprice=='0.00')
+						{
+							echo $_product->get_price();	
+						}
+						else
+						{
+							echo $regprice;
+						}
+						?>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+	<?php 
+		// 	$product_data = wc_get_product( $item->get_product_id() );
+		// 	echo'<pre>';
+		// print_r($product_data);
+		// 	echo'</pre>';
+
+
+endforeach;
+else :
+	?>
+	<span colspan="<?php echo esc_attr( $column_count ); ?>" class="wishlist-empty"><?php echo esc_html( apply_filters( 'yith_wcwl_no_product_to_remove_message', __( 'No products added to the wishlist', 'yith-woocommerce-wishlist' ), $wishlist ) ); ?></span>
+	<?php
+	endif
+?>
+</div>

@@ -260,14 +260,32 @@ if( ! class_exists('BeRocket_conditions') ) {
         }
 
         public static function condition_product_stockstatus($html, $name, $options) {
-            $def_options = array('stockstatus' => 'in_stock', 'is_example' => false);
+            $def_options = array('in_stock' => '', 'out_of_stock' => '', 'is_on_backorder' => '', 'is_example' => false);
             $options = array_merge($def_options, $options);
-            $html .= '
-            <select '.(empty($options['is_example']) ? '' : 'data-').'name="' . $name . '[stockstatus]">
-                <option value="in_stock"' . ($options['stockstatus'] == 'in_stock' ? ' selected' : '') . '>' . __('In stock', 'BeRocket_domain') . '</option>
-                <option value="out_of_stock"' . ($options['stockstatus'] == 'out_of_stock' ? ' selected' : '') . '>' . __('Out of stock', 'BeRocket_domain') . '</option>
-                <option value="is_on_backorder"' . ($options['stockstatus'] == 'is_on_backorder' ? ' selected' : '') . '>' . __('On Backorder', 'BeRocket_domain') . '</option>
-            </select>';
+            if( ! empty($options['stockstatus']) ) {
+                if($options['stockstatus'] == 'in_stock') {
+                    $options['in_stock'] = '1';
+                } else {
+                    $options['is_on_backorder'] = '1';
+                    if( $options['stockstatus'] == 'out_of_stock' ) {
+                        $options['out_of_stock'] = '1';
+                    }
+                }
+            }
+            $stock_statuses = array(
+                'in_stock' => __('In stock', 'BeRocket_domain'),
+                'out_of_stock' => __('Out of stock', 'BeRocket_domain'),
+                'is_on_backorder' => __('On Backorder', 'BeRocket_domain')
+            );
+            foreach($stock_statuses as $stock_slug => $stock_name) {
+                $html .= '<label>';
+                $html .= '<input type="checkbox" value="1" ';
+                $html .= (empty($options['is_example']) ? '' : 'data-').'name="' . $name . '['.$stock_slug.']"';
+                $html .= (empty($options[$stock_slug]) ? '' : ' checked');
+                $html .= '>';
+                $html .= $stock_name;
+                $html .= '</label>';
+            }
             return $html;
         }
 
@@ -533,14 +551,19 @@ if( ! class_exists('BeRocket_conditions') ) {
         }
 
         public static function check_condition_product_stockstatus($show, $condition, $additional) {
-            if( $condition['stockstatus'] == 'is_on_backorder' ) {
-                $show = $additional['product']->is_on_backorder();
-            } else {
-                $show = $additional['product']->is_in_stock();
-                if( $condition['stockstatus'] == 'out_of_stock' ) {
-                    $show = ! $show;
+            if( ! empty($condition['stockstatus']) ) {
+                if($condition['stockstatus'] == 'in_stock') {
+                    $condition['in_stock'] = '1';
+                } else {
+                    $condition['is_on_backorder'] = '1';
+                    if( $condition['stockstatus'] == 'out_of_stock' ) {
+                        $condition['out_of_stock'] = '1';
+                    }
                 }
             }
+            $show = ( ( ! empty($condition['in_stock']) && $additional['product']->is_in_stock() ) 
+                   || ( ! empty($condition['out_of_stock']) && ! $additional['product']->is_in_stock() )
+                   || ( ! empty($condition['is_on_backorder']) && $additional['product']->is_on_backorder() ) );
             return $show;
         }
 

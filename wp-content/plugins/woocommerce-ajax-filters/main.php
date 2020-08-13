@@ -894,6 +894,7 @@ class BeRocket_AAPF extends BeRocket_Framework {
                             array('value' => 'BeRocket_AAPF_wcseo_title_visual2', 'text' => __('{title} [attribute]:[values];[attribute]:[values]', 'BeRocket_AJAX_domain')),
                             array('value' => 'BeRocket_AAPF_wcseo_title_visual3', 'text' => __('[attribute 1 values] {title} with [attribute] [values] and [attribute] [values]', 'BeRocket_AJAX_domain')),
                             array('value' => 'BeRocket_AAPF_wcseo_title_visual4', 'text' => __('{title} - [values] / [values]', 'BeRocket_AJAX_domain')),
+                            array('value' => 'BeRocket_AAPF_wcseo_title_visual5', 'text' => __('[attribute]:[values];[attribute]:[values] - {title}', 'BeRocket_AJAX_domain')),
                         )),
                         "value"    => $this->defaults["seo_meta_title_visual"],
                     ),
@@ -1767,6 +1768,7 @@ jQuery(document).on('change', '.berocket_disable_ajax_loading', berocket_disable
         </div>';
     }
     public function shortcode_apply( $atts = array() ) {
+        if( ! is_array($atts) ) $atts = array();
         $atts = array_merge(array('apply' => true), $atts);
         remove_filter('berocket_aapf_wcshortcode_is_filtering', array($this, 'apply_filter_to_shortcode'));
         remove_filter('berocket_aapf_wcshortcode_is_filtering', array($this, 'not_apply_filter_to_shortcode'));

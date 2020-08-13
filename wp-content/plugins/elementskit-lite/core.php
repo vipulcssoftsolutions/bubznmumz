@@ -10,7 +10,7 @@ if(!class_exists('ElementsKit')):
 		 * @since 1.0.0
 		 * @var string The plugin version.
 		 */
-		const VERSION = '1.5.8';
+		const VERSION = '1.5.9';
 
 		/**
 		 * Package type

@@ -1,0 +1,22 @@
+2020-08-11T14:14:17+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/yith-woocommerce-frequently-bought-together/templates/yith-wfbt-form.php on line 103
+
+2020-08-11T14:14:31+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/yith-woocommerce-frequently-bought-together/templates/yith-wfbt-form.php on line 103
+
+2020-08-11T14:14:37+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/yith-woocommerce-frequently-bought-together/templates/yith-wfbt-form.php on line 103
+
+2020-08-11T14:40:30+00:00 CRITICAL Uncaught Error: Call to undefined function do_rms_activation_task() in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/yith-woocommerce-plugin-frequently-bought-together-premium-1.3.11/rms-script-ini.php:127
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/yith-woocommerce-plugin-frequently-bought-together-premium-1.3.11/init.php(17): require_once()
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-admin/includes/plugin.php(659): include_once('/home/427082.cl...')
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-admin/plugins.php(44): activate_plugin('yith-woocommerc...', 'https://woocomm...', false)
+#3 {main}
+  thrown in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/plugins/yith-woocommerce-plugin-frequently-bought-together-premium-1.3.11/rms-script-ini.php on line 127
+
+2020-08-11T15:16:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function action_woocommerce_after_single_product_summary(), 1 passed in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php:908
+Stack trace:
+#0 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(287): action_woocommerce_after_single_product_summary('')
+#1 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/woocommerce/content-single-product.php(70): do_action('woocommerce_aft...')
+#4 /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-includes/template.php(725): require('/home/42708 in /home/427082.cloudwaysapps.com/kmjtdaheqs/public_html/wp-content/themes/twentyten-child/functions.php on line 908
+

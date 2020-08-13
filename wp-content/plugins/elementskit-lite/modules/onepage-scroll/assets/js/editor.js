@@ -22,7 +22,7 @@
 				navPos: elementorFrontend.getPageSettings('ekit_onepagescroll_nav_pos'),
 				navIcon: elementorFrontend.getPageSettings('ekit_onepagescroll_nav_icon')
 			}, function (res) {
-				if ( res !== '0' ) {
+				if (res.length > 7) {
 					var $li = $onePageNavWrap.html( res ).find('li'),
 						$parent = $li.parent();
 

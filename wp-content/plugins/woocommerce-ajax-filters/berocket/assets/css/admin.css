@@ -1441,6 +1441,9 @@
 .br_conditions .br_html_condition:first-child:before {
     display: none;
 }
+.br_html_condition label {
+    margin-right: 15px;
+}
 .br_html_condition .br_cond_select {
     margin-top: 40px;
     position: relative;

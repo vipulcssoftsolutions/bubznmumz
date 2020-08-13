@@ -48,6 +48,7 @@ class Build_Modules{
 
     public function __construct(){
         $hotfix = apply_filters('elementskit/modules/list', []);
+        $this->system_modules = array_merge($this->system_modules, array_keys($hotfix));
 
         $this->core_modules = array_merge($this->system_modules, \ElementsKit::default_modules());
         $this->active_modules = Attr::instance()->utils->get_option('module_list', $this->core_modules);
@@ -56,12 +57,17 @@ class Build_Modules{
         foreach($this->active_modules as $module){
             if(in_array($module, $this->core_modules)){
 
-                if(isset($hotfix[$module])){
+                if(isset($hotfix[$module]) && isset($hotfix[$module]['path'])){
                     include_once $hotfix[$module]['path'] . 'init.php';
                 }
-
+                
+                if(isset($hotfix[$module]) && isset($hotfix[$module]['base_class_name'])){
+                    $class_name = $hotfix[$module]['base_class_name'];
+                }else{
+                    $class_name = '\ElementsKit\Modules\\'. \ElementsKit\Utils::make_classname($module) .'\Init';
+                }
+                
                 // make the class name and call it.
-                $class_name = '\ElementsKit\Modules\\'. \ElementsKit\Utils::make_classname($module) .'\Init';
                 if(class_exists($class_name)){
                     new $class_name();
                 }
